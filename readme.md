@@ -1,5 +1,7 @@
 # Japan Set3: Tracks ~~reMOD~~ weMOD
 
+Original NFO source code: [bundles.openttdcoop.org](https://bundles.openttdcoop.org/jptracks/nightlies/LATEST/)
+
 This weMOD version does not add additional functionality to the set; instead, this version only makes the fences seamless and added additional translations.
 
 ## Building
