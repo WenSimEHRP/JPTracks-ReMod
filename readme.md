@@ -1,6 +1,6 @@
-# Japan Set3: Tracks reMOD
+# Japan Set3: Tracks ~~reMOD~~ weMOD
 
-This reMOD version does not add additional functionality to the set; instead, this version only makes the fences seamless and added additional translations.
+This weMOD version does not add additional functionality to the set; instead, this version only makes the fences seamless and added additional translations.
 
 ## Building
 
@@ -34,5 +34,5 @@ Dandan, Onodera, Sanchimaru
 Original NFO code by:\
 Dandan， stevenh
 
-Re-mod by:
+Modification by:
 WenSim
