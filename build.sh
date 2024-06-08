@@ -1,5 +1,5 @@
 #!/bin/bash
-gcc -E -P -x c -o jptracks-remod.yagl sprites/jptracks.yagl &&
+gcc -E -P -x c -o jptracks-remod.yagl sprites/jptracks.pyagl &&
     mv jptracks-remod.yagl sprites/jptracks-remod.yagl &&
     yagl -e jptracks-remod.yagl &&
     mv jptracks-remod.yagl jptracks-remod.grf &&
