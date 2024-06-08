@@ -5,8 +5,8 @@ optional_info // Action14
 {
     INFO: 
     {
-        NAME: zh_CN, "Japan Set3: 轨道 {ext push-colour}{white}reMOD{ext pop-colour}";
-        DESC: zh_CN, "{white}Japan {red}Set{white}3: 轨道 {ext push-colour}{gold}reMOD{ext pop-colour}{lt-blue}{new-line}2024 年 6 月{black}{new-line}{new-line}由 {lt-blue}Dandan、Onodera、Sanchimaru{black} 绘制{new-line}{new-line}由 {lt-blue}Dandan、stevenh{black} 编写{new-line}由 {lt-blue}WenSim{black} 重新编写";
+        NAME: zh_CN, "Japan Set3: 轨道 {ext push-colour}{white}weMOD{ext pop-colour}";
+        DESC: zh_CN, "{white}Japan {red}Set{white}3: 轨道 {ext push-colour}{gold}weMOD{ext pop-colour}{lt-blue}{new-line}2024 年 6 月{black}{new-line}{new-line}由 {lt-blue}Dandan、Onodera、Sanchimaru{black} 绘制{new-line}{new-line}由 {lt-blue}Dandan、stevenh{black} 编写{new-line}由 {lt-blue}WenSim{black} 重新编写";
         VRSN: [ 0x01 0x00 0x00 0x00 ];
         MINV: [ 0x01 0x00 0x00 0x00 ];
         NPAR: [ 0x0B ];

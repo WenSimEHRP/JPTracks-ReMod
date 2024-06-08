@@ -47,8 +47,8 @@ grf // Action08
 {
     grf_id: "DP0\x01";
     version: GRF8;
-    name: "Japan Set3: Tracks {ext push-colour}{white}reMOD{ext pop-colour}";
-    description: "{white}Japan {red}Set{white}3: Tracks {ext push-colour}{gold}reMOD{ext pop-colour}{lt-blue}{new-line}June 2024{black}{new-line}Drawn by {lt-blue}Dandan, Onodera, Sanchimaru{black}{new-line}{new-line}Coded by {lt-blue}Dandan， stevenh{black}{new-line}Re-moded by {lt-blue}WenSim";
+    name: "Japan Set3: Tracks {ext push-colour}{white}weMOD{ext pop-colour}";
+    description: "{white}Japan {red}Set{white}3: Tracks {ext push-colour}{gold}weMOD{ext pop-colour}{lt-blue}{new-line}June 2024{black}{new-line}Drawn by {lt-blue}Dandan, Onodera, Sanchimaru{black}{new-line}{new-line}Coded by {lt-blue}Dandan， stevenh{black}{new-line}Re-moded by {lt-blue}WenSim";
 }
 // Record #9
 set_parameter // Action0D
