@@ -44105,6 +44105,23 @@ feature_graphics<RailTypes> // Action03
 label<0xF5> // Action10 - target for Action07 or Action09
 {
 }
+//TODO fence offset defines
+#define FENCE_0 33, 22, -33, -8
+#define FENCE_1 33, 22,   2, -8
+#define FENCE_2  2, 38,   0, -23
+#define FENCE_3 65,  6, -31, -6
+#define FENCE_4 33, 14, -33, -8
+#define FENCE_5 33, 14,   2, -8
+#define FENCE_6 33, 30, -33, -16
+#define FENCE_7 33, 30,   2, -16
+#define FENCE_8 33, 22, -29, -6
+#define FENCE_9 33, 22,  -2, -6
+#define FENCE_A  2, 38,   0, -23
+#define FENCE_B 65,  6, -31, -6
+#define FENCE_C 33, 14, -29, -6
+#define FENCE_D 33, 14,  -2, -6
+#define FENCE_E 33, 30, -29, -14
+#define FENCE_F 33, 30,  -2, -14
 // Record #2703
 if_act9 (is_equal(param[0x09] & 0xFF, 0x00)) // Action09
 {
@@ -44114,25 +44131,25 @@ if_act9 (is_equal(param[0x09] & 0xFF, 0x00)) // Action09
 }
 // Record #2704
 sprite_sets<RailTypes, 0x0000> // <feature, first_set> Action01
-{// TODO
+{
     sprite_set // 0x0000
     {
-        sprite_id<0x00001E57>{[33, 22, -33, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[232, 13035];}
-        sprite_id<0x00001E58>{[33, 22, 2, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[275, 13035];}
-        sprite_id<0x00001E59>{[2, 38, 0, -23], normal, c8bpp, "jptracks-8bpp-normal-0.png",[318, 13035];}
-        sprite_id<0x00001E5A>{[65, 6, -31, -6], normal, c8bpp, "jptracks-8bpp-normal-0.png",[330, 13035];}
-        sprite_id<0x00001E5B>{[33, 14, -33, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[405, 13035];}
-        sprite_id<0x00001E5C>{[33, 14, 2, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[448, 13035];}
-        sprite_id<0x00001E5D>{[33, 30, -33, -16], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[491, 13035];}
-        sprite_id<0x00001E5E>{[33, 30, 2, -16], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[534, 13035];}
-        sprite_id<0x00001E5F>{[33, 22, -29, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[232, 13035];}
-        sprite_id<0x00001E60>{[33, 22, -2, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[275, 13035];}
-        sprite_id<0x00001E61>{[2, 38, 0, -23], normal, c8bpp, "jptracks-8bpp-normal-0.png",[318, 13035];}
-        sprite_id<0x00001E62>{[65, 6, -31, -6], normal, c8bpp, "jptracks-8bpp-normal-0.png",[330, 13035];}
-        sprite_id<0x00001E63>{[33, 14, -29, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[405, 13035];}
-        sprite_id<0x00001E64>{[33, 14, -2, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[448, 13035];}
-        sprite_id<0x00001E65>{[33, 30, -29, -14], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[491, 13035];}
-        sprite_id<0x00001E66>{[33, 30, -2, -14], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[534, 13035];}
+        sprite_id<0x00001E57>{[FENCE_0], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[232, 13035];}
+        sprite_id<0x00001E58>{[FENCE_1], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[275, 13035];}
+        sprite_id<0x00001E59>{[FENCE_2], normal, c8bpp, "jptracks-8bpp-normal-0.png",[318, 13035];}
+        sprite_id<0x00001E5A>{[FENCE_3], normal, c8bpp, "jptracks-8bpp-normal-0.png",[330, 13035];}
+        sprite_id<0x00001E5B>{[FENCE_4], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[405, 13035];}
+        sprite_id<0x00001E5C>{[FENCE_5], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[448, 13035];}
+        sprite_id<0x00001E5D>{[FENCE_6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[491, 13035];}
+        sprite_id<0x00001E5E>{[FENCE_7], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[534, 13035];}
+        sprite_id<0x00001E5F>{[FENCE_8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[232, 13035];}
+        sprite_id<0x00001E60>{[FENCE_9], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[275, 13035];}
+        sprite_id<0x00001E61>{[FENCE_A], normal, c8bpp, "jptracks-8bpp-normal-0.png",[318, 13035];}
+        sprite_id<0x00001E62>{[FENCE_B], normal, c8bpp, "jptracks-8bpp-normal-0.png",[330, 13035];}
+        sprite_id<0x00001E63>{[FENCE_C], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[405, 13035];}
+        sprite_id<0x00001E64>{[FENCE_D], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[448, 13035];}
+        sprite_id<0x00001E65>{[FENCE_E], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[491, 13035];}
+        sprite_id<0x00001E66>{[FENCE_F], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[534, 13035];}
     }
 }
 // Record #2705
@@ -44171,22 +44188,22 @@ sprite_sets<RailTypes, 0x0000> // <feature, first_set> Action01
 {
     sprite_set // 0x0000
     {
-        sprite_id<0x00001D11>{[33, 22, -33, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[577, 13035];}
-        sprite_id<0x00001D12>{[33, 22, 2, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[620, 13035];}
-        sprite_id<0x00001D13>{[2, 38, 0, -23], normal, c8bpp, "jptracks-8bpp-normal-0.png",[663, 13035];}
-        sprite_id<0x00001D14>{[65, 6, -31, -6], normal, c8bpp, "jptracks-8bpp-normal-0.png",[675, 13035];}
-        sprite_id<0x00001D15>{[33, 14, -33, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[750, 13035];}
-        sprite_id<0x00001D16>{[33, 14, 2, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[10, 13090];}
-        sprite_id<0x00001D17>{[33, 30, -33, -16], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[53, 13090];}
-        sprite_id<0x00001D18>{[33, 30, 2, -16], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[96, 13090];}
-        sprite_id<0x00001D19>{[33, 22, -29, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[577, 13035];}
-        sprite_id<0x00001D1A>{[33, 22, -2, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[620, 13035];}
-        sprite_id<0x00001D1B>{[2, 38, 0, -23], normal, c8bpp, "jptracks-8bpp-normal-0.png",[663, 13035];}
-        sprite_id<0x00001D1C>{[65, 6, -31, -6], normal, c8bpp, "jptracks-8bpp-normal-0.png",[675, 13035];}
-        sprite_id<0x00001D1D>{[33, 14, -29, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[750, 13035];}
-        sprite_id<0x00001D1E>{[33, 14, -2, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[10, 13090];}
-        sprite_id<0x00001D1F>{[33, 30, -29, -14], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[53, 13090];}
-        sprite_id<0x00001D20>{[33, 30, -2, -14], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[96, 13090];}
+        sprite_id<0x00001D11>{[FENCE_0], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[577, 13035];}
+        sprite_id<0x00001D12>{[FENCE_1], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[620, 13035];}
+        sprite_id<0x00001D13>{[FENCE_2], normal, c8bpp, "jptracks-8bpp-normal-0.png",[663, 13035];}
+        sprite_id<0x00001D14>{[FENCE_3], normal, c8bpp, "jptracks-8bpp-normal-0.png",[675, 13035];}
+        sprite_id<0x00001D15>{[FENCE_4], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[750, 13035];}
+        sprite_id<0x00001D16>{[FENCE_5], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[10, 13090];}
+        sprite_id<0x00001D17>{[FENCE_6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[53, 13090];}
+        sprite_id<0x00001D18>{[FENCE_7], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[96, 13090];}
+        sprite_id<0x00001D19>{[FENCE_8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[577, 13035];}
+        sprite_id<0x00001D1A>{[FENCE_9], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[620, 13035];}
+        sprite_id<0x00001D1B>{[FENCE_A], normal, c8bpp, "jptracks-8bpp-normal-0.png",[663, 13035];}
+        sprite_id<0x00001D1C>{[FENCE_B], normal, c8bpp, "jptracks-8bpp-normal-0.png",[675, 13035];}
+        sprite_id<0x00001D1D>{[FENCE_C], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[750, 13035];}
+        sprite_id<0x00001D1E>{[FENCE_D], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[10, 13090];}
+        sprite_id<0x00001D1F>{[FENCE_E], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[53, 13090];}
+        sprite_id<0x00001D20>{[FENCE_F], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[96, 13090];}
     }
 }
 // Record #2710
@@ -44414,22 +44431,22 @@ sprite_sets<RailTypes, 0x0000> // <feature, first_set> Action01
 {
     sprite_set // 0x0000
     {
-        sprite_id<0x00001D2F>{[33, 22, -33, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[139, 13090];}
-        sprite_id<0x00001D30>{[33, 22, 2, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[182, 13090];}
-        sprite_id<0x00001D31>{[2, 38, 0, -23], normal, c8bpp, "jptracks-8bpp-normal-0.png",[225, 13090];}
-        sprite_id<0x00001D32>{[65, 6, -31, -6], normal, c8bpp, "jptracks-8bpp-normal-0.png",[237, 13090];}
-        sprite_id<0x00001D33>{[33, 14, -33, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[312, 13090];}
-        sprite_id<0x00001D34>{[33, 14, 2, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[355, 13090];}
-        sprite_id<0x00001D35>{[33, 30, -33, -16], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[398, 13090];}
-        sprite_id<0x00001D36>{[33, 30, 2, -16], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[441, 13090];}
-        sprite_id<0x00001D37>{[33, 22, -29, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[139, 13090];}
-        sprite_id<0x00001D38>{[33, 22, -2, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[182, 13090];}
-        sprite_id<0x00001D39>{[2, 38, 0, -23], normal, c8bpp, "jptracks-8bpp-normal-0.png",[225, 13090];}
-        sprite_id<0x00001D3A>{[65, 6, -31, -6], normal, c8bpp, "jptracks-8bpp-normal-0.png",[237, 13090];}
-        sprite_id<0x00001D3B>{[33, 14, -29, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[312, 13090];}
-        sprite_id<0x00001D3C>{[33, 14, -2, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[355, 13090];}
-        sprite_id<0x00001D3D>{[33, 30, -29, -14], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[398, 13090];}
-        sprite_id<0x00001D3E>{[33, 30, -2, -14], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[441, 13090];}
+        sprite_id<0x00001D2F>{[FENCE_0], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[139, 13090];}
+        sprite_id<0x00001D30>{[FENCE_1], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[182, 13090];}
+        sprite_id<0x00001D31>{[FENCE_2], normal, c8bpp, "jptracks-8bpp-normal-0.png",[225, 13090];}
+        sprite_id<0x00001D32>{[FENCE_3], normal, c8bpp, "jptracks-8bpp-normal-0.png",[237, 13090];}
+        sprite_id<0x00001D33>{[FENCE_4], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[312, 13090];}
+        sprite_id<0x00001D34>{[FENCE_5], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[355, 13090];}
+        sprite_id<0x00001D35>{[FENCE_6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[398, 13090];}
+        sprite_id<0x00001D36>{[FENCE_7], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[441, 13090];}
+        sprite_id<0x00001D37>{[FENCE_8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[139, 13090];}
+        sprite_id<0x00001D38>{[FENCE_9], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[182, 13090];}
+        sprite_id<0x00001D39>{[FENCE_A], normal, c8bpp, "jptracks-8bpp-normal-0.png",[225, 13090];}
+        sprite_id<0x00001D3A>{[FENCE_B], normal, c8bpp, "jptracks-8bpp-normal-0.png",[237, 13090];}
+        sprite_id<0x00001D3B>{[FENCE_C], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[312, 13090];}
+        sprite_id<0x00001D3C>{[FENCE_D], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[355, 13090];}
+        sprite_id<0x00001D3D>{[FENCE_E], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[398, 13090];}
+        sprite_id<0x00001D3E>{[FENCE_F], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png",[441, 13090];}
     }
 }
 // Record #2732
@@ -44537,22 +44554,22 @@ sprite_sets<RailTypes, 0x0000> // <feature, first_set> Action01
 {
     sprite_set // 0x0000
     {
-        sprite_id<0x00001D43>{[33, 22, -33, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [484, 13090];}
-        sprite_id<0x00001D44>{[33, 22, 2, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [527, 13090];}
-        sprite_id<0x00001D45>{[2, 38, 0, -23], normal, c8bpp, "jptracks-8bpp-normal-0.png", [570, 13090];}
-        sprite_id<0x00001D46>{[65, 6, -31, -6], normal, c8bpp, "jptracks-8bpp-normal-0.png", [582, 13090];}
-        sprite_id<0x00001D47>{[33, 14, -33, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [657, 13090];}
-        sprite_id<0x00001D48>{[33, 14, 2, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [700, 13090];}
-        sprite_id<0x00001D49>{[33, 30, -33, -16], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [743, 13090];}
-        sprite_id<0x00001D4A>{[33, 30, 2, -16], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [10, 13138];}
-        sprite_id<0x00001D4B>{[33, 22, -29, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [484, 13090];}
-        sprite_id<0x00001D4C>{[33, 22, -2, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [527, 13090];}
-        sprite_id<0x00001D4D>{[2, 38, 0, -23], normal, c8bpp, "jptracks-8bpp-normal-0.png", [570, 13090];}
-        sprite_id<0x00001D4E>{[65, 6, -31, -6], normal, c8bpp, "jptracks-8bpp-normal-0.png", [582, 13090];}
-        sprite_id<0x00001D4F>{[33, 14, -29, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [657, 13090];}
-        sprite_id<0x00001D50>{[33, 14, -2, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [700, 13090];}
-        sprite_id<0x00001D51>{[33, 30, -29, -14], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [743, 13090];}
-        sprite_id<0x00001D52>{[33, 30, -2, -14], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [10, 13138];}
+        sprite_id<0x00001D43>{[FENCE_0], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [484, 13090];}
+        sprite_id<0x00001D44>{[FENCE_1], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [527, 13090];}
+        sprite_id<0x00001D45>{[FENCE_2], normal, c8bpp, "jptracks-8bpp-normal-0.png", [570, 13090];}
+        sprite_id<0x00001D46>{[FENCE_3], normal, c8bpp, "jptracks-8bpp-normal-0.png", [582, 13090];}
+        sprite_id<0x00001D47>{[FENCE_4], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [657, 13090];}
+        sprite_id<0x00001D48>{[FENCE_5], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [700, 13090];}
+        sprite_id<0x00001D49>{[FENCE_6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [743, 13090];}
+        sprite_id<0x00001D4A>{[FENCE_7], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [10, 13138];}
+        sprite_id<0x00001D4B>{[FENCE_8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [484, 13090];}
+        sprite_id<0x00001D4C>{[FENCE_9], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [527, 13090];}
+        sprite_id<0x00001D4D>{[FENCE_A], normal, c8bpp, "jptracks-8bpp-normal-0.png", [570, 13090];}
+        sprite_id<0x00001D4E>{[FENCE_B], normal, c8bpp, "jptracks-8bpp-normal-0.png", [582, 13090];}
+        sprite_id<0x00001D4F>{[FENCE_C], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [657, 13090];}
+        sprite_id<0x00001D50>{[FENCE_D], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [700, 13090];}
+        sprite_id<0x00001D51>{[FENCE_E], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [743, 13090];}
+        sprite_id<0x00001D52>{[FENCE_F], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [10, 13138];}
     }
 }
 // Record #2744
@@ -44671,22 +44688,22 @@ sprite_sets<RailTypes, 0x0000> // <feature, first_set> Action01
 {
     sprite_set // 0x0000
     {
-        sprite_id<0x00001D59>{[33, 22, -33, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [53, 13138];}
-        sprite_id<0x00001D5A>{[33, 22, 2, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [96, 13138];}
-        sprite_id<0x00001D5B>{[2, 38, 0, -23], normal, c8bpp, "jptracks-8bpp-normal-0.png", [139, 13138];}
-        sprite_id<0x00001D5C>{[65, 6, -31, -6], normal, c8bpp, "jptracks-8bpp-normal-0.png", [151, 13138];}
-        sprite_id<0x00001D5D>{[33, 14, -33, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [226, 13138];}
-        sprite_id<0x00001D5E>{[33, 14, 2, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [269, 13138];}
-        sprite_id<0x00001D5F>{[33, 30, -33, -16], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [312, 13138];}
-        sprite_id<0x00001D60>{[33, 30, 2, -16], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [355, 13138];}
-        sprite_id<0x00001D61>{[33, 22, -29, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [53, 13138];}
-        sprite_id<0x00001D62>{[33, 22, -2, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [96, 13138];}
-        sprite_id<0x00001D63>{[2, 38, 0, -23], normal, c8bpp, "jptracks-8bpp-normal-0.png", [139, 13138];}
-        sprite_id<0x00001D64>{[65, 6, -31, -6], normal, c8bpp, "jptracks-8bpp-normal-0.png", [151, 13138];}
-        sprite_id<0x00001D65>{[33, 14, -29, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [226, 13138];}
-        sprite_id<0x00001D66>{[33, 14, -2, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [269, 13138];}
-        sprite_id<0x00001D67>{[33, 30, -29, -14], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [312, 13138];}
-        sprite_id<0x00001D68>{[33, 30, -2, -14], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [355, 13138];}
+        sprite_id<0x00001D59>{[FENCE_0], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [53, 13138];}
+        sprite_id<0x00001D5A>{[FENCE_1], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [96, 13138];}
+        sprite_id<0x00001D5B>{[FENCE_2], normal, c8bpp, "jptracks-8bpp-normal-0.png", [139, 13138];}
+        sprite_id<0x00001D5C>{[FENCE_3], normal, c8bpp, "jptracks-8bpp-normal-0.png", [151, 13138];}
+        sprite_id<0x00001D5D>{[FENCE_4], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [226, 13138];}
+        sprite_id<0x00001D5E>{[FENCE_5], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [269, 13138];}
+        sprite_id<0x00001D5F>{[FENCE_6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [312, 13138];}
+        sprite_id<0x00001D60>{[FENCE_7], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [355, 13138];}
+        sprite_id<0x00001D61>{[FENCE_8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [53, 13138];}
+        sprite_id<0x00001D62>{[FENCE_9], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [96, 13138];}
+        sprite_id<0x00001D63>{[FENCE_A], normal, c8bpp, "jptracks-8bpp-normal-0.png", [139, 13138];}
+        sprite_id<0x00001D64>{[FENCE_B], normal, c8bpp, "jptracks-8bpp-normal-0.png", [151, 13138];}
+        sprite_id<0x00001D65>{[FENCE_C], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [226, 13138];}
+        sprite_id<0x00001D66>{[FENCE_D], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [269, 13138];}
+        sprite_id<0x00001D67>{[FENCE_E], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [312, 13138];}
+        sprite_id<0x00001D68>{[FENCE_F], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [355, 13138];}
     }
 }
 // Record #2758
@@ -44725,22 +44742,22 @@ sprite_sets<RailTypes, 0x0000> // <feature, first_set> Action01
 {
     sprite_set // 0x0000
     {
-        sprite_id<0x00001D74>{[33, 22, -33, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [398, 13138];}
-        sprite_id<0x00001D75>{[33, 22, 2, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [441, 13138];}
-        sprite_id<0x00001D76>{[2, 38, 0, -23], normal, c8bpp, "jptracks-8bpp-normal-0.png", [484, 13138];}
-        sprite_id<0x00001D77>{[65, 6, -31, -6], normal, c8bpp, "jptracks-8bpp-normal-0.png", [496, 13138];}
-        sprite_id<0x00001D78>{[33, 14, -33, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [571, 13138];}
-        sprite_id<0x00001D79>{[33, 14, 2, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [614, 13138];}
-        sprite_id<0x00001D7A>{[33, 30, -33, -16], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [657, 13138];}
-        sprite_id<0x00001D7B>{[33, 30, 2, -16], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [700, 13138];}
-        sprite_id<0x00001D7C>{[33, 22, -29, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [398, 13138];}
-        sprite_id<0x00001D7D>{[33, 22, -2, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [441, 13138];}
-        sprite_id<0x00001D7E>{[2, 38, 0, -23], normal, c8bpp, "jptracks-8bpp-normal-0.png", [484, 13138];}
-        sprite_id<0x00001D7F>{[65, 6, -31, -6], normal, c8bpp, "jptracks-8bpp-normal-0.png", [496, 13138];}
-        sprite_id<0x00001D80>{[33, 14, -29, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [571, 13138];}
-        sprite_id<0x00001D81>{[33, 14, -2, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [614, 13138];}
-        sprite_id<0x00001D82>{[33, 30, -29, -14], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [657, 13138];}
-        sprite_id<0x00001D83>{[33, 30, -2, -14], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [700, 13138];}
+        sprite_id<0x00001D74>{[FENCE_0], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [398, 13138];}
+        sprite_id<0x00001D75>{[FENCE_1], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [441, 13138];}
+        sprite_id<0x00001D76>{[FENCE_2], normal, c8bpp, "jptracks-8bpp-normal-0.png", [484, 13138];}
+        sprite_id<0x00001D77>{[FENCE_3], normal, c8bpp, "jptracks-8bpp-normal-0.png", [496, 13138];}
+        sprite_id<0x00001D78>{[FENCE_4], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [571, 13138];}
+        sprite_id<0x00001D79>{[FENCE_5], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [614, 13138];}
+        sprite_id<0x00001D7A>{[FENCE_6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [657, 13138];}
+        sprite_id<0x00001D7B>{[FENCE_7], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [700, 13138];}
+        sprite_id<0x00001D7C>{[FENCE_8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [398, 13138];}
+        sprite_id<0x00001D7D>{[FENCE_9], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [441, 13138];}
+        sprite_id<0x00001D7E>{[FENCE_A], normal, c8bpp, "jptracks-8bpp-normal-0.png", [484, 13138];}
+        sprite_id<0x00001D7F>{[FENCE_B], normal, c8bpp, "jptracks-8bpp-normal-0.png", [496, 13138];}
+        sprite_id<0x00001D80>{[FENCE_C], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [571, 13138];}
+        sprite_id<0x00001D81>{[FENCE_D], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [614, 13138];}
+        sprite_id<0x00001D82>{[FENCE_E], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [657, 13138];}
+        sprite_id<0x00001D83>{[FENCE_F], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [700, 13138];}
     }
 }
 // Record #2763
@@ -44968,22 +44985,22 @@ sprite_sets<RailTypes, 0x0000> // <feature, first_set> Action01
 {
     sprite_set // 0x0000
     {
-        sprite_id<0x00001D84>{[33, 22, -33, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [743, 13138];}
-        sprite_id<0x00001D85>{[33, 22, 2, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [10, 13186];}
-        sprite_id<0x00001D86>{[2, 38, 0, -23], normal, c8bpp, "jptracks-8bpp-normal-0.png", [53, 13186];}
-        sprite_id<0x00001D87>{[65, 6, -31, -6], normal, c8bpp, "jptracks-8bpp-normal-0.png", [65, 13186];}
-        sprite_id<0x00001D88>{[33, 14, -33, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [140, 13186];}
-        sprite_id<0x00001D89>{[33, 14, 2, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [183, 13186];}
-        sprite_id<0x00001D8A>{[33, 30, -33, -16], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [226, 13186];}
-        sprite_id<0x00001D8B>{[33, 30, 2, -16], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [269, 13186];}
-        sprite_id<0x00001D8C>{[33, 22, -29, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [743, 13138];}
-        sprite_id<0x00001D8D>{[33, 22, -2, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [10, 13186];}
-        sprite_id<0x00001D8E>{[2, 38, 0, -23], normal, c8bpp, "jptracks-8bpp-normal-0.png", [53, 13186];}
-        sprite_id<0x00001D8F>{[65, 6, -31, -6], normal, c8bpp, "jptracks-8bpp-normal-0.png", [65, 13186];}
-        sprite_id<0x00001D90>{[33, 14, -29, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [140, 13186];}
-        sprite_id<0x00001D91>{[33, 14, -2, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [183, 13186];}
-        sprite_id<0x00001D92>{[33, 30, -29, -14], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [226, 13186];}
-        sprite_id<0x00001D93>{[33, 30, -2, -14], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [269, 13186];}    }
+        sprite_id<0x00001D84>{[FENCE_0], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [743, 13138];}
+        sprite_id<0x00001D85>{[FENCE_1], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [10, 13186];}
+        sprite_id<0x00001D86>{[FENCE_2], normal, c8bpp, "jptracks-8bpp-normal-0.png", [53, 13186];}
+        sprite_id<0x00001D87>{[FENCE_3], normal, c8bpp, "jptracks-8bpp-normal-0.png", [65, 13186];}
+        sprite_id<0x00001D88>{[FENCE_4], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [140, 13186];}
+        sprite_id<0x00001D89>{[FENCE_5], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [183, 13186];}
+        sprite_id<0x00001D8A>{[FENCE_6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [226, 13186];}
+        sprite_id<0x00001D8B>{[FENCE_7], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [269, 13186];}
+        sprite_id<0x00001D8C>{[FENCE_8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [743, 13138];}
+        sprite_id<0x00001D8D>{[FENCE_9], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [10, 13186];}
+        sprite_id<0x00001D8E>{[FENCE_A], normal, c8bpp, "jptracks-8bpp-normal-0.png", [53, 13186];}
+        sprite_id<0x00001D8F>{[FENCE_B], normal, c8bpp, "jptracks-8bpp-normal-0.png", [65, 13186];}
+        sprite_id<0x00001D90>{[FENCE_C], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [140, 13186];}
+        sprite_id<0x00001D91>{[FENCE_D], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [183, 13186];}
+        sprite_id<0x00001D92>{[FENCE_E], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [226, 13186];}
+        sprite_id<0x00001D93>{[FENCE_F], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [269, 13186];}    }
 }
 // Record #2785
 sprite_groups<RailTypes, 0xA5> // Action02 basic
@@ -45090,22 +45107,22 @@ sprite_sets<RailTypes, 0x0000> // <feature, first_set> Action01
 {
     sprite_set // 0x0000
     {
-        sprite_id<0x00001D98>{[33, 22, -33, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [312, 13186];}
-        sprite_id<0x00001D99>{[33, 22, 2, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [355, 13186];}
-        sprite_id<0x00001D9A>{[2, 38, 0, -23], normal, c8bpp, "jptracks-8bpp-normal-0.png", [398, 13186];}
-        sprite_id<0x00001D9B>{[65, 6, -31, -6], normal, c8bpp, "jptracks-8bpp-normal-0.png", [410, 13186];}
-        sprite_id<0x00001D9C>{[33, 14, -33, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [485, 13186];}
-        sprite_id<0x00001D9D>{[33, 14, 2, -8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [528, 13186];}
-        sprite_id<0x00001D9E>{[33, 30, -33, -16], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [571, 13186];}
-        sprite_id<0x00001D9F>{[33, 30, 2, -16], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [614, 13186];}
-        sprite_id<0x00001DA0>{[33, 22, -29, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [312, 13186];}
-        sprite_id<0x00001DA1>{[33, 22, -2, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [355, 13186];}
-        sprite_id<0x00001DA2>{[2, 38, 0, -23], normal, c8bpp, "jptracks-8bpp-normal-0.png", [398, 13186];}
-        sprite_id<0x00001DA3>{[65, 6, -31, -6], normal, c8bpp, "jptracks-8bpp-normal-0.png", [410, 13186];}
-        sprite_id<0x00001DA4>{[33, 14, -29, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [485, 13186];}
-        sprite_id<0x00001DA5>{[33, 14, -2, -6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [528, 13186];}
-        sprite_id<0x00001DA6>{[33, 30, -29, -14], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [571, 13186];}
-        sprite_id<0x00001DA7>{[33, 30, -2, -14], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [614, 13186];}    }
+        sprite_id<0x00001D98>{[FENCE_0], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [312, 13186];}
+        sprite_id<0x00001D99>{[FENCE_1], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [355, 13186];}
+        sprite_id<0x00001D9A>{[FENCE_2], normal, c8bpp, "jptracks-8bpp-normal-0.png", [398, 13186];}
+        sprite_id<0x00001D9B>{[FENCE_3], normal, c8bpp, "jptracks-8bpp-normal-0.png", [410, 13186];}
+        sprite_id<0x00001D9C>{[FENCE_4], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [485, 13186];}
+        sprite_id<0x00001D9D>{[FENCE_5], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [528, 13186];}
+        sprite_id<0x00001D9E>{[FENCE_6], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [571, 13186];}
+        sprite_id<0x00001D9F>{[FENCE_7], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [614, 13186];}
+        sprite_id<0x00001DA0>{[FENCE_8], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [312, 13186];}
+        sprite_id<0x00001DA1>{[FENCE_9], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [355, 13186];}
+        sprite_id<0x00001DA2>{[FENCE_A], normal, c8bpp, "jptracks-8bpp-normal-0.png", [398, 13186];}
+        sprite_id<0x00001DA3>{[FENCE_B], normal, c8bpp, "jptracks-8bpp-normal-0.png", [410, 13186];}
+        sprite_id<0x00001DA4>{[FENCE_C], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [485, 13186];}
+        sprite_id<0x00001DA5>{[FENCE_D], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [528, 13186];}
+        sprite_id<0x00001DA6>{[FENCE_E], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [571, 13186];}
+        sprite_id<0x00001DA7>{[FENCE_F], normal, c8bpp | chunked, "jptracks-8bpp-normal-0.png", [614, 13186];}    }
 }
 // Record #2797
 sprite_groups<RailTypes, 0xA9> // Action02 basic
