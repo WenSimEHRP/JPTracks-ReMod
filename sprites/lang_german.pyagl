@@ -1,0 +1,253 @@
+// Record #167
+if_act9 (is_equal(param[0x10] & 0xFF, 0x01)) // Action09
+{
+    skip_sprites: 0xF0;
+    // Or skip to the next label (Action10) with this value - search wraps at end of GRF.
+    // 0x00 means skip to end of GRF file - may disable the GRF.
+}
+// Record #168
+strings<RailTypes, de_DE, 0xDC10*> // <feature, language, first_id> Action04, German
+{
+    /* 0xDC10 */ "Schmalspurstrecke";
+    /* 0xDC11 */ "Schmalspurstrecke";
+    /* 0xDC12 */ "Schmalspurstrecke (elektrifiziert)";
+    /* 0xDC13 */ "Schmalspurstrecke, modern (elektrifiziert)";
+    /* 0xDC14 */ "Normalspurstrecke (elektrifiziert)";
+    /* 0xDC15 */ "Normalspurstrecke, modern (elektrifiziert)";
+    /* 0xDC16 */ "Shinkansen-Strecke (elektrifiziert)";
+    /* 0xDC17 */ "Shinkansen-Strecke, modern (elektrifiziert)";
+    /* 0xDC18 */ "Normalspurstrecke (mit Stromschiene)";
+    /* 0xDC19 */ "Normalspurstrecke, urban (mit Stromschiene)";
+    /* 0xDC1A */ "TO PEOPLE WHO ARE READING THE SOURCE CODE: THIS IS A PLACEHOLDER";
+    /* 0xDC1B */ "Schmalspurstrecke, urban (elektrifiziert)";
+    /* 0xDC1C */ "Normalspurstrecke, urban (elektrifiziert)";
+    /* 0xDC1D */ "Normalspurstrecke";
+}
+// Record #181
+strings<RailTypes, de_DE, 0xDC20*> // <feature, language, first_id> Action04, German
+{
+    /* 0xDC20 */ "Schmalspurstrecke{white}";
+    /* 0xDC21 */ "Schmalspurstrecke{white}";
+    /* 0xDC22 */ "Schmalspurstrecke {lt-blue}(elektrifiziert){white}";
+    /* 0xDC23 */ "Schmalspurstrecke, modern {lt-blue}(elektrifiziert){white}";
+    /* 0xDC24 */ "Normalspurstrecke {lt-blue}(elektrifiziert){white}";
+    /* 0xDC25 */ "Normalspurstrecke, modern {lt-blue}(elektrifiziert){white}";
+    /* 0xDC26 */ "Shinkansen-Strecke {lt-blue}(elektrifiziert){white}";
+    /* 0xDC27 */ "Shinkansen-Strecke, modern {lt-blue}(elektrifiziert){white}";
+    /* 0xDC28 */ "Normalspurstrecke {green}(mit Stromschiene){white}";
+    /* 0xDC29 */ "Normalspurstrecke, urban {green}(mit Stromschiene){white}";
+    /* 0xDC2A */ "PLACEHOLDER";
+    /* 0xDC2B */ "Schmalspurtrecke, urban {lt-blue}(elektrifiziert){white}";
+    /* 0xDC2C */ "Normalspurstrecke, urban {lt-blue}(elektrifiziert){white}";
+    /* 0xDC2D */ "Normalspurstrecke{white}";
+}
+// Record #195
+strings<RailTypes, de_DE, 0xDC30*> // <feature, language, first_id> Action04, German
+{
+    /* 0xDC30 */ "{white}Neue Schmalspurzüge";
+    /* 0xDC31 */ "{white}Neue Schmalspurzüge";
+    /* 0xDC32 */ "{white}Neue elektrische Schmalspurzüge";
+    /* 0xDC33 */ "{white}Neue elektrische Schmalspurzüge";
+    /* 0xDC34 */ "{white}Neue elektrische Normalspurzüge";
+    /* 0xDC35 */ "{white}Neue elektrische Normalspurzüge";
+    /* 0xDC36 */ "{white}Neue Shinkansenzüge";
+    /* 0xDC37 */ "{white}Neue Shinkansenzüge";
+    /* 0xDC38 */ "{white}Neue Stromschienenzüge";
+    /* 0xDC39 */ "TO PEOPLE WHO ARE READING THE SOURCE CODE: THIS IS A PLACEHOLDER";
+    /* 0xDC3A */ "{white}Neue elektrische 750mm-Spur-Züge";
+    /* 0xDC3B */ "{white}Neue elektrische Schmalspurzüge";
+    /* 0xDC3C */ "{white}Neue elektrische Normalspurzüge";
+    /* 0xDC3D */ "{white}Neue Normalspurzüge";
+}
+// Record #208
+strings<RailTypes, de_DE, 0xDC40*> // <feature, language, first_id> Action04, German
+{
+    /* 0xDC40 */ "Leichte Schmalspurzüge";
+    /* 0xDC41 */ "Schmalspurzüge";
+    /* 0xDC42 */ "Elektrische Schmalspurzüge";
+    /* 0xDC43 */ "Moderne elektrische Schmalspurzüge";
+    /* 0xDC44 */ "Elektrische Normalspurzüge";
+    /* 0xDC45 */ "Moderne elektrische Normalspurzüge";
+    /* 0xDC46 */ "Shinkansenzüge";
+    /* 0xDC47 */ "Moderne Shinkansenzüge";
+    /* 0xDC48 */ "Metro-Stromschienenzüge";
+    /* 0xDC49 */ "TO PEOPLE WHO ARE READING THE SOURCE CODE: THIS IS A PLACEHOLDER";
+    /* 0xDC4A */ "Elektrische 750mm Schmalspurzüge";
+    /* 0xDC4B */ "Urbane elektrische Schmalspurzüge";
+    /* 0xDC4C */ "Urbane elektrische Normalspurzüge";
+    /* 0xDC4D */ "Normalspurzüge";
+}
+// Record #221
+strings<RailTypes, de_DE, 0xDC50*> // <feature, language, first_id> Action04, German
+{
+    /* 0xDC50 */ "Schienenfahrzeugtyp";
+}
+// Record #222
+strings<RailTypes, de_DE, 0xDC54*> // <feature, language, first_id> Action04, German
+{
+    /* 0xDC54 */ "Schienenfahrzeugtyp";
+}
+// Record #223
+strings<RailTypes, de_DE, 0xDC56*> // <feature, language, first_id> Action04, German
+{
+    /* 0xDC56 */ "Shinkansenzug";
+}
+// Record #224
+strings<RailTypes, de_DE, 0xDC58*> // <feature, language, first_id> Action04, German
+{
+    /* 0xDC58 */ "Schienenfahrzeugtyp";
+    /* 0xDC59 */ "Schienenfahrzeugtyp";
+}
+// Record #226
+label<0xF0> // Action10 - target for Action07 or Action09
+{
+}
+// Record #227
+if_act9 (is_not_equal(param[0x10] & 0xFF, 0x01)) // Action09
+{
+    skip_sprites: 0xF1;
+    // Or skip to the next label (Action10) with this value - search wraps at end of GRF.
+    // 0x00 means skip to end of GRF file - may disable the GRF.
+}
+// Record #228
+strings<RailTypes, de_DE, 0xDC10*> // <feature, language, first_id> Action04, German
+{
+    /* 0xDC10 */ "{white}Nebenstrecke";
+    /* 0xDC11 */ "{white}Hauptstrecke";
+    /* 0xDC12 */ "{white}Moderne Hauptstrecke";
+    /* 0xDC13 */ "{white}Ausbaustrecke";
+    /* 0xDC14 */ "{white}Hauptstrecke (mit Oberleitung)";
+    /* 0xDC15 */ "{white}Moderne Hauptstrecke (mit Oberleitung)";
+    /* 0xDC16 */ "{white}Ausbaustrecke (mit Oberleitung)";
+    /* 0xDC17 */ "{white}Neubaustrecke (mit Oberleitung)";
+    /* 0xDC18 */ "{white}Hauptstrecke (mit Stromschiene)";
+    /* 0xDC19 */ "{white}Hauptstrecke (mit Oberleitung und Stromschiene)";
+    /* 0xDC1A */ "{white}Urbane Strecke (mit Oberleitung)";
+    /* 0xDC1B */ "{white}Urbane Strecke (mit Stromschiene)";
+    /* 0xDC1C */ "{white}Schmalspurstrecke";
+    /* 0xDC1D */ "{white}Schmalspurstrecke (mit Oberleitung)";
+}
+// Record #242
+strings<RailTypes, de_DE, 0xDC20*> // <feature, language, first_id> Action04, German
+{
+    /* 0xDC20 */ "Nebenstrecke{white}";
+    /* 0xDC21 */ "Hauptstrecke{white}";
+    /* 0xDC22 */ "Moderne Hauptstrecke{white}";
+    /* 0xDC23 */ "Ausbaustrecke{white}";
+    /* 0xDC24 */ "Hauptstrecke {lt-blue}(mit Oberleitung){white}";
+    /* 0xDC25 */ "Moderne Hauptstrecke {lt-blue}(mit Oberleitung){white}";
+    /* 0xDC26 */ "Ausbaustrecke {lt-blue}(mit Oberleitung){white}";
+    /* 0xDC27 */ "Neubaustrecke {lt-blue}(mit Oberleitung){white}";
+    /* 0xDC28 */ "Hauptstrecke {green}(mit Stromschiene){white}";
+    /* 0xDC29 */ "Hauptstrecke {lt-blue}(mit Oberleitung und {green}Stromschiene){white}";
+    /* 0xDC2A */ "Urbane Strecke {lt-blue}(mit Oberleitung){white}";
+    /* 0xDC2B */ "Urbane Strecke {green}(mit Stromschiene){white}";
+    /* 0xDC2C */ "Schmalspurstrecke{white}";
+    /* 0xDC2D */ "Schmalspurstrecke {lt-blue}(mit Oberleitung){white}";
+}
+// Record #256
+strings<RailTypes, de_DE, 0xDC30*> // <feature, language, first_id> Action04, German
+{
+    /* 0xDC30 */ "{white}Neue Züge";
+    /* 0xDC31 */ "{white}Neue Züge";
+    /* 0xDC32 */ "{white}Neue Züge";
+    /* 0xDC33 */ "{white}Neue Züge";
+    /* 0xDC34 */ "{white}Neue elektrische Züge";
+    /* 0xDC35 */ "{white}Neue elektrische Züge";
+    /* 0xDC36 */ "{white}Neue elektrische Züge";
+    /* 0xDC37 */ "{white}Neue elektrische Züge";
+    /* 0xDC38 */ "{white}Neue Stromschienenzüge";
+    /* 0xDC39 */ "{white}Neue Zweisystem-Züge";
+    /* 0xDC3A */ "{white}Neue elektrische Züge";
+    /* 0xDC3B */ "{white}Neue Stromschienenzüge";
+    /* 0xDC3C */ "{white}Neue Schmalspurzüge";
+    /* 0xDC3D */ "{white}Neue Schmalspurzüge";
+}
+// Record #270
+strings<RailTypes, de_DE, 0xDC40*> // <feature, language, first_id> Action04, German
+{
+    /* 0xDC40 */ "Leichte Züge";
+    /* 0xDC41 */ "Züge";
+    /* 0xDC42 */ "Moderne Züge";
+    /* 0xDC43 */ "Hochgeschwindigkeitszüge";
+    /* 0xDC44 */ "Elektrische Züge";
+    /* 0xDC45 */ "Moderne elektrische Züge";
+    /* 0xDC46 */ "Hochgeschwindigkeitszüge";
+    /* 0xDC47 */ "Moderne Hochgeschwindigkeitszüge";
+    /* 0xDC48 */ "Stromschienenzüge";
+    /* 0xDC49 */ "Dual-elektrische Züge";
+    /* 0xDC4A */ "Urbane elektrische Züge";
+    /* 0xDC4B */ "Urbane Stromschienenzüge";
+    /* 0xDC4C */ "Schmalspurzüge";
+    /* 0xDC4D */ "Elektrische Schmalspurzüge";
+}
+// Record #284
+strings<RailTypes, de_DE, 0xDC50*> // <feature, language, first_id> Action04, German
+{
+    /* 0xDC50 */ "Schienenfahrzeugtyp";
+}
+// Record #285
+strings<RailTypes, de_DE, 0xDC53*> // <feature, language, first_id> Action04, German
+{
+    /* 0xDC53 */ "Schienenfahrzeugtyp";
+}
+// Record #286
+strings<RailTypes, de_DE, 0xDC5C*> // <feature, language, first_id> Action04, German
+{
+    /* 0xDC5C */ "Schienenfahrzeugtyp";
+}
+// Record #287
+if_act9 (is_bit_set(param[0x11] & 0xFF, 1 << 1)) // Action09
+{
+    skip_sprites: 0x0C;
+    // Or skip to the next label (Action10) with this value - search wraps at end of GRF.
+    // 0x00 means skip to end of GRF file - may disable the GRF.
+}
+// Record #288
+strings<RailTypes, de_DE, 0xDC11*> // <feature, language, first_id> Action04, German
+{
+    /* 0xDC11 */ "Eisenbahnstrecke";
+}
+// Record #289
+strings<RailTypes, de_DE, 0xDC14*> // <feature, language, first_id> Action04, German
+{
+    /* 0xDC14 */ "Eisenbahnstrecke (electrifiziert)";
+}
+// Record #290
+strings<RailTypes, de_DE, 0xDC18*> // <feature, language, first_id> Action04, German
+{
+    /* 0xDC18 */ "Eisenbahnstrecke (mit Stromschiene)";
+    /* 0xDC19 */ "Eisenbahnstrecke (mit Stromschiene und Oberleitung)";
+}
+// Record #292
+strings<RailTypes, de_DE, 0xDC1C*> // <feature, language, first_id> Action04, German
+{
+    /* 0xDC1C */ "Schmalspurstrecke";
+    /* 0xDC1D */ "Schmalspurstrecke (elektrifiziert)";
+}
+// Record #294
+strings<RailTypes, de_DE, 0xDC21*> // <feature, language, first_id> Action04, German
+{
+    /* 0xDC21 */ "Eisenbahnstrecke{white}";
+}
+// Record #295
+strings<RailTypes, de_DE, 0xDC24*> // <feature, language, first_id> Action04, German
+{
+    /* 0xDC24 */ "Eisenbahnstrecke {lt-blue}(electrifiziert){white}";
+}
+// Record #296
+strings<RailTypes, de_DE, 0xDC28*> // <feature, language, first_id> Action04, German
+{
+    /* 0xDC28 */ "Eisenbahnstrecke {green}(mit Stromschiene){white}";
+    /* 0xDC29 */ "Eisenbahnstrecke {green}(mit Stromschiene {lt-blue}und Oberleitung){white}";
+}
+// Record #298
+strings<RailTypes, de_DE, 0xDC2C*> // <feature, language, first_id> Action04, German
+{
+    /* 0xDC2C */ "Schmalspurstrecke{white}";
+    /* 0xDC2D */ "Schmalspurstrecke {lt-blue}(elektrifiziert){white}";
+}
+// Record #300
+label<0xF1> // Action10 - target for Action07 or Action09
+{
+}

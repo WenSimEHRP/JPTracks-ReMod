@@ -1,0 +1,257 @@
+// Record #32
+if_act9 (is_equal(param[0x10] & 0xFF, 0x01)) // Action09
+{
+    skip_sprites: 0xF0;
+    // Or skip to the next label (Action10) with this value - search wraps at end of GRF.
+    // 0x00 means skip to end of GRF file - may disable the GRF.
+}
+// Record #33
+strings<RailTypes, default, 0xDC10*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC10 */ "{white}Narrow gauge line";
+    /* 0xDC11 */ "{white}Narrow gauge line";
+    /* 0xDC12 */ "{white}Narrow gauge line (electrified)";
+    /* 0xDC13 */ "{white}Narrow gauge modern line (electrified)";
+    /* 0xDC14 */ "{white}Standard gauge line (electrified)";
+    /* 0xDC15 */ "{white}Standard gauge modern line (electrified)";
+    /* 0xDC16 */ "{white}Shinkansen highspeed line (electrified)";
+    /* 0xDC17 */ "{white}Shinkansen modern highspeed line (electrified)";
+    /* 0xDC18 */ "{white}Standard gauge line (3rd rail powered)";
+    /* 0xDC19 */ "{white}Standard gauge urban line (3rd rail powered)";
+    /* 0xDC1A */ "TO PEOPLE WHO ARE READING THE SOURCE CODE: THIS IS A PLACEHOLDER";
+    /* 0xDC1B */ "{white}Narrow gauge urban line (electrified)";
+    /* 0xDC1C */ "{white}Standard gauge urban line (electrified)";
+    /* 0xDC1D */ "{white}Standard gauge line";
+}
+// Record #46
+strings<RailTypes, default, 0xDC20*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC20 */ "Narrow gauge line{white}";
+    /* 0xDC21 */ "Narrow gauge line{white}";
+    /* 0xDC22 */ "Narrow gauge line {lt-blue}(electrified){white}";
+    /* 0xDC23 */ "Narrow gauge modern line {lt-blue}(electrified){white}";
+    /* 0xDC24 */ "Standard gauge line {lt-blue}(electrified){white}";
+    /* 0xDC25 */ "Standard gauge modern line {lt-blue}(electrified){white}";
+    /* 0xDC26 */ "Shinkansen highspeed line {lt-blue}(electrified){white}";
+    /* 0xDC27 */ "Shinkansen modern highspeed line {lt-blue}(electrified){white}";
+    /* 0xDC28 */ "Standard gauge line {green}(3rd rail powered){white}";
+    /* 0xDC29 */ "Standard gauge urban line {green}(3rd rail powered){white}";
+    /* 0xDC2A */ "PLACEHOLDER";
+    /* 0xDC2B */ "Narrow gauge urban line {lt-blue}(electrified){white}";
+    /* 0xDC2C */ "Standard gauge urban line {lt-blue}(electrified){white}";
+    /* 0xDC2D */ "Standard gauge line{white}";
+}
+// Record #59
+strings<RailTypes, default, 0xDC30*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC30 */ "{white}New narrow gauge trains";
+    /* 0xDC31 */ "{white}New narrow gauge trains";
+    /* 0xDC32 */ "{white}New electric narrow gauge trains";
+    /* 0xDC33 */ "{white}New electric narrow gauge trains";
+    /* 0xDC34 */ "{white}New electric standard gauge trains";
+    /* 0xDC35 */ "{white}New electric standard gauge trains";
+    /* 0xDC36 */ "{white}New Shinkansen trains";
+    /* 0xDC37 */ "{white}New Shinkansen trains";
+    /* 0xDC38 */ "{white}New 3rd rail powered trains";
+}
+// Record #68
+strings<RailTypes, default, 0xDC3B*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC3B */ "{white}New electric narrow gauge trains";
+    /* 0xDC3C */ "{white}New electric standard gauge trains";
+    /* 0xDC3D */ "{white}New standard gauge trains";
+}
+// Record #71
+strings<RailTypes, default, 0xDC40*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC40 */ "Light narrow gauge trains";
+    /* 0xDC41 */ "Narrow gauge trains";
+    /* 0xDC42 */ "Electric narrow gauge trains";
+    /* 0xDC43 */ "Modern electric narrow gauge trains";
+    /* 0xDC44 */ "Electric standard gauge trains";
+    /* 0xDC45 */ "Modern electric standard gauge trains";
+    /* 0xDC46 */ "Shinkansen trains";
+    /* 0xDC47 */ "Modern Shinkansen trains";
+    /* 0xDC48 */ "metro trains";
+}
+// Record #80
+strings<RailTypes, default, 0xDC4B*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC4B */ "Urban narrow gauge trains";
+    /* 0xDC4C */ "Urban standard gauge trains";
+    /* 0xDC4D */ "Standard gauge trains";
+}
+// Record #83
+strings<RailTypes, default, 0xDC50*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC50 */ "rail vehicle";
+}
+// Record #84
+strings<RailTypes, default, 0xDC54*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC54 */ "rail vehicle";
+}
+// Record #85
+strings<RailTypes, default, 0xDC56*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC56 */ "Shinkansen train";
+}
+// Record #86
+strings<RailTypes, default, 0xDC58*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC58 */ "metro rail vehicle";
+    /* 0xDC59 */ "rail vehicle";
+}
+// Record #88
+label<0xF0> // Action10 - target for Action07 or Action09
+{
+}
+// Record #89
+if_act9 (is_not_equal(param[0x10] & 0xFF, 0x01)) // Action09
+{
+    skip_sprites: 0xF1;
+    // Or skip to the next label (Action10) with this value - search wraps at end of GRF.
+    // 0x00 means skip to end of GRF file - may disable the GRF.
+}
+// Record #90
+strings<RailTypes, default, 0xDC10*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC10 */ "Branch line";
+    /* 0xDC11 */ "Main line";
+    /* 0xDC12 */ "Modern main line";
+    /* 0xDC13 */ "Highspeed line";
+    /* 0xDC14 */ "Main line (electrified)";
+    /* 0xDC15 */ "Modern line (electrified)";
+    /* 0xDC16 */ "Highspeed line (electrified)";
+    /* 0xDC17 */ "Modern highspeed line (electrified)";
+    /* 0xDC18 */ "Main line (3rd rail powered)";
+    /* 0xDC19 */ "Main line (dual electrified)";
+    /* 0xDC1A */ "Urban line (electrified)";
+    /* 0xDC1B */ "Urban line (3rd rail powered)";
+    /* 0xDC1C */ "Narrow gauge line";
+    /* 0xDC1D */ "Narrow gauge line (electrified)";
+}
+// Record #104
+strings<RailTypes, default, 0xDC20*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC20 */ "Branch line{white}";
+    /* 0xDC21 */ "Main line{white}";
+    /* 0xDC22 */ "Modern main line{white}";
+    /* 0xDC23 */ "Highspeed line{white}";
+    /* 0xDC24 */ "Main line {lt-blue}(electrified){white}";
+    /* 0xDC25 */ "Modern line {lt-blue}(electrified){white}";
+    /* 0xDC26 */ "Highspeed line {lt-blue}(electrified){white}";
+    /* 0xDC27 */ "Modern highspeed line {lt-blue}(electrified){white}";
+    /* 0xDC28 */ "Main line {green}(3rd rail powered){white}";
+    /* 0xDC29 */ "Main line {green}(dual {lt-blue}electrified){white}";
+    /* 0xDC2A */ "Urban line {lt-blue}(electrified){white}";
+    /* 0xDC2B */ "Urban line {green}(3rd rail powered){white}";
+    /* 0xDC2C */ "Narrow gauge line{white}";
+    /* 0xDC2D */ "Narrow gauge line {lt-blue}(electrified){white}";
+}
+// Record #118
+strings<RailTypes, default, 0xDC30*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC30 */ "{white}New trains";
+    /* 0xDC31 */ "{white}New trains";
+    /* 0xDC32 */ "{white}New trains";
+    /* 0xDC33 */ "{white}New trains";
+    /* 0xDC34 */ "{white}New electric trains";
+    /* 0xDC35 */ "{white}New electric trains";
+    /* 0xDC36 */ "{white}New electric trains";
+    /* 0xDC37 */ "{white}New electric trains";
+    /* 0xDC38 */ "{white}New 3rd rail powered trains";
+    /* 0xDC39 */ "{white}New dual electric trains";
+    /* 0xDC3A */ "{white}New electric trains";
+    /* 0xDC3B */ "{white}New 3rd rail powered trains";
+    /* 0xDC3C */ "{white}New narrow gauge trains";
+    /* 0xDC3D */ "{white}New narrow gauge trains";
+}
+// Record #132
+strings<RailTypes, default, 0xDC40*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC40 */ "Light trains";
+    /* 0xDC41 */ "Trains";
+    /* 0xDC42 */ "Modern trains";
+    /* 0xDC43 */ "Highspeed trains";
+    /* 0xDC44 */ "Electric trains";
+    /* 0xDC45 */ "Modern electric trains";
+    /* 0xDC46 */ "Electric highspeed trains";
+    /* 0xDC47 */ "Modern electric highspeed trains";
+    /* 0xDC48 */ "3rd rail powered trains";
+    /* 0xDC49 */ "Dual powered electric trains";
+    /* 0xDC4A */ "Urban trains";
+    /* 0xDC4B */ "Urban 3rd rail powered trains";
+    /* 0xDC4C */ "Narrow gauge trains";
+    /* 0xDC4D */ "Electric narrow gauge trains";
+}
+// Record #146
+strings<RailTypes, default, 0xDC50*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC50 */ "rail vehicle";
+}
+// Record #147
+strings<RailTypes, default, 0xDC53*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC53 */ "rail vehicle";
+}
+// Record #148
+strings<RailTypes, default, 0xDC5C*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC5C */ "rail vehicle";
+}
+// Record #149
+if_act9 (is_bit_set(param[0x11] & 0xFF, 1 << 1)) // Action09
+{
+    skip_sprites: 0x0C;
+    // Or skip to the next label (Action10) with this value - search wraps at end of GRF.
+    // 0x00 means skip to end of GRF file - may disable the GRF.
+}
+// Record #150
+strings<RailTypes, default, 0xDC11*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC11 */ "Railway";
+}
+// Record #151
+strings<RailTypes, default, 0xDC14*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC14 */ "Railroad (electrified)";
+}
+// Record #152
+strings<RailTypes, default, 0xDC18*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC18 */ "Railroad (3rd rail powered)";
+    /* 0xDC19 */ "Railroad (dual electrified)";
+}
+// Record #154
+strings<RailTypes, default, 0xDC1C*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC1C */ "Narrow gauge railroad";
+    /* 0xDC1D */ "Narrow gauge railroad (electrified)";
+}
+// Record #156
+strings<RailTypes, default, 0xDC21*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC21 */ "Railroad{white}";
+}
+// Record #157
+strings<RailTypes, default, 0xDC24*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC24 */ "Railroad {lt-blue}(electrified){white}";
+}
+// Record #158
+strings<RailTypes, default, 0xDC28*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC28 */ "Railroad {green}(3rd rail powered){white}";
+    /* 0xDC29 */ "Railroad {green}(dual {lt-blue}electrified){white}";
+}
+// Record #160
+strings<RailTypes, default, 0xDC2C*> // <feature, language, first_id> Action04, Default
+{
+    /* 0xDC2C */ "Narrow gauge railroad{white}";
+    /* 0xDC2D */ "Narrow gauge railroad {lt-blue}(electrified){white}";
+}
+// Record #162
+label<0xF1> // Action10 - target for Action07 or Action09
+{
+}

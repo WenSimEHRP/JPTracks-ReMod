@@ -1,0 +1,257 @@
+// Record #32
+if_act9 (is_equal(param[0x10] & 0xFF, 0x01)) // Action09
+{
+    skip_sprites: 0xF0;
+    // Or skip to the next label (Action10) with this value - search wraps at end of GRF.
+    // 0x00 means skip to end of GRF file - may disable the GRF.
+}
+// Record #33
+strings<RailTypes, zh_CN, 0xDC10*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC10 */ "{white}窄轨铁路";
+    /* 0xDC11 */ "{white}窄轨铁路";
+    /* 0xDC12 */ "{white}窄轨铁路 (电气化)";
+    /* 0xDC13 */ "{white}现代窄轨 (电气化)";
+    /* 0xDC14 */ "{white}准轨铁路 (电气化)";
+    /* 0xDC15 */ "{white}现代准轨 (电气化)";
+    /* 0xDC16 */ "{white}新干线高速铁路 (电气化)";
+    /* 0xDC17 */ "{white}现代新干线铁路 (电气化)";
+    /* 0xDC18 */ "{white}准轨铁路 (第三轨)";
+    /* 0xDC19 */ "{white}都市准轨 (第三轨)";
+    /* 0xDC1A */ "TO PEOPLE WHO ARE READING THE SOURCE CODE: THIS IS A PLACEHOLDER";
+    /* 0xDC1B */ "{white}都市窄轨 (电气化)";
+    /* 0xDC1C */ "{white}都市准轨 (电气化)";
+    /* 0xDC1D */ "{white}准轨铁路";
+}
+// Record #46
+strings<RailTypes, zh_CN, 0xDC20*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC20 */ "窄轨铁路{white}";
+    /* 0xDC21 */ "窄轨铁路{white}";
+    /* 0xDC22 */ "窄轨铁路{lt-blue} (电气化){white}";
+    /* 0xDC23 */ "现代窄轨{lt-blue} (电气化){white}";
+    /* 0xDC24 */ "准轨铁路{lt-blue} (电气化){white}";
+    /* 0xDC25 */ "现代准轨{lt-blue} (电气化){white}";
+    /* 0xDC26 */ "新干线高速铁路{lt-blue} (电气化){white}";
+    /* 0xDC27 */ "现代新干线铁路{lt-blue} (电气化){white}";
+    /* 0xDC28 */ "准轨铁路{green} (第三轨){white}";
+    /* 0xDC29 */ "都市准轨{green} (第三轨){white}";
+    /* 0xDC2A */ "PLACEHOLDER";
+    /* 0xDC2B */ "都市窄轨{lt-blue} (电气化){white}";
+    /* 0xDC2C */ "都市准轨{lt-blue} (电气化){white}";
+    /* 0xDC2D */ "准轨铁路{white}";
+}
+// Record #59
+strings<RailTypes, zh_CN, 0xDC30*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC30 */ "{white}新窄轨列车";
+    /* 0xDC31 */ "{white}新窄轨列车";
+    /* 0xDC32 */ "{white}新电气化窄轨列车";
+    /* 0xDC33 */ "{white}新电气化窄轨列车";
+    /* 0xDC34 */ "{white}新电气化准轨列车";
+    /* 0xDC35 */ "{white}新电气化准轨列车";
+    /* 0xDC36 */ "{white}新新干线";
+    /* 0xDC37 */ "{white}新新干线";
+    /* 0xDC38 */ "{white}新第三轨列车";
+}
+// Record #68
+strings<RailTypes, zh_CN, 0xDC3B*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC3B */ "{white}新电气化窄轨列车";
+    /* 0xDC3C */ "{white}新电气化准轨列车";
+    /* 0xDC3D */ "{white}新准轨列车";
+}
+// Record #71
+strings<RailTypes, zh_CN, 0xDC40*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC40 */ "轻型窄轨列车";
+    /* 0xDC41 */ "窄轨列车";
+    /* 0xDC42 */ "电气化窄轨列车";
+    /* 0xDC43 */ "现代电气化窄轨列车";
+    /* 0xDC44 */ "电气化准轨列车";
+    /* 0xDC45 */ "现代电气化准轨列车";
+    /* 0xDC46 */ "新干线列车";
+    /* 0xDC47 */ "现代新干线列车";
+    /* 0xDC48 */ "地铁列车";
+}
+// Record #80
+strings<RailTypes, zh_CN, 0xDC4B*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC4B */ "都市窄轨列车";
+    /* 0xDC4C */ "都市准轨列车";
+    /* 0xDC4D */ "准轨列车";
+}
+// Record #83
+strings<RailTypes, zh_CN, 0xDC50*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC50 */ "列车";
+}
+// Record #84
+strings<RailTypes, zh_CN, 0xDC54*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC54 */ "列车";
+}
+// Record #85
+strings<RailTypes, zh_CN, 0xDC56*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC56 */ "新干线列车";
+}
+// Record #86
+strings<RailTypes, zh_CN, 0xDC58*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC58 */ "地铁列车";
+    /* 0xDC59 */ "列车";
+}
+// Record #88
+label<0xF0> // Action10 - target for Action07 or Action09
+{
+}
+// Record #89
+if_act9 (is_not_equal(param[0x10] & 0xFF, 0x01)) // Action09
+{
+    skip_sprites: 0xF1;
+    // Or skip to the next label (Action10) with this value - search wraps at end of GRF.
+    // 0x00 means skip to end of GRF file - may disable the GRF.
+}
+// Record #90
+strings<RailTypes, zh_CN, 0xDC10*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC10 */ "支线铁路";
+    /* 0xDC11 */ "主线铁路";
+    /* 0xDC12 */ "现代主线";
+    /* 0xDC13 */ "高速铁路";
+    /* 0xDC14 */ "主线铁路 (电气化)";
+    /* 0xDC15 */ "现代主线 (电气化)";
+    /* 0xDC16 */ "高速铁路";
+    /* 0xDC17 */ "现代高速铁路 (电气化)";
+    /* 0xDC18 */ "主线铁路 (第三轨)";
+    /* 0xDC19 */ "主线铁路 (双重供电)";
+    /* 0xDC1A */ "都市铁路 (电气化)";
+    /* 0xDC1B */ "都市铁路 (第三轨)";
+    /* 0xDC1C */ "窄轨铁路";
+    /* 0xDC1D */ "窄轨铁路 (电气化)";
+}
+// Record #104
+strings<RailTypes, zh_CN, 0xDC20*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC20 */ "支线铁路{white}";
+    /* 0xDC21 */ "主线铁路{white}";
+    /* 0xDC22 */ "现代主线{white}";
+    /* 0xDC23 */ "高速铁路{white}";
+    /* 0xDC24 */ "主线铁路{lt-blue} (电气化){white}";
+    /* 0xDC25 */ "现代主线{lt-blue} (电气化){white}";
+    /* 0xDC26 */ "高速铁路{lt-blue} (电气化){white}";
+    /* 0xDC27 */ "现代高速铁路{lt-blue} (电气化){white}";
+    /* 0xDC28 */ "主线铁路{green} (第三轨){white}";
+    /* 0xDC29 */ "主线铁路{green} (双重{lt-blue}供电){white}";
+    /* 0xDC2A */ "都市铁路{lt-blue} (电气化){white}";
+    /* 0xDC2B */ "都市铁路{green} (第三轨){white}";
+    /* 0xDC2C */ "窄轨铁路{white}";
+    /* 0xDC2D */ "窄轨铁路{lt-blue} (电气化){white}";
+}
+// Record #118
+strings<RailTypes, zh_CN, 0xDC30*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC30 */ "{white}新列车";
+    /* 0xDC31 */ "{white}新列车";
+    /* 0xDC32 */ "{white}新列车";
+    /* 0xDC33 */ "{white}新列车";
+    /* 0xDC34 */ "{white}新电气化列车";
+    /* 0xDC35 */ "{white}新电气化列车";
+    /* 0xDC36 */ "{white}新电气化列车";
+    /* 0xDC37 */ "{white}新电气化列车";
+    /* 0xDC38 */ "{white}新第三轨列车";
+    /* 0xDC39 */ "{white}新双供电列车";
+    /* 0xDC3A */ "{white}新电气化列车";
+    /* 0xDC3B */ "{white}新第三轨列车";
+    /* 0xDC3C */ "{white}新窄轨列车";
+    /* 0xDC3D */ "{white}新窄轨列车";
+}
+// Record #132
+strings<RailTypes, zh_CN, 0xDC40*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC40 */ "轻型列车";
+    /* 0xDC41 */ "列车";
+    /* 0xDC42 */ "现代列车";
+    /* 0xDC43 */ "高速列车";
+    /* 0xDC44 */ "电气化列车";
+    /* 0xDC45 */ "现代电气化列车";
+    /* 0xDC46 */ "电气化高速列车";
+    /* 0xDC47 */ "现代电气化高速列车";
+    /* 0xDC48 */ "第三轨列车";
+    /* 0xDC49 */ "双供电列车";
+    /* 0xDC4A */ "都市列车";
+    /* 0xDC4B */ "都市第三轨列车";
+    /* 0xDC4C */ "窄轨列车";
+    /* 0xDC4D */ "电气化窄轨列车";
+}
+// Record #146
+strings<RailTypes, zh_CN, 0xDC50*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC50 */ "列车";
+}
+// Record #147
+strings<RailTypes, zh_CN, 0xDC53*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC53 */ "列车";
+}
+// Record #148
+strings<RailTypes, zh_CN, 0xDC5C*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC5C */ "列车";
+}
+// Record #149
+if_act9 (is_bit_set(param[0x11] & 0xFF, 1 << 1)) // Action09
+{
+    skip_sprites: 0x0C;
+    // Or skip to the next label (Action10) with this value - search wraps at end of GRF.
+    // 0x00 means skip to end of GRF file - may disable the GRF.
+}
+// Record #150
+strings<RailTypes, zh_CN, 0xDC11*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC11 */ "铁路";
+}
+// Record #151
+strings<RailTypes, zh_CN, 0xDC14*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC14 */ "铁路 (电气化)";
+}
+// Record #152
+strings<RailTypes, zh_CN, 0xDC18*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC18 */ "铁路 (第三轨)";
+    /* 0xDC19 */ "铁路 (双电气化)";
+}
+// Record #154
+strings<RailTypes, zh_CN, 0xDC1C*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC1C */ "窄轨铁路";
+    /* 0xDC1D */ "窄轨铁路 (电气化)";
+}
+// Record #156
+strings<RailTypes, zh_CN, 0xDC21*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC21 */ "铁路{white}";
+}
+// Record #157
+strings<RailTypes, zh_CN, 0xDC24*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC24 */ "铁路{lt-blue} (电气化){white}";
+}
+// Record #158
+strings<RailTypes, zh_CN, 0xDC28*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC28 */ "铁路{green} (第三轨){white}";
+    /* 0xDC29 */ "铁路{green}(双重{lt-blue}供电){white}";
+}
+// Record #160
+strings<RailTypes, zh_CN, 0xDC2C*> // <feature, language, first_id> Action04, zh_CN
+{
+    /* 0xDC2C */ "窄轨铁路{white}";
+    /* 0xDC2D */ "窄轨铁路{lt-blue} (电气化){white}";
+}
+// Record #162
+label<0xF1> // Action10 - target for Action07 or Action09
+{
+}
