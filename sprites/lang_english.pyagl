@@ -1,4 +1,10 @@
 // Record #32
+//* This is the main language file for the GRF. It contains all the strings used in the GRF.
+//* to add an extra language, copy this file and rename it to lang_XX.pyagl, where XX is the language name.
+//* only change "default" to the language code in the strings definition, e.g. strings<RailTypes, ko_KR, 0xDC10*>
+//* afterwards, change the strings on your copy to the desired language.
+//! REMEMBER: AFTER YOU HAVE EVERYTHING SET, CHANGE THE INDEX FILE!!
+//! DO NOT TOUCH ANYTHING ELSE IN THIS FILE!!
 if_act9 (is_equal(param[0x10] & 0xFF, 0x01)) // Action09
 {
     skip_sprites: 0xF0;

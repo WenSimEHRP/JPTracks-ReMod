@@ -244,9 +244,7 @@ set_parameter // Action0D
     data_value: 0x00000000;
 }
 //TODO language file goes here
-#include "./lang_english.pyagl"
-#include "./lang_german.pyagl"
-#include "./lang_simplified_chinese.pyagl"
+#include "./lang_index.pyagl"
 // Record #167
 // Record #301
 if_act9 (is_equal(param[0x10] & 0xFF, 0x01)) // Action09

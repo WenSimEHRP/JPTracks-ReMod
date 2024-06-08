@@ -1,0 +1,8 @@
+//* This file is the index file for the language.
+//* If you add a new language, you must modify this file.
+#include "./lang_english.pyagl"
+#include "./lang_german.pyagl"
+#include "./lang_simplified_chinese.pyagl"
+// #include "./lang_french.pyagl"
+// #include "./lang_polish.pyagl"
+// etc...
