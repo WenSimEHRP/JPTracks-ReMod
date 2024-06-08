@@ -40,16 +40,8 @@ error_message<Fatal, default, 0x06> // Action0B <severity, language, message>
     // {grf_name} requires OpenTTD version {data} or better.
     data: "r20960";
 }
-//TODO stupid gcc and Action0x14 here
-#include "./action14.pyagl"
-// Record #8
-grf // Action08
-{
-    grf_id: "DP0\x01";
-    version: GRF8;
-    name: "Japan Set3: Tracks {ext push-colour}{white}weMOD{ext pop-colour}";
-    description: "{white}Japan {red}Set{white}3: Tracks {ext push-colour}{gold}weMOD{ext pop-colour}{lt-blue}{new-line}June 2024{black}{new-line}Drawn by {lt-blue}Dandan, Onodera, Sanchimaru{black}{new-line}{new-line}Coded by {lt-blue}Dandan， stevenh{black}{new-line}Re-moded by {lt-blue}WenSim";
-}
+//TODO stupid gcc and Action0x14/Action0x08 here
+#include "./header.pyagl"
 // Record #9
 set_parameter // Action0D
 {
