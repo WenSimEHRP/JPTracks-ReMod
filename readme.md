@@ -6,22 +6,28 @@ This weMOD version does not add additional functionality to the set; instead, th
 
 ## Building
 
-To build the GRF you would need yagl installed. You could get yagl from [https://github.com/unicyclebloke/yagl](https://github.com/unicyclebloke/yagl) or install it via scoop (on Windows) with these commands:
+To build the GRF you would need yagl and gcc. You could get yagl from [https://github.com/unicyclebloke/yagl](https://github.com/unicyclebloke/yagl) or install it via scoop (on Windows) with these commands:
 
 ```powershell
 scoop bucket add openttd-bucket https://github.com/wensimehrp/openttd-bucket
 scoop install openttd-bucket/yagl
 ```
 
-Afterwards, execute the following commands in your terminal:
+You could install gcc by installing [MinGW](https://www.mingw-w64.org/); you could also get it via scoop:
 
 ```powershell
-yagl -e jptracks-remod.yagl
-# or
-yagl -e jptracks.yagl
+scoop install mingw
 ```
 
-The program should output a .yagl file; it's a .grf file but in a different extension name.
+Afterwards, execute the following commands in your terminal:
+
+```bash
+bash build.sh
+# or, if using Windows
+build.bat
+```
+
+The program would output `jptracks-remod.grf`.
 
 ## TODO
 
@@ -36,5 +42,5 @@ Dandan, Onodera, Sanchimaru
 Original NFO code by:\
 Dandan， stevenh
 
-Modification by:
+Modification by:\
 WenSim
