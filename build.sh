@@ -1,6 +1,5 @@
 #!/bin/bash
-gcc -E -P -x c -o jptracks-wemod.yagl sprites/jptracks.pyagl &&
-    mv jptracks-wemod.yagl sprites/jptracks-wemod.yagl &&
+gcc -E -P -C -x c -o sprites/jptracks-wemod.yagl sprites/jptracks.pyagl &&
     yagl -e jptracks-wemod.yagl &&
     mv jptracks-wemod.yagl jptracks-wemod.grf &&
     echo "done!"
