@@ -29,18 +29,13 @@ build.bat
 
 The program would output `jptracks-remod.grf`.
 
-## TODO
-
-Change purchase icons;
-Add extra railtypes, maybe?
-
 ## Credits
 
 Original graphics by:\
 Dandan, Onodera, Sanchimaru
 
 Original NFO code by:\
-Dandan， stevenh
+Dandan, stevenh
 
 Modification by:\
 WenSim
