@@ -12,7 +12,10 @@ optional_info // Action14
 {new-line}代码：\
 {new-line}{lt-blue}Dandan, {lt-blue}stevenh{black}\
 {new-line}weMOD：\
-{new-line}{lt-blue}WenSim{black}";
+{new-line}{lt-blue}WenSim{black}\
+{new-line}\
+{new-line}\
+{red}注意！禁用 JP3 列车的轨道，否则轨道将被覆盖！"; // Chinese (Simplified)
         VRSN: [ 0x01 0x00 0x00 0x00 ];
         MINV: [ 0x01 0x00 0x00 0x00 ];
         NPAR: [ 0x0B ];
@@ -202,5 +205,8 @@ grf // Action08
 {new-line}Coded by:\
 {new-line}{lt-blue}Dandan, {lt-blue}stevenh{black}\
 {new-line}weMOD by:\
-{new-line}{lt-blue}WenSim{black}";
+{new-line}{lt-blue}WenSim{black}\
+{new-line}\
+{new-line}\
+{red}NOTE: DISABLE TRACKS IN JP3 TRAINS ELSE TRACKS WILL BE OVERRIEDED!";
 }
