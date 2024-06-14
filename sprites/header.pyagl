@@ -1,92 +1,80 @@
 // Record #7
-// Action 14 optional info
-// you can add translations here
 optional_info // Action14
 {
     INFO: 
     {
-        NAME: zh_CN, "Japan Set3: 轨道 {ext push-colour}{white}weMOD{ext pop-colour}";
-        DESC: zh_CN, "{white}Japan {red}Set{white}3: 轨道 {ext push-colour}{gold}weMOD{ext pop-colour}{lt-blue}{new-line}2024 年 6 月{black}{new-line}{new-line}由 {lt-blue}Dandan、Onodera、Sanchimaru{black} 绘制{new-line}{new-line}由 {lt-blue}Dandan、stevenh{black} 编写{new-line}由 {lt-blue}WenSim{black} 重新编写";
-        VRSN: [ 0x01 0x00 0x00 0x00 ];
-        MINV: [ 0x01 0x00 0x00 0x00 ];
+        NAME: zh_CN, "Japan Set3: 轨道 {ext push-colour}{white}weMOD{ext pop-colour}"; // Chinese (Simplified)
+        DESC: zh_CN, "\
+{white}Japan {red}Set{gold}{white}3: 轨道{lt-blue} - reMOD v1 - 2024 年 6 月{black}\
+{new-line}\
+{new-line}图像：\
+{new-line}{lt-blue}Dandan, Onodera, Sanchimaru{black}\
+{new-line}代码：\
+{new-line}{lt-blue}Dandan, {lt-blue}stevenh{black}\
+{new-line}weMOD：\
+{new-line}{lt-blue}WenSim{black}";
+        VRSN: [ 0x40 0x01 0x00 0x00 ];
+        MINV: [ 0x2C 0x01 0x00 0x00 ];
         NPAR: [ 0x0B ];
         PALS: [ 0x44 ];
         PARA: 
         {
             0x00000000: 
             {
-                NAME: default, "Mode"; // Default
-                DESC: default, "Choose between generic or country-specific modes. When set to 'automatic', the Japanese mode is used only if the Japanese train set is used.{new-line} Japanese mode is significantly different from international mode. The country-specific settings mostly concern speed limits and some graphical details."; // Default
-                NAME: de_DE, "Modus"; // German
-                DESC: de_DE, "Auswahl zwischen generischem oder länderspezifischen Modi. Wenn diese Einstellung auf 'automatisch' gesetzt ist, wird der japanische Modus nur dann verwendet, wenn das Japanische Zugset verwendet wird.{new-line} Japanischer und internationaler Modus sind deutlich verschieden. Die länderspezifischen Modi verändern in erster Linie die Geschwindigkeitsbeschränkungen und einige optische Details."; // German
-                NAME: zh_CN, "轨道模式"; // Default
-                DESC: zh_CN, "在通用与特定地区轨道模式之间选择。当设置为“自动”时，“日本”模式只会在检测到日式列车拓展 (Japan Set3: Trains)的时候启用；{new-line}“日本”模式与“国际”模式有很大差别。地区模式之间的区别主要在于轨道限速和图像等。"; // Default
-                LIMI: [ 0x00 0x00 0x00 0x00 0x04 0x00 0x00 0x00 ];
                 DFLT: [ 0x00 0x00 0x00 0x00 ];
+                LIMI: [ 0x00 0x00 0x00 0x00 0x04 0x00 0x00 0x00 ];
+                NAME: default, "Mode"; // Default
+                DESC: default, "Choose between generic or country-specific modes. When set to 'automatic', the Japanese mode is used only if the Japanese train set is used."; // Default
+                NAME: zh_CN, "轨道模式"; // Chinese (Simplified)
+                DESC: zh_CN, "选择轨道模式。当设置为“自动”时，仅在使用日本火车组时才使用日本模式。"; // Chinese (Simplified)
                 VALU: 
                 {
-                    0x00000000: default, "Automatic (Japanese/International)"; // Default
-                    0x00000001: default, "International"; // Default
+                    0x00000000: default, "Automatic (Japanese/Generic)"; // Default
+                    0x00000001: default, "Generic"; // Default
                     0x00000002: default, "German"; // Default
                     0x00000003: default, "British"; // Default
                     0x00000004: default, "North American"; // Default
-                    0x00000000: de_DE, "Automatisch (japanisch/international)"; // German
-                    0x00000001: de_DE, "International"; // German
-                    0x00000002: de_DE, "Deutsch"; // German
-                    0x00000003: de_DE, "Britisch"; // German
-                    0x00000004: de_DE, "Nordamerikanisch"; // German
-                    0x00000000: zh_CN, "自动 (日本/国际)"; // Default
-                    0x00000001: zh_CN, "国际"; // Default
-                    0x00000002: zh_CN, "德国"; // Default
-                    0x00000003: zh_CN, "英国"; // Default
-                    0x00000004: zh_CN, "北美"; // Default
+                    0x00000000: zh_CN, "自动（日本/通用）"; // Chinese (Simplified)
+                    0x00000001: zh_CN, "通用"; // Chinese (Simplified)
+                    0x00000002: zh_CN, "德国"; // Chinese (Simplified)
+                    0x00000003: zh_CN, "英国"; // Chinese (Simplified)
+                    0x00000004: zh_CN, "北美"; // Chinese (Simplified)
                 }
             }
             0x00000001: 
             {
+                DFLT: [ 0x00 0x00 0x00 0x00 ];
+                LIMI: [ 0x00 0x00 0x00 0x00 0x02 0x00 0x00 0x00 ];
                 NAME: default, "Track selection"; // Default
                 DESC: default, "Choose how many track types to play with. In the reduced setting, the urban track types are disabled. In the minimal setting, only track type for each gauge and electrification system is present, without speed limits."; // Default
-                NAME: de_DE, "Auswahl"; // German
-                DESC: de_DE, "Regelt die verfügbaren Gleistypen. In der Einstellung 'reduziert' werden die urbanen Strecken deaktiviert. In der Einstellung 'minimal' stehen von jeder Spurweite und jedem elektischen System nur ein Vertreter zur Verfügung, ohne Geschwindigkeitsbeschränkungen."; // German
-                NAME: zh_CN, "可用轨道"; // Default
-                DESC: zh_CN, "选择可用轨道种类。设置为“减少”将会禁用城市轨道；设置为“最少”则只会出现每种轨距的电化/非电化版本，且没有速度限制。"; // Default
-                LIMI: [ 0x00 0x00 0x00 0x00 0x02 0x00 0x00 0x00 ];
-                DFLT: [ 0x00 0x00 0x00 0x00 ];
+                NAME: zh_CN, "轨道选择"; // Chinese (Simplified)
+                DESC: zh_CN, "选择要使用的轨道类型数量。在减少设置中，城市轨道类型被禁用。在最小设置中，只有每种轨距和电气化系统的一种轨道类型，没有速度限制。"; // Chinese (Simplified)
                 VALU: 
                 {
                     0x00000000: default, "Full"; // Default
                     0x00000001: default, "Reduced"; // Default
                     0x00000002: default, "Minimal"; // Default
-                    0x00000000: de_DE, "Voll"; // German
-                    0x00000001: de_DE, "Reduziert"; // German
-                    0x00000002: de_DE, "Minimal"; // German
-                    0x00000000: zh_CN, "完整"; // Default
-                    0x00000001: zh_CN, "减少"; // Default
-                    0x00000002: zh_CN, "最少"; // Default
+                    0x00000000: zh_CN, "完整"; // Chinese (Simplified)
+                    0x00000001: zh_CN, "减少"; // Chinese (Simplified)
+                    0x00000002: zh_CN, "最少"; // Chinese (Simplified)
                 }
             }
             0x00000002: 
             {
+                DFLT: [ 0x01 0x00 0x00 0x00 ];
+                LIMI: [ 0x00 0x00 0x00 0x00 0x01 0x00 0x00 0x00 ];
+                TYPE: [ 0x01 ];
                 NAME: default, "Finescale tracks"; // Default
                 DESC: default, "Use narrower track sprites."; // Default
-                NAME: de_DE, "'Finescale' Grafik"; // German
-                DESC: de_DE, "Verwende schmalere Gleise."; // German
-                NAME: zh_CN, "更窄轨道图形"; // Default
-                DESC: zh_CN, "启用后将使用更窄的轨道图形。"; // Default
-                TYPE: [ 0x01 ];
-                LIMI: [ 0x00 0x00 0x00 0x00 0x01 0x00 0x00 0x00 ];
-                DFLT: [ 0x01 0x00 0x00 0x00 ];
+                NAME: zh_CN, "更窄轨道"; // Chinese (Simplified)
+                DESC: zh_CN, "使用更窄的轨道图像。"; // Chinese (Simplified)
             }
             0x00000003: 
             {
-                NAME: default, "Construction costs"; // Default
-                DESC: default, "Adjust construction costs.";
-                NAME: de_DE, "Baukosten"; // German
-                DESC: de_DE, "Baukosten anpassen."; // German
-                NAME: zh_CN, "建设费用"; // Default
-                DESC: zh_CN, "调整建设费用。";
-                LIMI: [ 0x00 0x00 0x00 0x00 0x04 0x00 0x00 0x00 ];
                 DFLT: [ 0x02 0x00 0x00 0x00 ];
+                LIMI: [ 0x00 0x00 0x00 0x00 0x04 0x00 0x00 0x00 ];
+                NAME: default, "Construction costs"; // Default
+                NAME: zh_CN, "建造成本"; // Chinese (Simplified)
                 VALU: 
                 {
                     0x00000000: default, "very low"; // Default
@@ -94,28 +82,21 @@ optional_info // Action14
                     0x00000002: default, "normal"; // Default
                     0x00000003: default, "high"; // Default
                     0x00000004: default, "very high"; // Default
-                    0x00000003: de_DE, "sehr niedrig"; // German
-                    0x00000001: de_DE, "niedrig"; // German
-                    0x00000002: de_DE, "normal"; // German
-                    0x00000003: de_DE, "hoch"; // German
-                    0x00000004: de_DE, "sehr hoch"; // German
-                    0x00000000: zh_CN, "非常低"; // Default
-                    0x00000001: zh_CN, "低"; // Default
-                    0x00000002: zh_CN, "正常"; // Default
-                    0x00000003: zh_CN, "高"; // Default
-                    0x00000004: zh_CN, "非常高"; // Default
+                    0x00000000: zh_CN, "非常低"; // Chinese (Simplified)
+                    0x00000001: zh_CN, "低"; // Chinese (Simplified)
+                    0x00000002: zh_CN, "正常"; // Chinese (Simplified)
+                    0x00000003: zh_CN, "高"; // Chinese (Simplified)
+                    0x00000004: zh_CN, "非常高"; // Chinese (Simplified)
                 }
             }
             0x00000004: 
             {
-                NAME: default, "Maintenance costs"; // Default
-                DESC: default, "You must activate 'Advanced Settings -> Economy -> Infrastructure maintenance' for this setting to take effect."; // Default
-                NAME: de_DE, "Instandhaltungskosten"; // German
-                DESC: de_DE, "Instandhaltungskosten fallen nur an, wenn sie unter 'Erweiterte Einstellungen -> Wirtschaft -> Instandhaltung der Infrastruktur eingeschaltet wurden."; // German
-                NAME: zh_CN, "维护费用"; // Default
-                DESC: zh_CN, "必须启用“基建维护”选项以让此设置工作。"; // Default
-                LIMI: [ 0x00 0x00 0x00 0x00 0x04 0x00 0x00 0x00 ];
                 DFLT: [ 0x02 0x00 0x00 0x00 ];
+                LIMI: [ 0x00 0x00 0x00 0x00 0x04 0x00 0x00 0x00 ];
+                NAME: default, "Maintenance costs"; // Default
+                DESC: default, "You must activate 'Infrastructure maintenance' for this setting to take effect."; // Default
+                NAME: zh_CN, "维护成本"; // Chinese (Simplified)
+                DESC: zh_CN, "您必须激活“基础设施维护”才能使此设置生效。"; // Chinese (Simplified)
                 VALU: 
                 {
                     0x00000000: default, "very low"; // Default
@@ -123,119 +104,103 @@ optional_info // Action14
                     0x00000002: default, "normal"; // Default
                     0x00000003: default, "high"; // Default
                     0x00000004: default, "very high"; // Default
-                    0x00000004: de_DE, "sehr niedrig"; // German
-                    0x00000001: de_DE, "niedrig"; // German
-                    0x00000002: de_DE, "normal"; // German
-                    0x00000003: de_DE, "hoch"; // German
-                    0x00000004: de_DE, "sehr hoch"; // German
-                    0x00000000: zh_CN, "非常低"; // Default
-                    0x00000001: zh_CN, "低"; // Default
-                    0x00000002: zh_CN, "正常"; // Default
-                    0x00000003: zh_CN, "高"; // Default
-                    0x00000004: zh_CN, "非常高"; // Default
+                    0x00000000: zh_CN, "非常低"; // Chinese (Simplified)
+                    0x00000001: zh_CN, "低"; // Chinese (Simplified)
+                    0x00000002: zh_CN, "正常"; // Chinese (Simplified)
+                    0x00000003: zh_CN, "高"; // Chinese (Simplified)
+                    0x00000004: zh_CN, "非常高"; // Chinese (Simplified)
                 }
             }
             0x00000005: 
             {
+                DFLT: [ 0x01 0x00 0x00 0x00 ];
+                LIMI: [ 0x00 0x00 0x00 0x00 0x01 0x00 0x00 0x00 ];
+                TYPE: [ 0x01 ];
                 NAME: default, "Use custom tunnel portals"; // Default
                 DESC: default, "If this setting is disabled, the default graphics for tunnel portals will be used instead of the ones provided by this set."; // Default
-                NAME: de_DE, "Verwende eigene Tunnelportale"; // German
-                DESC: de_DE, "Wenn diese Einstellung ausgeschaltet wird, werden die originalen Tunnelgraphiken verwendet."; // German
-                NAME: zh_CN, "使用自定义隧道出入口"; // Default
-                DESC: zh_CN, "启用时将会使用本拓展内的隧道出入口；禁用时将会使用游戏自带的隧道出入口。"; // Default
-                TYPE: [ 0x01 ];
-                LIMI: [ 0x00 0x00 0x00 0x00 0x01 0x00 0x00 0x00 ];
-                DFLT: [ 0x01 0x00 0x00 0x00 ];
+                NAME: zh_CN, "使用自定义隧道口"; // Chinese (Simplified)
+                DESC: zh_CN, "如果禁用此设置，则将使用隧道口的默认图形，而不是此设置提供的图形。"; // Chinese (Simplified)
             }
             0x00000006: 
             {
+                DFLT: [ 0x01 0x00 0x00 0x00 ];
+                LIMI: [ 0x00 0x00 0x00 0x00 0x01 0x00 0x00 0x00 ];
+                TYPE: [ 0x01 ];
                 NAME: default, "Use custom catenary"; // Default
                 DESC: default, "If this setting is disabled, the default graphics for catenary wire and poles will be used instead of the ones provided by this set."; // Default
-                NAME: de_DE, "Verwende eigene Oberleitungen"; // German
-                DESC: de_DE, "Wenn diese Einstellung ausgeschaltet wird, werden die originalen Oberleitungsgrafiken verwendet."; // German
-                NAME: zh_CN, "使用自定义接触网"; // Default
-                DESC: zh_CN, "启用时将会使用本拓展内的隧道出入口；禁用时将会使用游戏自带的隧道出入口。"; // Default
-                TYPE: [ 0x01 ];
-                LIMI: [ 0x00 0x00 0x00 0x00 0x01 0x00 0x00 0x00 ];
-                DFLT: [ 0x01 0x00 0x00 0x00 ];
+                NAME: zh_CN, "使用自定义接触网"; // Chinese (Simplified)
+                DESC: zh_CN, "如果禁用此设置，则将使用接触网和杆的默认图形，而不是此设置提供的图形。"; // Chinese (Simplified)
             }
             0x00000007: 
             {
+                DFLT: [ 0x01 0x00 0x00 0x00 ];
+                LIMI: [ 0x00 0x00 0x00 0x00 0x01 0x00 0x00 0x00 ];
+                TYPE: [ 0x01 ];
                 NAME: default, "Use custom depots"; // Default
                 DESC: default, "If this setting is disabled, the default graphics for train depots will be used instead of the ones provided by this set."; // Default
-                NAME: de_DE, "Verwende eigene Depots"; // German
-                DESC: de_DE, "Wenn diese Einstellung ausgeschaltet wird, werden die originalen Depotgrafiken verwendet."; // German
-                NAME: zh_CN, "使用自定义车库"; // Default
-                DESC: zh_CN, "启用时将会使用本拓展内的车库；禁用时将会使用游戏自带的车库。"; // Default
-                TYPE: [ 0x01 ];
-                LIMI: [ 0x00 0x00 0x00 0x00 0x01 0x00 0x00 0x00 ];
-                DFLT: [ 0x01 0x00 0x00 0x00 ];
+                NAME: zh_CN, "使用自定义车辆段"; // Chinese (Simplified)
+                DESC: zh_CN, "如果禁用此设置，则将使用火车车辆段的默认图形，而不是此设置提供的图形。"; // Chinese (Simplified)
             }
             0x00000008: 
             {
+                DFLT: [ 0x03 0x00 0x00 0x00 ];
+                LIMI: [ 0x00 0x00 0x00 0x00 0x03 0x00 0x00 0x00 ];
                 NAME: default, "Fences"; // Default
                 DESC: default, "Replaces or deactivates the default fences for railtracks."; // Default
-                NAME: de_DE, "Zäune"; // German
-                DESC: de_DE, "Ersetzt oder deaktiviert die originalen Grafiken für Streckenzäune."; // German
-                NAME: zh_CN, "栅栏设置"; // Default
-                DESC: zh_CN, "替换或禁用默认铁路栅栏。"; // Default
-                LIMI: [ 0x00 0x00 0x00 0x00 0x03 0x00 0x00 0x00 ];
-                DFLT: [ 0x03 0x00 0x00 0x00 ];
+                NAME: zh_CN, "围栏"; // Chinese (Simplified)
+                DESC: zh_CN, "替换或停用铁路轨道的默认围栏。"; // Chinese (Simplified)
                 VALU: 
                 {
                     0x00000000: default, "none"; // Default
-                    0x00000001: default, "unchanged (original TTD if not changed by another set)"; // Default
+                    0x00000001: default, "Default"; // Default
                     0x00000002: default, "only for urban and highspeed tracks"; // Default
                     0x00000003: default, "for all railtypes"; // Default
-                    0x00000000: de_DE, "keine"; // German
-                    0x00000001: de_DE, "unverändert (original TTD falls nicht durch anderes Set geändert)"; // German
-                    0x00000002: de_DE, "nur für urbane Strecken und Schnellfahrstrecken"; // German
-                    0x00000003: de_DE, "für alle Streckentypen"; // German
-                    0x00000000: zh_CN, "无"; // Default
-                    0x00000001: zh_CN, "原版"; // Default
-                    0x00000002: zh_CN, "仅都市与高速轨道"; // Default
-                    0x00000003: zh_CN, "所有"; // Default
+                    0x00000000: zh_CN, "无"; // Chinese (Simplified)
+                    0x00000001: zh_CN, "默认"; // Chinese (Simplified)
+                    0x00000002: zh_CN, "仅用于城市和高速轨道"; // Chinese (Simplified)
+                    0x00000003: zh_CN, "所有轨道类型"; // Chinese (Simplified)
                 }
             }
             0x00000009: 
             {
+                DFLT: [ 0x01 0x00 0x00 0x00 ];
+                LIMI: [ 0x00 0x00 0x00 0x00 0x01 0x00 0x00 0x00 ];
+                TYPE: [ 0x01 ];
                 NAME: default, "Use company colors"; // Default
                 DESC: default, "Depots and fences use company colors if this option is enabled."; // Default
-                NAME: de_DE, "Verwende Firmenfarben"; // German
-                DESC: de_DE, "Wenn diese Option eingeschaltet ist, verwenden Zäune und Depots die Firmenfarben."; // German
-                NAME: zh_CN, "使用公司颜色"; // Default
-                DESC: zh_CN, "启用时将在栅栏和车库应用公司颜色。"; // Default
-                TYPE: [ 0x01 ];
-                LIMI: [ 0x00 0x00 0x00 0x00 0x01 0x00 0x00 0x00 ];
-                DFLT: [ 0x01 0x00 0x00 0x00 ];
+                NAME: zh_CN, "使用公司颜色"; // Chinese (Simplified)
+                DESC: zh_CN, "如果启用此选项，则车辆段和围栏将使用公司颜色。"; // Chinese (Simplified)
             }
             0x0000000A: 
             {
-                NAME: default, "GUI elements"; // Default
-                DESC: default, "Choose GUI elements for original graphics or OpenGFX."; // Default
-                NAME: de_DE, "Bedienelemente"; // German
-                DESC: de_DE, "Bedienelemente für Originalgraphiken oder für OpenGFX."; // German
-                NAME: zh_CN, "GUI 图标"; // Default
-                DESC: zh_CN, "选择使用的 GUI 图标"; // Default
-                LIMI: [ 0x00 0x00 0x00 0x00 0x01 0x00 0x00 0x00 ];
                 DFLT: [ 0x01 0x00 0x00 0x00 ];
+                LIMI: [ 0x00 0x00 0x00 0x00 0x01 0x00 0x00 0x00 ];
+                NAME: default, "{ext push-colour}{red}[REMOVED]{ext pop-colour} GUI elements"; // Default
+                DESC: default, "Choose GUI elements for original graphics or OpenGFX."; // Default
+                NAME: zh_CN, "{ext push-colour}{red}[已移除]{ext pop-colour} GUI 元素"; // Chinese (Simplified)
+                DESC: zh_CN, "选择原始图形或 OpenGFX 的 GUI 元素。"; // Chinese (Simplified)
                 VALU: 
                 {
-                    0x00000000: default, "Original graphics"; // Default
-                    0x00000001: default, "OpenGFX"; // Default
-                    0x00000000: de_DE, "Originalgraphiken"; // German
-                    0x00000001: de_DE, "OpenGFX"; // German
-                    0x00000000: zh_CN, "TTD"; // Default
-                    0x00000001: zh_CN, "OpenGFX"; // Default
+                    0x00000000: default, "{red}TTD"; // Default
+                    0x00000001: default, "{red}OpenGFX"; // Default
                 }
             }
         }
     }
 }
+
 grf // Action08
 {
-    grf_id: "DP0\x01";
-    version: GRF8;
+    grf_id: "DP0\x00";
+    version: GRF7;
     name: "Japan Set3: Tracks {ext push-colour}{white}weMOD{ext pop-colour}";
-    description: "{white}Japan {red}Set{white}3: Tracks {ext push-colour}{gold}weMOD{ext pop-colour}{lt-blue}{new-line}June 2024{black}{new-line}Drawn by {lt-blue}Dandan, Onodera, Sanchimaru{black}{new-line}{new-line}Coded by {lt-blue}Dandan， stevenh{black}{new-line}Re-moded by {lt-blue}WenSim";
+    description: "\
+{white}Japan {red}Set{gold}{white}3: Tracks{lt-blue} - reMOD v1 - June 2024{black}\
+{new-line}\
+{new-line}Drawn by:\
+{new-line}{lt-blue}Dandan, Onodera, Sanchimaru{black}\
+{new-line}Coded by:\
+{new-line}{lt-blue}Dandan, {lt-blue}stevenh{black}\
+{new-line}weMOD by:\
+{new-line}{lt-blue}WenSim{black}";
 }
