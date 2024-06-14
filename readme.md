@@ -13,19 +13,23 @@ This weMOD version does not add additional functionality to the set; instead, th
 - Changed track and tunnel sprites
 - Changed minimum version requirement to OpenTTD 12.0
 - Improved GUI (WIP)
+- Wideeeeeeer ballast
 
 ## Building
 
 To build the GRF you would need yagl and gcc. You could get yagl from [https://github.com/unicyclebloke/yagl](https://github.com/unicyclebloke/yagl) or install it via scoop (on Windows) with these commands:
 
-```powershell
+```bash
 scoop bucket add openttd-bucket https://github.com/wensimehrp/openttd-bucket
-scoop install openttd-bucket/yagl
+scoop install openttd-bucket/yagl@1.2.2
+# the whole program is created using yagl@1.2.2, and the tool has a very
+# strict version restriction, so to not cause any troubles you may want to
+# specify the version when downloading it.
 ```
 
 You could install gcc by installing [MinGW](https://www.mingw-w64.org/); you could also get it via scoop:
 
-```powershell
+```bash
 scoop install mingw
 ```
 
@@ -33,11 +37,12 @@ Afterwards, execute the following commands in your terminal:
 
 ```bash
 bash build.sh
-# or, if using Windows
-build.bat
+# of course, you can create your own building script
+# or, easiest solution, if you just want the binary
+yagl -e jptracks-wemod.grf
 ```
 
-The program would output `jptracks-remod.grf`.
+The program would output `jptracks-wemod.grf`.
 
 ## Credits
 
