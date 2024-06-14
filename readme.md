@@ -4,6 +4,16 @@ Original NFO source code: [bundles.openttdcoop.org](https://bundles.openttdcoop.
 
 This weMOD version does not add additional functionality to the set; instead, this version only makes the fences seamless and added additional translations.
 
+## Difference with JP3 Tracks
+
+- Removed TTD GUI
+- Improved tracks fences
+- Added extra translations
+  - Simplified Chinese
+- Changed track and tunnel sprites
+- Changed minimum version requirement to OpenTTD 12.0
+- Improved GUI (WIP)
+
 ## Building
 
 To build the GRF you would need yagl and gcc. You could get yagl from [https://github.com/unicyclebloke/yagl](https://github.com/unicyclebloke/yagl) or install it via scoop (on Windows) with these commands:

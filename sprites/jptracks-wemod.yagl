@@ -1,5 +1,14 @@
 yagl_version: "v1.2.2-0-g679a0ca";
 grf_format: Container1;
+ignore // Action0C
+{
+    "{new-line}
+    This GRF is created by WenSim, and is based upon the JP3 Tracks set.{new-line}
+    Huge thanks to UnicycleBloke. Without them and their YAGL (de)compiler{new-line}
+    this GRF would not have been possible.{new-line}
+    Adding translations in NFO is just a pain, and YAGL is a gamechanger.{new-line}
+    ";
+}
 // Record #1
 if_act9 (is_equal(global_var[0x9D] & 0xFFFFFFFF, 0x00000001)) // Action09
 {
@@ -21,7 +30,7 @@ if_act9 (is_equal(global_var[0xA1] & 0xFFFFFFFF, 0xFFFFFFFF)) // Action09
     // 0x00 means skip to end of GRF file - may disable the GRF.
 }
 // Record #4
-if_act9 (is_less_than(global_var[0xA1] & 0xFFFFFFFF, 0x110051DF)) // Action09
+if_act9 (is_less_than(global_var[0xA1] & 0xFFFFFFFF, 0x1C080000)) // Action09
 {
     skip_sprites: 0x01;
     // Or skip to the next label (Action10) with this value - search wraps at end of GRF.
@@ -38,17 +47,7 @@ if_act9 (is_equal(global_var[0x9A] & 0xFF, 0xFF)) // Action09
 error_message<Fatal, default, 0x06> // Action0B <severity, language, message>
 {
     // {grf_name} requires OpenTTD version {data} or better.
-    data: "r20960";
-}
-// Record #7
-ignore // Action0C
-{
-    "{new-line}
-    This GRF is created by WenSim, and is based upon the JP3 Tracks set.{new-line}
-    Huge thanks to UnicycleBloke. Without them and their YAGL (de)compiler{new-line}
-    this GRF would not have been possible.{new-line}
-    Adding translations in NFO is just a pain, and YAGL is a gamechanger.{new-line}
-    ";
+    data: "12.0";
 }
 // Record #7
 optional_info // Action14
@@ -235,7 +234,7 @@ optional_info // Action14
 grf // Action08
 {
     grf_id: "DP0\x00";
-    version: GRF7;
+    version: GRF8;
     name: "Japan Set3: Tracks {ext push-colour}{white}weMOD{ext pop-colour}";
     description: "{white}Japan {red}Set{gold}{white}3: Tracks{lt-blue} - reMOD v1 - June 2024{black}{new-line}{new-line}Drawn by:{new-line}{lt-blue}Dandan, Onodera, Sanchimaru{black}{new-line}Coded by:{new-line}{lt-blue}Dandan, {lt-blue}stevenh{black}{new-line}weMOD by:{new-line}{lt-blue}WenSim{black}";
 }

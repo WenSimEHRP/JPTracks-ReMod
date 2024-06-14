@@ -192,7 +192,7 @@ optional_info // Action14
 grf // Action08
 {
     grf_id: "DP0\x00";
-    version: GRF7;
+    version: GRF8;
     name: "Japan Set3: Tracks {ext push-colour}{white}weMOD{ext pop-colour}";
     description: "\
 {white}Japan {red}Set{gold}{white}3: Tracks{lt-blue} - reMOD v1 - June 2024{black}\

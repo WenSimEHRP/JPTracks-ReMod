@@ -1,46 +1,5 @@
 yagl_version: "v1.2.2-0-g679a0ca";
 grf_format: Container1;
-// Record #1
-if_act9 (is_equal(global_var[0x9D] & 0xFFFFFFFF, 0x00000001)) // Action09
-{
-    skip_sprites: 0x01;
-    // Or skip to the next label (Action10) with this value - search wraps at end of GRF.
-    // 0x00 means skip to end of GRF file - may disable the GRF.
-}
-// Record #2
-error_message<Fatal, default, 0x06> // Action0B <severity, language, message>
-{
-    // {grf_name} requires OpenTTD version {data} or better.
-    data: "r20960";
-}
-// Record #3
-if_act9 (is_equal(global_var[0xA1] & 0xFFFFFFFF, 0xFFFFFFFF)) // Action09
-{
-    skip_sprites: 0x02;
-    // Or skip to the next label (Action10) with this value - search wraps at end of GRF.
-    // 0x00 means skip to end of GRF file - may disable the GRF.
-}
-// Record #4
-if_act9 (is_less_than(global_var[0xA1] & 0xFFFFFFFF, 0x110051DF)) // Action09
-{
-    skip_sprites: 0x01;
-    // Or skip to the next label (Action10) with this value - search wraps at end of GRF.
-    // 0x00 means skip to end of GRF file - may disable the GRF.
-}
-// Record #5
-if_act9 (is_equal(global_var[0x9A] & 0xFF, 0xFF)) // Action09
-{
-    skip_sprites: 0x01;
-    // Or skip to the next label (Action10) with this value - search wraps at end of GRF.
-    // 0x00 means skip to end of GRF file - may disable the GRF.
-}
-// Record #6
-error_message<Fatal, default, 0x06> // Action0B <severity, language, message>
-{
-    // {grf_name} requires OpenTTD version {data} or better.
-    data: "r20960";
-}
-// Record #7
 ignore // Action0C
 {
     "{new-line}
@@ -50,6 +9,8 @@ ignore // Action0C
     Adding translations in NFO is just a pain, and YAGL is a gamechanger.{new-line}
     ";
 }
+// Record #1
+#include "./checks.pyagl"
 #include "./header.pyagl"
 // Record #10
 set_parameter // Action0D
