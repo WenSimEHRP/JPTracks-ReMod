@@ -1,3 +1,4 @@
 // this is the language index file
 #include "./lang_english.pyagl"
 #include "./lang_simplified_chinese.pyagl"
+#include "./lang_traditional_chinese.pyagl"

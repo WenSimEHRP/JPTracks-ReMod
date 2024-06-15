@@ -6,6 +6,7 @@ optional_info // Action14
         NAME: zh_CN, "Japan Set3: 轨道 {ext push-colour}{white}weMOD{ext pop-colour}"; // Chinese (Simplified)
         DESC: zh_CN, "\
 {white}Japan {red}Set{gold}{white}3: 轨道{lt-blue} - reMOD v1 - 2024 年 6 月{black}\
+{new-line}{red}注意！禁用 JP3 列车的轨道，否则轨道将被覆盖！{black}\
 {new-line}\
 {new-line}图像：\
 {new-line}{lt-blue}Dandan, Onodera, Sanchimaru{black}\
@@ -14,8 +15,26 @@ optional_info // Action14
 {new-line}weMOD：\
 {new-line}{lt-blue}WenSim{black}\
 {new-line}\
+{new-line}翻译：\
+{new-line}{lt-blue}WenSim{black}\
+{new-line}{lt-blue}Keihoku{black}\
+";
+        NAME: zh_TW, "Japan Set3: 軌道 {ext push-colour}{white}weMOD{ext pop-colour}"; // Chinese (Traditional)
+        DESC: zh_TW, "\
+{white}Japan {red}Set{gold}{white}3: 軌道{lt-blue} - reMOD v1 - 2024 年 6 月{black}\
+{new-line}{red}注意！禁止使用JP3列車的軌道，否則軌道將被覆蓋！{black}\
 {new-line}\
-{red}注意！禁用 JP3 列车的轨道，否则轨道将被覆盖！"; // Chinese (Simplified)
+{new-line}圖像：\
+{new-line}{lt-blue}Dandan, Onodera, Sanchimaru{black}\
+{new-line}代碼：\
+{new-line}{lt-blue}Dandan, {lt-blue}stevenh{black}\
+{new-line}weMOD：\
+{new-line}{lt-blue}WenSim{black}\
+{new-line}\
+{new-line}翻譯：\
+{new-line}{lt-blue}Keihoku{black}\
+{new-line}{lt-blue}WenSim{black}\
+";
         VRSN: [ 0x01 0x00 0x00 0x00 ];
         MINV: [ 0x01 0x00 0x00 0x00 ];
         NPAR: [ 0x0B ];
@@ -30,6 +49,8 @@ optional_info // Action14
                 DESC: default, "Choose between generic or country-specific modes. When set to 'automatic', the Japanese mode is used only if the Japanese train set is used."; // Default
                 NAME: zh_CN, "轨道模式"; // Chinese (Simplified)
                 DESC: zh_CN, "选择轨道模式。当设置为“自动”时，仅在使用日本火车组时才使用日本模式。"; // Chinese (Simplified)
+                NAME: zh_TW, "軌道模式"; // Chinese (Traditional)
+                DESC: zh_TW, "選擇軌道模式。當設置為“自動”時，僅在使用日本火車組時才使用日本模式。"; // Chinese (Traditional)
                 VALU: 
                 {
                     0x00000000: default, "Automatic (Japanese/Generic)"; // Default
@@ -42,6 +63,11 @@ optional_info // Action14
                     0x00000002: zh_CN, "德国"; // Chinese (Simplified)
                     0x00000003: zh_CN, "英国"; // Chinese (Simplified)
                     0x00000004: zh_CN, "北美"; // Chinese (Simplified)
+                    0x00000000: zh_TW, "自動（日本/通用）"; // Chinese (Traditional)
+                    0x00000001: zh_TW, "通用"; // Chinese (Traditional)
+                    0x00000002: zh_TW, "德國"; // Chinese (Traditional)
+                    0x00000003: zh_TW, "英國"; // Chinese (Traditional)
+                    0x00000004: zh_TW, "北美"; // Chinese (Traditional)
                 }
             }
             0x00000001: 
@@ -52,6 +78,8 @@ optional_info // Action14
                 DESC: default, "Choose how many track types to play with. In the reduced setting, the urban track types are disabled. In the minimal setting, only track type for each gauge and electrification system is present, without speed limits."; // Default
                 NAME: zh_CN, "轨道选择"; // Chinese (Simplified)
                 DESC: zh_CN, "选择要使用的轨道类型数量。在减少设置中，城市轨道类型被禁用。在最小设置中，只有每种轨距和电气化系统的一种轨道类型，没有速度限制。"; // Chinese (Simplified)
+                NAME: zh_TW, "軌道選擇"; // Chinese (Traditional)
+                DESC: zh_TW, "選擇要使用的軌道類型數量。在減少設置中，城市軌道類型被禁用。在最小設置中，只有每種軌距和電氣化系统的一種軌道類型，没有速度限制。"; // Chinese (Traditional)
                 VALU: 
                 {
                     0x00000000: default, "Full"; // Default
@@ -60,6 +88,9 @@ optional_info // Action14
                     0x00000000: zh_CN, "完整"; // Chinese (Simplified)
                     0x00000001: zh_CN, "减少"; // Chinese (Simplified)
                     0x00000002: zh_CN, "最少"; // Chinese (Simplified)
+                    0x00000000: zh_TW, "完整"; // Chinese (Traditional)
+                    0x00000001: zh_TW, "減少"; // Chinese (Traditional)
+                    0x00000002: zh_TW, "最少"; // Chinese (Traditional)
                 }
             }
             0x00000002: 
@@ -71,6 +102,8 @@ optional_info // Action14
                 DESC: default, "Use narrower track sprites."; // Default
                 NAME: zh_CN, "更窄轨道"; // Chinese (Simplified)
                 DESC: zh_CN, "使用更窄的轨道图像。"; // Chinese (Simplified)
+                NAME: zh_TW, "更窄軌道"; // Chinese (Traditional)
+                DESC: zh_TW, "使用更窄的軌道圖像。"; // Chinese (Traditional)
             }
             0x00000003: 
             {
@@ -78,6 +111,7 @@ optional_info // Action14
                 LIMI: [ 0x00 0x00 0x00 0x00 0x04 0x00 0x00 0x00 ];
                 NAME: default, "Construction costs"; // Default
                 NAME: zh_CN, "建造成本"; // Chinese (Simplified)
+                NAME: zh_TW, "建造成本"; // Chinese (Traditional)
                 VALU: 
                 {
                     0x00000000: default, "very low"; // Default
@@ -90,6 +124,11 @@ optional_info // Action14
                     0x00000002: zh_CN, "正常"; // Chinese (Simplified)
                     0x00000003: zh_CN, "高"; // Chinese (Simplified)
                     0x00000004: zh_CN, "非常高"; // Chinese (Simplified)
+                    0x00000000: zh_TW, "非常低"; // Chinese (Traditional)
+                    0x00000001: zh_TW, "低"; // Chinese (Traditional)
+                    0x00000002: zh_TW, "正常"; // Chinese (Traditional)
+                    0x00000003: zh_TW, "高"; // Chinese (Traditional)
+                    0x00000004: zh_TW, "非常高"; // Chinese (Traditional)
                 }
             }
             0x00000004: 
@@ -100,6 +139,8 @@ optional_info // Action14
                 DESC: default, "You must activate 'Infrastructure maintenance' for this setting to take effect."; // Default
                 NAME: zh_CN, "维护成本"; // Chinese (Simplified)
                 DESC: zh_CN, "您必须激活“基础设施维护”才能使此设置生效。"; // Chinese (Simplified)
+                NAME: zh_TW, "維護成本"; // Chinese (Traditional)
+                DESC: zh_TW, "您必須激活“基礎設施維護”才能使此設置生效。"; // Chinese (Traditional)
                 VALU: 
                 {
                     0x00000000: default, "very low"; // Default
@@ -112,6 +153,11 @@ optional_info // Action14
                     0x00000002: zh_CN, "正常"; // Chinese (Simplified)
                     0x00000003: zh_CN, "高"; // Chinese (Simplified)
                     0x00000004: zh_CN, "非常高"; // Chinese (Simplified)
+                    0x00000000: zh_TW, "非常低"; // Chinese (Traditional)
+                    0x00000001: zh_TW, "低"; // Chinese (Traditional)
+                    0x00000002: zh_TW, "正常"; // Chinese (Traditional)
+                    0x00000003: zh_TW, "高"; // Chinese (Traditional)
+                    0x00000004: zh_TW, "非常高"; // Chinese (Traditional)
                 }
             }
             0x00000005: 
@@ -123,6 +169,8 @@ optional_info // Action14
                 DESC: default, "If this setting is disabled, the default graphics for tunnel portals will be used instead of the ones provided by this set."; // Default
                 NAME: zh_CN, "使用自定义隧道口"; // Chinese (Simplified)
                 DESC: zh_CN, "如果禁用此设置，则将使用隧道口的默认图形，而不是此设置提供的图形。"; // Chinese (Simplified)
+                NAME: zh_TW, "使用自定義隧道口"; // Chinese (Traditional)
+                DESC: zh_TW, "如果禁用此設置，則將使用隧道口的默認圖形，而不是此設置提供的圖形。"; // Chinese (Traditional)
             }
             0x00000006: 
             {
@@ -133,6 +181,8 @@ optional_info // Action14
                 DESC: default, "If this setting is disabled, the default graphics for catenary wire and poles will be used instead of the ones provided by this set."; // Default
                 NAME: zh_CN, "使用自定义接触网"; // Chinese (Simplified)
                 DESC: zh_CN, "如果禁用此设置，则将使用接触网和杆的默认图形，而不是此设置提供的图形。"; // Chinese (Simplified)
+                NAME: zh_TW, "使用自定義電車線"; // Chinese (Traditional)
+                DESC: zh_TW, "如果禁用此設置，則將使用電車線和電車線柱的默認圖形，而不是此設置提供的圖形。"; // Chinese (Traditional)
             }
             0x00000007: 
             {
@@ -143,6 +193,8 @@ optional_info // Action14
                 DESC: default, "If this setting is disabled, the default graphics for train depots will be used instead of the ones provided by this set."; // Default
                 NAME: zh_CN, "使用自定义车辆段"; // Chinese (Simplified)
                 DESC: zh_CN, "如果禁用此设置，则将使用火车车辆段的默认图形，而不是此设置提供的图形。"; // Chinese (Simplified)
+                NAME: zh_TW, "使用自定義車廠"; // Chinese (Traditional)
+                DESC: zh_TW, "如果禁用此設置，則將使用火車車廠的默認圖形，而不是此設置提供的圖形。"; // Chinese (Traditional)
             }
             0x00000008: 
             {
@@ -152,6 +204,8 @@ optional_info // Action14
                 DESC: default, "Replaces or deactivates the default fences for railtracks."; // Default
                 NAME: zh_CN, "围栏"; // Chinese (Simplified)
                 DESC: zh_CN, "替换或停用铁路轨道的默认围栏。"; // Chinese (Simplified)
+                NAME: zh_TW, "圍欄"; // Chinese (Traditional)
+                DESC: zh_TW, "替換或停用鐵路軌道的默認圍欄。"; // Chinese (Traditional)
                 VALU: 
                 {
                     0x00000000: default, "none"; // Default
@@ -162,6 +216,10 @@ optional_info // Action14
                     0x00000001: zh_CN, "默认"; // Chinese (Simplified)
                     0x00000002: zh_CN, "仅用于城市和高速轨道"; // Chinese (Simplified)
                     0x00000003: zh_CN, "所有轨道类型"; // Chinese (Simplified)
+                    0x00000000: zh_TW, "無"; // Chinese (Traditional)
+                    0x00000001: zh_TW, "默認"; // Chinese (Traditional)
+                    0x00000002: zh_TW, "僅用於城市和高速軌道"; // Chinese (Traditional)
+                    0x00000003: zh_TW, "所有軌道類型"; // Chinese (Traditional)
                 }
             }
             0x00000009: 
@@ -173,6 +231,8 @@ optional_info // Action14
                 DESC: default, "Depots and fences use company colors if this option is enabled."; // Default
                 NAME: zh_CN, "使用公司颜色"; // Chinese (Simplified)
                 DESC: zh_CN, "如果启用此选项，则车辆段和围栏将使用公司颜色。"; // Chinese (Simplified)
+                NAME: zh_TW, "使用公司顏色"; // Chinese (Traditional)
+                DESC: zh_TW, "如果啟用此選項，则車廠和圍欄將使用公司顏色。"; // Chinese (Traditional)
             }
             0x0000000A: 
             {
@@ -182,6 +242,8 @@ optional_info // Action14
                 DESC: default, "Choose GUI elements for original graphics or OpenGFX."; // Default
                 NAME: zh_CN, "{ext push-colour}{red}[已移除]{ext pop-colour} GUI 元素"; // Chinese (Simplified)
                 DESC: zh_CN, "选择原始图形或 OpenGFX 的 GUI 元素。"; // Chinese (Simplified)
+                NAME: zh_TW, "{ext push-colour}{red}[已移除]{ext pop-colour} GUI 元素"; // Chinese (Traditional)
+                DESC: zh_TW, "選擇原始圖形或 OpenGFX 的 GUI 元素。"; // Chinese (Traditional)
                 VALU: 
                 {
                     0x00000000: default, "{red}TTD"; // Default
@@ -199,6 +261,7 @@ grf // Action08
     name: "Japan Set3: Tracks {ext push-colour}{white}weMOD{ext pop-colour}";
     description: "\
 {white}Japan {red}Set{gold}{white}3: Tracks{lt-blue} - reMOD v1 - June 2024{black}\
+{new-line}{red}NOTE: DISABLE TRACKS IN JP3 TRAINS ELSE TRACKS WILL BE OVERRIEDED!{black}\
 {new-line}\
 {new-line}Drawn by:\
 {new-line}{lt-blue}Dandan, Onodera, Sanchimaru{black}\
@@ -207,6 +270,8 @@ grf // Action08
 {new-line}weMOD by:\
 {new-line}{lt-blue}WenSim{black}\
 {new-line}\
-{new-line}\
-{red}NOTE: DISABLE TRACKS IN JP3 TRAINS ELSE TRACKS WILL BE OVERRIEDED!";
+{new-line}Translation by:\
+{new-line}{lt-blue}WenSim{black}\
+{new-line}{lt-blue}Keihoku{black}\
+";
 }

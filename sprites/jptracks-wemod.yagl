@@ -55,9 +55,11 @@ optional_info // Action14
     INFO:
     {
         NAME: zh_CN, "Japan Set3: 轨道 {ext push-colour}{white}weMOD{ext pop-colour}"; // Chinese (Simplified)
-        DESC: zh_CN, "{white}Japan {red}Set{gold}{white}3: 轨道{lt-blue} - reMOD v1 - 2024 年 6 月{black}{new-line}{new-line}图像：{new-line}{lt-blue}Dandan, Onodera, Sanchimaru{black}{new-line}代码：{new-line}{lt-blue}Dandan, {lt-blue}stevenh{black}{new-line}weMOD：{new-line}{lt-blue}WenSim{black}";
-        VRSN: [ 0x40 0x01 0x00 0x00 ];
-        MINV: [ 0x2C 0x01 0x00 0x00 ];
+        DESC: zh_CN, "{white}Japan {red}Set{gold}{white}3: 轨道{lt-blue} - reMOD v1 - 2024 年 6 月{black}{new-line}{red}注意！禁用 JP3 列车的轨道，否则轨道将被覆盖！{black}{new-line}{new-line}图像：{new-line}{lt-blue}Dandan, Onodera, Sanchimaru{black}{new-line}代码：{new-line}{lt-blue}Dandan, {lt-blue}stevenh{black}{new-line}weMOD：{new-line}{lt-blue}WenSim{black}{new-line}{new-line}翻译：{new-line}{lt-blue}WenSim{black}{new-line}{lt-blue}Keihoku{black}";
+        NAME: zh_TW, "Japan Set3: 軌道 {ext push-colour}{white}weMOD{ext pop-colour}"; // Chinese (Traditional)
+        DESC: zh_TW, "{white}Japan {red}Set{gold}{white}3: 軌道{lt-blue} - reMOD v1 - 2024 年 6 月{black}{new-line}{red}注意！禁止使用JP3列車的軌道，否則軌道將被覆蓋！{black}{new-line}{new-line}圖像：{new-line}{lt-blue}Dandan, Onodera, Sanchimaru{black}{new-line}代碼：{new-line}{lt-blue}Dandan, {lt-blue}stevenh{black}{new-line}weMOD：{new-line}{lt-blue}WenSim{black}{new-line}{new-line}翻譯：{new-line}{lt-blue}Keihoku{black}{new-line}{lt-blue}WenSim{black}";
+        VRSN: [ 0x01 0x00 0x00 0x00 ];
+        MINV: [ 0x01 0x00 0x00 0x00 ];
         NPAR: [ 0x0B ];
         PALS: [ 0x44 ];
         PARA:
@@ -70,6 +72,8 @@ optional_info // Action14
                 DESC: default, "Choose between generic or country-specific modes. When set to 'automatic', the Japanese mode is used only if the Japanese train set is used."; // Default
                 NAME: zh_CN, "轨道模式"; // Chinese (Simplified)
                 DESC: zh_CN, "选择轨道模式。当设置为“自动”时，仅在使用日本火车组时才使用日本模式。"; // Chinese (Simplified)
+                NAME: zh_TW, "軌道模式"; // Chinese (Traditional)
+                DESC: zh_TW, "選擇軌道模式。當設置為“自動”時，僅在使用日本火車組時才使用日本模式。"; // Chinese (Traditional)
                 VALU:
                 {
                     0x00000000: default, "Automatic (Japanese/Generic)"; // Default
@@ -82,6 +86,11 @@ optional_info // Action14
                     0x00000002: zh_CN, "德国"; // Chinese (Simplified)
                     0x00000003: zh_CN, "英国"; // Chinese (Simplified)
                     0x00000004: zh_CN, "北美"; // Chinese (Simplified)
+                    0x00000000: zh_TW, "自動（日本/通用）"; // Chinese (Traditional)
+                    0x00000001: zh_TW, "通用"; // Chinese (Traditional)
+                    0x00000002: zh_TW, "德國"; // Chinese (Traditional)
+                    0x00000003: zh_TW, "英國"; // Chinese (Traditional)
+                    0x00000004: zh_TW, "北美"; // Chinese (Traditional)
                 }
             }
             0x00000001:
@@ -92,6 +101,8 @@ optional_info // Action14
                 DESC: default, "Choose how many track types to play with. In the reduced setting, the urban track types are disabled. In the minimal setting, only track type for each gauge and electrification system is present, without speed limits."; // Default
                 NAME: zh_CN, "轨道选择"; // Chinese (Simplified)
                 DESC: zh_CN, "选择要使用的轨道类型数量。在减少设置中，城市轨道类型被禁用。在最小设置中，只有每种轨距和电气化系统的一种轨道类型，没有速度限制。"; // Chinese (Simplified)
+                NAME: zh_TW, "軌道選擇"; // Chinese (Traditional)
+                DESC: zh_TW, "選擇要使用的軌道類型數量。在減少設置中，城市軌道類型被禁用。在最小設置中，只有每種軌距和電氣化系统的一種軌道類型，没有速度限制。"; // Chinese (Traditional)
                 VALU:
                 {
                     0x00000000: default, "Full"; // Default
@@ -100,6 +111,9 @@ optional_info // Action14
                     0x00000000: zh_CN, "完整"; // Chinese (Simplified)
                     0x00000001: zh_CN, "减少"; // Chinese (Simplified)
                     0x00000002: zh_CN, "最少"; // Chinese (Simplified)
+                    0x00000000: zh_TW, "完整"; // Chinese (Traditional)
+                    0x00000001: zh_TW, "減少"; // Chinese (Traditional)
+                    0x00000002: zh_TW, "最少"; // Chinese (Traditional)
                 }
             }
             0x00000002:
@@ -111,6 +125,8 @@ optional_info // Action14
                 DESC: default, "Use narrower track sprites."; // Default
                 NAME: zh_CN, "更窄轨道"; // Chinese (Simplified)
                 DESC: zh_CN, "使用更窄的轨道图像。"; // Chinese (Simplified)
+                NAME: zh_TW, "更窄軌道"; // Chinese (Traditional)
+                DESC: zh_TW, "使用更窄的軌道圖像。"; // Chinese (Traditional)
             }
             0x00000003:
             {
@@ -118,6 +134,7 @@ optional_info // Action14
                 LIMI: [ 0x00 0x00 0x00 0x00 0x04 0x00 0x00 0x00 ];
                 NAME: default, "Construction costs"; // Default
                 NAME: zh_CN, "建造成本"; // Chinese (Simplified)
+                NAME: zh_TW, "建造成本"; // Chinese (Traditional)
                 VALU:
                 {
                     0x00000000: default, "very low"; // Default
@@ -130,6 +147,11 @@ optional_info // Action14
                     0x00000002: zh_CN, "正常"; // Chinese (Simplified)
                     0x00000003: zh_CN, "高"; // Chinese (Simplified)
                     0x00000004: zh_CN, "非常高"; // Chinese (Simplified)
+                    0x00000000: zh_TW, "非常低"; // Chinese (Traditional)
+                    0x00000001: zh_TW, "低"; // Chinese (Traditional)
+                    0x00000002: zh_TW, "正常"; // Chinese (Traditional)
+                    0x00000003: zh_TW, "高"; // Chinese (Traditional)
+                    0x00000004: zh_TW, "非常高"; // Chinese (Traditional)
                 }
             }
             0x00000004:
@@ -140,6 +162,8 @@ optional_info // Action14
                 DESC: default, "You must activate 'Infrastructure maintenance' for this setting to take effect."; // Default
                 NAME: zh_CN, "维护成本"; // Chinese (Simplified)
                 DESC: zh_CN, "您必须激活“基础设施维护”才能使此设置生效。"; // Chinese (Simplified)
+                NAME: zh_TW, "維護成本"; // Chinese (Traditional)
+                DESC: zh_TW, "您必須激活“基礎設施維護”才能使此設置生效。"; // Chinese (Traditional)
                 VALU:
                 {
                     0x00000000: default, "very low"; // Default
@@ -152,6 +176,11 @@ optional_info // Action14
                     0x00000002: zh_CN, "正常"; // Chinese (Simplified)
                     0x00000003: zh_CN, "高"; // Chinese (Simplified)
                     0x00000004: zh_CN, "非常高"; // Chinese (Simplified)
+                    0x00000000: zh_TW, "非常低"; // Chinese (Traditional)
+                    0x00000001: zh_TW, "低"; // Chinese (Traditional)
+                    0x00000002: zh_TW, "正常"; // Chinese (Traditional)
+                    0x00000003: zh_TW, "高"; // Chinese (Traditional)
+                    0x00000004: zh_TW, "非常高"; // Chinese (Traditional)
                 }
             }
             0x00000005:
@@ -163,6 +192,8 @@ optional_info // Action14
                 DESC: default, "If this setting is disabled, the default graphics for tunnel portals will be used instead of the ones provided by this set."; // Default
                 NAME: zh_CN, "使用自定义隧道口"; // Chinese (Simplified)
                 DESC: zh_CN, "如果禁用此设置，则将使用隧道口的默认图形，而不是此设置提供的图形。"; // Chinese (Simplified)
+                NAME: zh_TW, "使用自定義隧道口"; // Chinese (Traditional)
+                DESC: zh_TW, "如果禁用此設置，則將使用隧道口的默認圖形，而不是此設置提供的圖形。"; // Chinese (Traditional)
             }
             0x00000006:
             {
@@ -173,6 +204,8 @@ optional_info // Action14
                 DESC: default, "If this setting is disabled, the default graphics for catenary wire and poles will be used instead of the ones provided by this set."; // Default
                 NAME: zh_CN, "使用自定义接触网"; // Chinese (Simplified)
                 DESC: zh_CN, "如果禁用此设置，则将使用接触网和杆的默认图形，而不是此设置提供的图形。"; // Chinese (Simplified)
+                NAME: zh_TW, "使用自定義電車線"; // Chinese (Traditional)
+                DESC: zh_TW, "如果禁用此設置，則將使用電車線和電車線柱的默認圖形，而不是此設置提供的圖形。"; // Chinese (Traditional)
             }
             0x00000007:
             {
@@ -183,6 +216,8 @@ optional_info // Action14
                 DESC: default, "If this setting is disabled, the default graphics for train depots will be used instead of the ones provided by this set."; // Default
                 NAME: zh_CN, "使用自定义车辆段"; // Chinese (Simplified)
                 DESC: zh_CN, "如果禁用此设置，则将使用火车车辆段的默认图形，而不是此设置提供的图形。"; // Chinese (Simplified)
+                NAME: zh_TW, "使用自定義車廠"; // Chinese (Traditional)
+                DESC: zh_TW, "如果禁用此設置，則將使用火車車廠的默認圖形，而不是此設置提供的圖形。"; // Chinese (Traditional)
             }
             0x00000008:
             {
@@ -192,6 +227,8 @@ optional_info // Action14
                 DESC: default, "Replaces or deactivates the default fences for railtracks."; // Default
                 NAME: zh_CN, "围栏"; // Chinese (Simplified)
                 DESC: zh_CN, "替换或停用铁路轨道的默认围栏。"; // Chinese (Simplified)
+                NAME: zh_TW, "圍欄"; // Chinese (Traditional)
+                DESC: zh_TW, "替換或停用鐵路軌道的默認圍欄。"; // Chinese (Traditional)
                 VALU:
                 {
                     0x00000000: default, "none"; // Default
@@ -202,6 +239,10 @@ optional_info // Action14
                     0x00000001: zh_CN, "默认"; // Chinese (Simplified)
                     0x00000002: zh_CN, "仅用于城市和高速轨道"; // Chinese (Simplified)
                     0x00000003: zh_CN, "所有轨道类型"; // Chinese (Simplified)
+                    0x00000000: zh_TW, "無"; // Chinese (Traditional)
+                    0x00000001: zh_TW, "默認"; // Chinese (Traditional)
+                    0x00000002: zh_TW, "僅用於城市和高速軌道"; // Chinese (Traditional)
+                    0x00000003: zh_TW, "所有軌道類型"; // Chinese (Traditional)
                 }
             }
             0x00000009:
@@ -213,6 +254,8 @@ optional_info // Action14
                 DESC: default, "Depots and fences use company colors if this option is enabled."; // Default
                 NAME: zh_CN, "使用公司颜色"; // Chinese (Simplified)
                 DESC: zh_CN, "如果启用此选项，则车辆段和围栏将使用公司颜色。"; // Chinese (Simplified)
+                NAME: zh_TW, "使用公司顏色"; // Chinese (Traditional)
+                DESC: zh_TW, "如果啟用此選項，则車廠和圍欄將使用公司顏色。"; // Chinese (Traditional)
             }
             0x0000000A:
             {
@@ -222,6 +265,8 @@ optional_info // Action14
                 DESC: default, "Choose GUI elements for original graphics or OpenGFX."; // Default
                 NAME: zh_CN, "{ext push-colour}{red}[已移除]{ext pop-colour} GUI 元素"; // Chinese (Simplified)
                 DESC: zh_CN, "选择原始图形或 OpenGFX 的 GUI 元素。"; // Chinese (Simplified)
+                NAME: zh_TW, "{ext push-colour}{red}[已移除]{ext pop-colour} GUI 元素"; // Chinese (Traditional)
+                DESC: zh_TW, "選擇原始圖形或 OpenGFX 的 GUI 元素。"; // Chinese (Traditional)
                 VALU:
                 {
                     0x00000000: default, "{red}TTD"; // Default
@@ -233,10 +278,10 @@ optional_info // Action14
 }
 grf // Action08
 {
-    grf_id: "DP0\x00";
+    grf_id: "DP0\x01";
     version: GRF8;
     name: "Japan Set3: Tracks {ext push-colour}{white}weMOD{ext pop-colour}";
-    description: "{white}Japan {red}Set{gold}{white}3: Tracks{lt-blue} - reMOD v1 - June 2024{black}{new-line}{new-line}Drawn by:{new-line}{lt-blue}Dandan, Onodera, Sanchimaru{black}{new-line}Coded by:{new-line}{lt-blue}Dandan, {lt-blue}stevenh{black}{new-line}weMOD by:{new-line}{lt-blue}WenSim{black}";
+    description: "{white}Japan {red}Set{gold}{white}3: Tracks{lt-blue} - reMOD v1 - June 2024{black}{new-line}{red}NOTE: DISABLE TRACKS IN JP3 TRAINS ELSE TRACKS WILL BE OVERRIEDED!{black}{new-line}{new-line}Drawn by:{new-line}{lt-blue}Dandan, Onodera, Sanchimaru{black}{new-line}Coded by:{new-line}{lt-blue}Dandan, {lt-blue}stevenh{black}{new-line}weMOD by:{new-line}{lt-blue}WenSim{black}{new-line}{new-line}Translation by:{new-line}{lt-blue}WenSim{black}{new-line}{lt-blue}Keihoku{black}";
 }
 // Record #10
 set_parameter // Action0D
@@ -742,19 +787,19 @@ strings<RailTypes, zh_CN, 0xDC10*> // <feature, language, first_id> Action04, zh
     /* 0xDC10 */ "{white}窄轨铁路";
     /* 0xDC11 */ "{white}窄轨铁路";
     /* 0xDC12 */ "{white}窄轨铁路 (电气化)";
-    /* 0xDC13 */ "{white}现代窄轨 (电气化)";
+    /* 0xDC13 */ "{white}{ext push-colour}{gold}现代{ext pop-colour}窄轨 (电气化)";
     /* 0xDC14 */ "{white}准轨铁路 (电气化)";
-    /* 0xDC15 */ "{white}现代准轨 (电气化)";
+    /* 0xDC15 */ "{white}{ext push-colour}{gold}现代{ext pop-colour}准轨 (电气化)";
     /* 0xDC16 */ "{white}新干线高速铁路 (电气化)";
-    /* 0xDC17 */ "{white}现代新干线铁路 (电气化)";
+    /* 0xDC17 */ "{white}{ext push-colour}{gold}现代{ext pop-colour}新干线铁路 (电气化)";
     /* 0xDC18 */ "{white}准轨铁路 (第三轨)";
-    /* 0xDC19 */ "{white}都市准轨 (第三轨)";
+    /* 0xDC19 */ "{white}{ext push-colour}{yellow}都市{ext pop-colour}准轨 (第三轨)";
 }
 // Record #91
 strings<RailTypes, zh_CN, 0xDC1B*> // <feature, language, first_id> Action04, zh_CN
 {
-    /* 0xDC1B */ "{white}都市窄轨 (电气化)";
-    /* 0xDC1C */ "{white}都市准轨 (电气化)";
+    /* 0xDC1B */ "{white}{ext push-colour}{yellow}都市{ext pop-colour}窄轨 (电气化)";
+    /* 0xDC1C */ "{white}{ext push-colour}{yellow}都市{ext pop-colour}准轨 (电气化)";
     /* 0xDC1D */ "{white}准轨铁路";
 }
 // Record #94
@@ -763,19 +808,19 @@ strings<RailTypes, zh_CN, 0xDC20*> // <feature, language, first_id> Action04, zh
     /* 0xDC20 */ "窄轨铁路{white}";
     /* 0xDC21 */ "窄轨铁路{white}";
     /* 0xDC22 */ "窄轨铁路 {lt-blue}(电气化){white}";
-    /* 0xDC23 */ "现代窄轨 {lt-blue}(电气化){white}";
+    /* 0xDC23 */ "{ext push-colour}{gold}现代{ext pop-colour}窄轨 {lt-blue}(电气化){white}";
     /* 0xDC24 */ "准轨铁路 {lt-blue}(电气化){white}";
-    /* 0xDC25 */ "现代准轨 {lt-blue}(电气化){white}";
+    /* 0xDC25 */ "{ext push-colour}{gold}现代{ext pop-colour}准轨 {lt-blue}(电气化){white}";
     /* 0xDC26 */ "新干线高速铁路 {lt-blue}(电气化){white}";
-    /* 0xDC27 */ "现代新干线铁路 {lt-blue}(电气化){white}";
+    /* 0xDC27 */ "{ext push-colour}{gold}现代{ext pop-colour}新干线铁路 {lt-blue}(电气化){white}";
     /* 0xDC28 */ "准轨铁路 {green}(第三轨){white}";
-    /* 0xDC29 */ "都市准轨 {green}(第三轨){white}";
+    /* 0xDC29 */ "{ext push-colour}{yellow}都市{ext pop-colour}准轨 {green}(第三轨){white}";
 }
 // Record #104
 strings<RailTypes, zh_CN, 0xDC2B*> // <feature, language, first_id> Action04, zh_CN
 {
-    /* 0xDC2B */ "都市窄轨 {lt-blue}(电气化){white}";
-    /* 0xDC2C */ "都市准轨 {lt-blue}(电气化){white}";
+    /* 0xDC2B */ "{ext push-colour}{yellow}都市{ext pop-colour}窄轨 {lt-blue}(电气化){white}";
+    /* 0xDC2C */ "{ext push-colour}{yellow}都市{ext pop-colour}准轨 {lt-blue}(电气化){white}";
     /* 0xDC2D */ "准轨铁路{white}";
 }
 // Record #107
@@ -804,18 +849,18 @@ strings<RailTypes, zh_CN, 0xDC40*> // <feature, language, first_id> Action04, zh
     /* 0xDC40 */ "轻型窄轨列车";
     /* 0xDC41 */ "窄轨列车";
     /* 0xDC42 */ "电气化窄轨列车";
-    /* 0xDC43 */ "现代电气化窄轨列车";
+    /* 0xDC43 */ "{ext push-colour}{gold}现代{ext pop-colour}电气化窄轨列车";
     /* 0xDC44 */ "电气化准轨列车";
-    /* 0xDC45 */ "现代电气化准轨列车";
+    /* 0xDC45 */ "{ext push-colour}{gold}现代{ext pop-colour}电气化准轨列车";
     /* 0xDC46 */ "新干线列车";
-    /* 0xDC47 */ "现代新干线列车";
+    /* 0xDC47 */ "{ext push-colour}{gold}现代{ext pop-colour}新干线列车";
     /* 0xDC48 */ "地铁列车";
 }
 // Record #128
 strings<RailTypes, zh_CN, 0xDC4B*> // <feature, language, first_id> Action04, zh_CN
 {
-    /* 0xDC4B */ "都市窄轨列车";
-    /* 0xDC4C */ "都市准轨列车";
+    /* 0xDC4B */ "{ext push-colour}{yellow}都市{ext pop-colour}窄轨列车";
+    /* 0xDC4C */ "{ext push-colour}{yellow}都市{ext pop-colour}准轨列车";
     /* 0xDC4D */ "准轨列车";
 }
 // Record #131
@@ -859,16 +904,16 @@ strings<RailTypes, zh_CN, 0xDC10*> // <feature, language, first_id> Action04, zh
 {
     /* 0xDC10 */ "支线铁路";
     /* 0xDC11 */ "主线铁路";
-    /* 0xDC12 */ "现代主线";
+    /* 0xDC12 */ "{ext push-colour}{gold}现代{ext pop-colour}主线";
     /* 0xDC13 */ "高速铁路";
     /* 0xDC14 */ "主线铁路 (电气化)";
-    /* 0xDC15 */ "现代铁路 (电气化)";
+    /* 0xDC15 */ "{ext push-colour}{gold}现代{ext pop-colour}铁路 (电气化)";
     /* 0xDC16 */ "高速铁路 (电气化)";
-    /* 0xDC17 */ "现代高铁 (电气化)";
+    /* 0xDC17 */ "{ext push-colour}{gold}现代{ext pop-colour}高铁 (电气化)";
     /* 0xDC18 */ "主线铁路 (第三轨)";
     /* 0xDC19 */ "主线铁路 (双电气化)";
-    /* 0xDC1A */ "都市铁路 (电气化)";
-    /* 0xDC1B */ "都市铁路 (第三轨)";
+    /* 0xDC1A */ "{ext push-colour}{yellow}都市{ext pop-colour}铁路 (电气化)";
+    /* 0xDC1B */ "{ext push-colour}{yellow}都市{ext pop-colour}铁路 (第三轨)";
     /* 0xDC1C */ "窄轨铁路";
     /* 0xDC1D */ "窄轨铁路 (电气化)";
 }
@@ -877,16 +922,16 @@ strings<RailTypes, zh_CN, 0xDC20*> // <feature, language, first_id> Action04, zh
 {
     /* 0xDC20 */ "支线铁路{white}";
     /* 0xDC21 */ "主线铁路{white}";
-    /* 0xDC22 */ "现代主线{white}";
+    /* 0xDC22 */ "{ext push-colour}{gold}现代{ext pop-colour}主线{white}";
     /* 0xDC23 */ "高速铁路{white}";
     /* 0xDC24 */ "主线铁路 {lt-blue}(电气化){white}";
-    /* 0xDC25 */ "现代铁路 {lt-blue}(电气化){white}";
+    /* 0xDC25 */ "{ext push-colour}{gold}现代{ext pop-colour}铁路 {lt-blue}(电气化){white}";
     /* 0xDC26 */ "高速铁路 {lt-blue}(电气化){white}";
-    /* 0xDC27 */ "现代高铁 {lt-blue}(电气化){white}";
+    /* 0xDC27 */ "{ext push-colour}{gold}现代{ext pop-colour}高铁 {lt-blue}(电气化){white}";
     /* 0xDC28 */ "主线铁路 {green}(第三轨){white}";
     /* 0xDC29 */ "主线铁路 {green}(双{lt-blue}电气化){white}";
-    /* 0xDC2A */ "都市铁路 {lt-blue}(电气化){white}";
-    /* 0xDC2B */ "都市铁路 {green}(第三轨){white}";
+    /* 0xDC2A */ "{ext push-colour}{yellow}都市{ext pop-colour}铁路 {lt-blue}(电气化){white}";
+    /* 0xDC2B */ "{ext push-colour}{yellow}都市{ext pop-colour}铁路 {green}(第三轨){white}";
     /* 0xDC2C */ "窄轨铁路{white}";
     /* 0xDC2D */ "窄轨铁路 {lt-blue}(电气化){white}";
 }
@@ -913,16 +958,16 @@ strings<RailTypes, zh_CN, 0xDC40*> // <feature, language, first_id> Action04, zh
 {
     /* 0xDC40 */ "轻型列车";
     /* 0xDC41 */ "铁路列车";
-    /* 0xDC42 */ "现代列车";
+    /* 0xDC42 */ "{ext push-colour}{gold}现代{ext pop-colour}列车";
     /* 0xDC43 */ "高速列车";
     /* 0xDC44 */ "电气化列车";
-    /* 0xDC45 */ "现代电气化列车";
+    /* 0xDC45 */ "{ext push-colour}{gold}现代{ext pop-colour}电气化列车";
     /* 0xDC46 */ "电气化高速列车";
-    /* 0xDC47 */ "现代电气化高速列车";
+    /* 0xDC47 */ "{ext push-colour}{gold}现代{ext pop-colour}电气化高速列车";
     /* 0xDC48 */ "第三轨列车";
     /* 0xDC49 */ "双供电电气化列车";
-    /* 0xDC4A */ "都市列车";
-    /* 0xDC4B */ "都市第三轨列车";
+    /* 0xDC4A */ "{ext push-colour}{yellow}都市{ext pop-colour}列车";
+    /* 0xDC4B */ "{ext push-colour}{yellow}都市{ext pop-colour}第三轨列车";
     /* 0xDC4C */ "窄轨列车";
     /* 0xDC4D */ "电气化窄轨列车";
 }
@@ -1007,6 +1052,298 @@ strings<RailTypes, zh_CN, 0xDC2C*> // <feature, language, first_id> Action04, zh
 strings<RailTypes, zh_CN, 0xDC2D*> // <feature, language, first_id> Action04, zh_CN
 {
     /* 0xDC2D */ "窄轨铁路 {lt-blue}(电气化){white}";
+}
+// Record #210
+label<0xF1> // Action10 - target for Action07 or Action09
+{
+}
+// Record #211
+ignore // Action0C
+{
+    "This is the end of this language file.";
+}
+ignore // Action0C
+{
+    "This is the start of this language file.";
+}
+// Record #80
+if_act9 (is_equal(param[0x10] & 0xFF, 0x01)) // Action09
+{
+    skip_sprites: 0xF0;
+    // Or skip to the next label (Action10) with this value - search wraps at end of GRF.
+    // 0x00 means skip to end of GRF file - may disable the GRF.
+}
+// Record #81
+strings<RailTypes, zh_TW, 0xDC10*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC10 */ "{white}窄軌鐵路";
+    /* 0xDC11 */ "{white}窄軌鐵路";
+    /* 0xDC12 */ "{white}窄軌鐵路 (電氣化)";
+    /* 0xDC13 */ "{white}{ext push-colour}{gold}現代{ext pop-colour}窄軌 (電氣化)";
+    /* 0xDC14 */ "{white}標準軌鐵路 (電氣化)";
+    /* 0xDC15 */ "{white}{ext push-colour}{gold}現代{ext pop-colour}標準軌 (電氣化)";
+    /* 0xDC16 */ "{white}新幹線高速鐵路 (電氣化)";
+    /* 0xDC17 */ "{white}{ext push-colour}{gold}現代{ext pop-colour}新幹線鐵路 (電氣化)";
+    /* 0xDC18 */ "{white}標準軌鐵路 (第三軌)";
+    /* 0xDC19 */ "{white}{ext push-colour}{yellow}都市{ext pop-colour}標準軌鐵路 (第三軌)";
+}
+// Record #91
+strings<RailTypes, zh_TW, 0xDC1B*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC1B */ "{white}{ext push-colour}{yellow}都市{ext pop-colour}窄軌 (電氣化)";
+    /* 0xDC1C */ "{white}{ext push-colour}{yellow}都市{ext pop-colour}標準軌鐵路 (電氣化)";
+    /* 0xDC1D */ "{white}標準軌鐵路";
+}
+// Record #94
+strings<RailTypes, zh_TW, 0xDC20*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC20 */ "窄軌鐵路{white}";
+    /* 0xDC21 */ "窄軌鐵路{white}";
+    /* 0xDC22 */ "窄軌鐵路 {lt-blue}(電氣化){white}";
+    /* 0xDC23 */ "{ext push-colour}{gold}現代{ext pop-colour}窄軌 {lt-blue}(電氣化){white}";
+    /* 0xDC24 */ "標準軌鐵路 {lt-blue}(電氣化){white}";
+    /* 0xDC25 */ "{ext push-colour}{gold}現代{ext pop-colour}標準軌 {lt-blue}(電氣化){white}";
+    /* 0xDC26 */ "新幹線高速鐵路 {lt-blue}(電氣化){white}";
+    /* 0xDC27 */ "{ext push-colour}{gold}現代{ext pop-colour}新幹線鐵路 {lt-blue}(電氣化){white}";
+    /* 0xDC28 */ "標準軌鐵路 {green}(第三軌){white}";
+    /* 0xDC29 */ "{ext push-colour}{yellow}都市{ext pop-colour}標準軌鐵路 {green}(第三軌){white}";
+}
+// Record #104
+strings<RailTypes, zh_TW, 0xDC2B*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC2B */ "{ext push-colour}{yellow}都市{ext pop-colour}窄軌 {lt-blue}(電氣化){white}";
+    /* 0xDC2C */ "{ext push-colour}{yellow}都市{ext pop-colour}標準軌 {lt-blue}(電氣化){white}";
+    /* 0xDC2D */ "標準軌鐵路{white}";
+}
+// Record #107
+strings<RailTypes, zh_TW, 0xDC30*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC30 */ "{white}新窄軌列車";
+    /* 0xDC31 */ "{white}新窄軌列車";
+    /* 0xDC32 */ "{white}新電氣化窄軌列車";
+    /* 0xDC33 */ "{white}新電氣化窄軌列車";
+    /* 0xDC34 */ "{white}新電氣化標準軌列車";
+    /* 0xDC35 */ "{white}新電氣化標準軌列車";
+    /* 0xDC36 */ "{white}新新幹線列車";
+    /* 0xDC37 */ "{white}新新幹線列車";
+    /* 0xDC38 */ "{white}新第三軌列車";
+}
+// Record #116
+strings<RailTypes, zh_TW, 0xDC3B*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC3B */ "{white}新電氣化窄軌列車";
+    /* 0xDC3C */ "{white}新電氣化標準軌列車";
+    /* 0xDC3D */ "{white}新標準軌列車";
+}
+// Record #119
+strings<RailTypes, zh_TW, 0xDC40*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC40 */ "輕型窄軌列車";
+    /* 0xDC41 */ "窄軌列車";
+    /* 0xDC42 */ "電氣化窄軌列車";
+    /* 0xDC43 */ "{ext push-colour}{gold}現代{ext pop-colour}電氣化窄軌列車";
+    /* 0xDC44 */ "電氣化標準軌列車";
+    /* 0xDC45 */ "{ext push-colour}{gold}現代{ext pop-colour}電氣化標準軌列車";
+    /* 0xDC46 */ "新幹線列車";
+    /* 0xDC47 */ "{ext push-colour}{gold}現代{ext pop-colour}新幹線列車";
+    /* 0xDC48 */ "地鐵列車";
+}
+// Record #128
+strings<RailTypes, zh_TW, 0xDC4B*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC4B */ "{ext push-colour}{yellow}都市{ext pop-colour}窄軌列車";
+    /* 0xDC4C */ "{ext push-colour}{yellow}都市{ext pop-colour}標準軌列車";
+    /* 0xDC4D */ "標準軌列車";
+}
+// Record #131
+strings<RailTypes, zh_TW, 0xDC50*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC50 */ "鐵路列車";
+}
+// Record #132
+strings<RailTypes, zh_TW, 0xDC54*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC54 */ "鐵路列車";
+}
+// Record #133
+strings<RailTypes, zh_TW, 0xDC56*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC56 */ "新幹線列車";
+}
+// Record #134
+strings<RailTypes, zh_TW, 0xDC58*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC58 */ "地鐵列車";
+}
+// Record #135
+strings<RailTypes, zh_TW, 0xDC59*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC59 */ "鐵路列車";
+}
+// Record #136
+label<0xF0> // Action10 - target for Action07 or Action09
+{
+}
+// Record #137
+if_act9 (is_not_equal(param[0x10] & 0xFF, 0x01)) // Action09
+{
+    skip_sprites: 0xF1;
+    // Or skip to the next label (Action10) with this value - search wraps at end of GRF.
+    // 0x00 means skip to end of GRF file - may disable the GRF.
+}
+// Record #138
+strings<RailTypes, zh_TW, 0xDC10*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC10 */ "支線鐵路";
+    /* 0xDC11 */ "主線鐵路";
+    /* 0xDC12 */ "{ext push-colour}{gold}現代{ext pop-colour}主線";
+    /* 0xDC13 */ "高速鐵路";
+    /* 0xDC14 */ "主線鐵路 (電氣化)";
+    /* 0xDC15 */ "{ext push-colour}{gold}現代{ext pop-colour}鐵路 (電氣化)";
+    /* 0xDC16 */ "高速鐵路 (電氣化)";
+    /* 0xDC17 */ "{ext push-colour}{gold}現代{ext pop-colour}高铁 (電氣化)";
+    /* 0xDC18 */ "主線鐵路 (第三軌)";
+    /* 0xDC19 */ "主線鐵路 (雙電氣化)";
+    /* 0xDC1A */ "{ext push-colour}{yellow}都市{ext pop-colour}鐵路 (電氣化)";
+    /* 0xDC1B */ "{ext push-colour}{yellow}都市{ext pop-colour}鐵路 (第三軌)";
+    /* 0xDC1C */ "窄軌鐵路";
+    /* 0xDC1D */ "窄軌鐵路 (電氣化)";
+}
+// Record #152
+strings<RailTypes, zh_TW, 0xDC20*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC20 */ "支線鐵路{white}";
+    /* 0xDC21 */ "主線鐵路{white}";
+    /* 0xDC22 */ "{ext push-colour}{gold}現代{ext pop-colour}主線{white}";
+    /* 0xDC23 */ "高速鐵路{white}";
+    /* 0xDC24 */ "主線鐵路 {lt-blue}(電氣化){white}";
+    /* 0xDC25 */ "{ext push-colour}{gold}現代{ext pop-colour}鐵路 {lt-blue}(電氣化){white}";
+    /* 0xDC26 */ "高速鐵路 {lt-blue}(電氣化){white}";
+    /* 0xDC27 */ "{ext push-colour}{gold}現代{ext pop-colour}高铁 {lt-blue}(電氣化){white}";
+    /* 0xDC28 */ "主線鐵路 {green}(第三軌){white}";
+    /* 0xDC29 */ "主線鐵路 {green}(雙{lt-blue}電氣化){white}";
+    /* 0xDC2A */ "{ext push-colour}{yellow}都市{ext pop-colour}鐵路 {lt-blue}(電氣化){white}";
+    /* 0xDC2B */ "{ext push-colour}{yellow}都市{ext pop-colour}鐵路 {green}(第三軌){white}";
+    /* 0xDC2C */ "窄軌鐵路{white}";
+    /* 0xDC2D */ "窄軌鐵路 {lt-blue}(電氣化){white}";
+}
+// Record #166
+strings<RailTypes, zh_TW, 0xDC30*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC30 */ "{white}新列車";
+    /* 0xDC31 */ "{white}新列車";
+    /* 0xDC32 */ "{white}新列車";
+    /* 0xDC33 */ "{white}新列車";
+    /* 0xDC34 */ "{white}新電氣化列車";
+    /* 0xDC35 */ "{white}新電氣化列車";
+    /* 0xDC36 */ "{white}新電氣化列車";
+    /* 0xDC37 */ "{white}新電氣化列車";
+    /* 0xDC38 */ "{white}新第三軌列車";
+    /* 0xDC39 */ "{white}新雙供電列車";
+    /* 0xDC3A */ "{white}新電氣化列車";
+    /* 0xDC3B */ "{white}新第三軌列車";
+    /* 0xDC3C */ "{white}新窄軌列車";
+    /* 0xDC3D */ "{white}新窄軌列車";
+}
+// Record #180
+strings<RailTypes, zh_TW, 0xDC40*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC40 */ "輕型列車";
+    /* 0xDC41 */ "鐵路列車";
+    /* 0xDC42 */ "{ext push-colour}{gold}現代{ext pop-colour}列車";
+    /* 0xDC43 */ "高速列車";
+    /* 0xDC44 */ "電氣化列車";
+    /* 0xDC45 */ "{ext push-colour}{gold}現代{ext pop-colour}電氣化列車";
+    /* 0xDC46 */ "電氣化高速列車";
+    /* 0xDC47 */ "{ext push-colour}{gold}現代{ext pop-colour}電氣化高速列車";
+    /* 0xDC48 */ "第三軌列車";
+    /* 0xDC49 */ "雙供電電氣化列車";
+    /* 0xDC4A */ "{ext push-colour}{yellow}都市{ext pop-colour}列車";
+    /* 0xDC4B */ "{ext push-colour}{yellow}都市{ext pop-colour}第三軌列車";
+    /* 0xDC4C */ "窄軌列車";
+    /* 0xDC4D */ "電氣化窄軌列車";
+}
+// Record #194
+strings<RailTypes, zh_TW, 0xDC50*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC50 */ "鐵路列車";
+}
+// Record #195
+strings<RailTypes, zh_TW, 0xDC53*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC53 */ "鐵路列車";
+}
+// Record #196
+strings<RailTypes, zh_TW, 0xDC5C*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC5C */ "鐵路列車";
+}
+// Record #197
+if_act9 (is_bit_set(param[0x11] & 0xFF, 1 << 1)) // Action09
+{
+    skip_sprites: 0x0C;
+    // Or skip to the next label (Action10) with this value - search wraps at end of GRF.
+    // 0x00 means skip to end of GRF file - may disable the GRF.
+}
+// Record #198
+strings<RailTypes, zh_TW, 0xDC11*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC11 */ "鐵路";
+}
+// Record #199
+strings<RailTypes, zh_TW, 0xDC14*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC14 */ "鐵路 (電氣化)";
+}
+// Record #200
+strings<RailTypes, zh_TW, 0xDC18*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC18 */ "鐵路 (第三軌)";
+}
+// Record #201
+strings<RailTypes, zh_TW, 0xDC19*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC19 */ "鐵路 (雙電氣化)";
+}
+// Record #202
+strings<RailTypes, zh_TW, 0xDC1C*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC1C */ "窄軌鐵路";
+}
+// Record #203
+strings<RailTypes, zh_TW, 0xDC1D*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC1D */ "窄軌鐵路 (電氣化)";
+}
+// Record #204
+strings<RailTypes, zh_TW, 0xDC21*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC21 */ "鐵路{white}";
+}
+// Record #205
+strings<RailTypes, zh_TW, 0xDC24*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC24 */ "鐵路 {lt-blue}(電氣化){white}";
+}
+// Record #206
+strings<RailTypes, zh_TW, 0xDC28*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC28 */ "鐵路 {green}(第三軌){white}";
+}
+// Record #207
+strings<RailTypes, zh_TW, 0xDC29*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC29 */ "鐵路 {green}(雙{lt-blue}電氣化){white}";
+}
+// Record #208
+strings<RailTypes, zh_TW, 0xDC2C*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC2C */ "窄軌鐵路{white}";
+}
+// Record #209
+strings<RailTypes, zh_TW, 0xDC2D*> // <feature, language, first_id> Action04, zh_TW
+{
+    /* 0xDC2D */ "窄軌鐵路 {lt-blue}(電氣化){white}";
 }
 // Record #210
 label<0xF1> // Action10 - target for Action07 or Action09

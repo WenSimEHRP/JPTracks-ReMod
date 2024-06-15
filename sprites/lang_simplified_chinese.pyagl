@@ -15,19 +15,19 @@ strings<RailTypes, zh_CN, 0xDC10*> // <feature, language, first_id> Action04, zh
     /* 0xDC10 */ "{white}窄轨铁路";
     /* 0xDC11 */ "{white}窄轨铁路";
     /* 0xDC12 */ "{white}窄轨铁路 (电气化)";
-    /* 0xDC13 */ "{white}现代窄轨 (电气化)";
+    /* 0xDC13 */ "{white}{ext push-colour}{gold}现代{ext pop-colour}窄轨 (电气化)";
     /* 0xDC14 */ "{white}准轨铁路 (电气化)";
-    /* 0xDC15 */ "{white}现代准轨 (电气化)";
+    /* 0xDC15 */ "{white}{ext push-colour}{gold}现代{ext pop-colour}准轨 (电气化)";
     /* 0xDC16 */ "{white}新干线高速铁路 (电气化)";
-    /* 0xDC17 */ "{white}现代新干线铁路 (电气化)";
+    /* 0xDC17 */ "{white}{ext push-colour}{gold}现代{ext pop-colour}新干线铁路 (电气化)";
     /* 0xDC18 */ "{white}准轨铁路 (第三轨)";
-    /* 0xDC19 */ "{white}都市准轨 (第三轨)";
+    /* 0xDC19 */ "{white}{ext push-colour}{yellow}都市{ext pop-colour}准轨 (第三轨)";
 }
 // Record #91
 strings<RailTypes, zh_CN, 0xDC1B*> // <feature, language, first_id> Action04, zh_CN
 {
-    /* 0xDC1B */ "{white}都市窄轨 (电气化)";
-    /* 0xDC1C */ "{white}都市准轨 (电气化)";
+    /* 0xDC1B */ "{white}{ext push-colour}{yellow}都市{ext pop-colour}窄轨 (电气化)";
+    /* 0xDC1C */ "{white}{ext push-colour}{yellow}都市{ext pop-colour}准轨 (电气化)";
     /* 0xDC1D */ "{white}准轨铁路";
 }
 // Record #94
@@ -36,19 +36,19 @@ strings<RailTypes, zh_CN, 0xDC20*> // <feature, language, first_id> Action04, zh
     /* 0xDC20 */ "窄轨铁路{white}";
     /* 0xDC21 */ "窄轨铁路{white}";
     /* 0xDC22 */ "窄轨铁路 {lt-blue}(电气化){white}";
-    /* 0xDC23 */ "现代窄轨 {lt-blue}(电气化){white}";
+    /* 0xDC23 */ "{ext push-colour}{gold}现代{ext pop-colour}窄轨 {lt-blue}(电气化){white}";
     /* 0xDC24 */ "准轨铁路 {lt-blue}(电气化){white}";
-    /* 0xDC25 */ "现代准轨 {lt-blue}(电气化){white}";
+    /* 0xDC25 */ "{ext push-colour}{gold}现代{ext pop-colour}准轨 {lt-blue}(电气化){white}";
     /* 0xDC26 */ "新干线高速铁路 {lt-blue}(电气化){white}";
-    /* 0xDC27 */ "现代新干线铁路 {lt-blue}(电气化){white}";
+    /* 0xDC27 */ "{ext push-colour}{gold}现代{ext pop-colour}新干线铁路 {lt-blue}(电气化){white}";
     /* 0xDC28 */ "准轨铁路 {green}(第三轨){white}";
-    /* 0xDC29 */ "都市准轨 {green}(第三轨){white}";
+    /* 0xDC29 */ "{ext push-colour}{yellow}都市{ext pop-colour}准轨 {green}(第三轨){white}";
 }
 // Record #104
 strings<RailTypes, zh_CN, 0xDC2B*> // <feature, language, first_id> Action04, zh_CN
 {
-    /* 0xDC2B */ "都市窄轨 {lt-blue}(电气化){white}";
-    /* 0xDC2C */ "都市准轨 {lt-blue}(电气化){white}";
+    /* 0xDC2B */ "{ext push-colour}{yellow}都市{ext pop-colour}窄轨 {lt-blue}(电气化){white}";
+    /* 0xDC2C */ "{ext push-colour}{yellow}都市{ext pop-colour}准轨 {lt-blue}(电气化){white}";
     /* 0xDC2D */ "准轨铁路{white}";
 }
 // Record #107
@@ -77,18 +77,18 @@ strings<RailTypes, zh_CN, 0xDC40*> // <feature, language, first_id> Action04, zh
     /* 0xDC40 */ "轻型窄轨列车";
     /* 0xDC41 */ "窄轨列车";
     /* 0xDC42 */ "电气化窄轨列车";
-    /* 0xDC43 */ "现代电气化窄轨列车";
+    /* 0xDC43 */ "{ext push-colour}{gold}现代{ext pop-colour}电气化窄轨列车";
     /* 0xDC44 */ "电气化准轨列车";
-    /* 0xDC45 */ "现代电气化准轨列车";
+    /* 0xDC45 */ "{ext push-colour}{gold}现代{ext pop-colour}电气化准轨列车";
     /* 0xDC46 */ "新干线列车";
-    /* 0xDC47 */ "现代新干线列车";
+    /* 0xDC47 */ "{ext push-colour}{gold}现代{ext pop-colour}新干线列车";
     /* 0xDC48 */ "地铁列车";
 }
 // Record #128
 strings<RailTypes, zh_CN, 0xDC4B*> // <feature, language, first_id> Action04, zh_CN
 {
-    /* 0xDC4B */ "都市窄轨列车";
-    /* 0xDC4C */ "都市准轨列车";
+    /* 0xDC4B */ "{ext push-colour}{yellow}都市{ext pop-colour}窄轨列车";
+    /* 0xDC4C */ "{ext push-colour}{yellow}都市{ext pop-colour}准轨列车";
     /* 0xDC4D */ "准轨列车";
 }
 // Record #131
@@ -132,16 +132,16 @@ strings<RailTypes, zh_CN, 0xDC10*> // <feature, language, first_id> Action04, zh
 {
     /* 0xDC10 */ "支线铁路";
     /* 0xDC11 */ "主线铁路";
-    /* 0xDC12 */ "现代主线";
+    /* 0xDC12 */ "{ext push-colour}{gold}现代{ext pop-colour}主线";
     /* 0xDC13 */ "高速铁路";
     /* 0xDC14 */ "主线铁路 (电气化)";
-    /* 0xDC15 */ "现代铁路 (电气化)";
+    /* 0xDC15 */ "{ext push-colour}{gold}现代{ext pop-colour}铁路 (电气化)";
     /* 0xDC16 */ "高速铁路 (电气化)";
-    /* 0xDC17 */ "现代高铁 (电气化)";
+    /* 0xDC17 */ "{ext push-colour}{gold}现代{ext pop-colour}高铁 (电气化)";
     /* 0xDC18 */ "主线铁路 (第三轨)";
     /* 0xDC19 */ "主线铁路 (双电气化)";
-    /* 0xDC1A */ "都市铁路 (电气化)";
-    /* 0xDC1B */ "都市铁路 (第三轨)";
+    /* 0xDC1A */ "{ext push-colour}{yellow}都市{ext pop-colour}铁路 (电气化)";
+    /* 0xDC1B */ "{ext push-colour}{yellow}都市{ext pop-colour}铁路 (第三轨)";
     /* 0xDC1C */ "窄轨铁路";
     /* 0xDC1D */ "窄轨铁路 (电气化)";
 }
@@ -150,16 +150,16 @@ strings<RailTypes, zh_CN, 0xDC20*> // <feature, language, first_id> Action04, zh
 {
     /* 0xDC20 */ "支线铁路{white}";
     /* 0xDC21 */ "主线铁路{white}";
-    /* 0xDC22 */ "现代主线{white}";
+    /* 0xDC22 */ "{ext push-colour}{gold}现代{ext pop-colour}主线{white}";
     /* 0xDC23 */ "高速铁路{white}";
     /* 0xDC24 */ "主线铁路 {lt-blue}(电气化){white}";
-    /* 0xDC25 */ "现代铁路 {lt-blue}(电气化){white}";
+    /* 0xDC25 */ "{ext push-colour}{gold}现代{ext pop-colour}铁路 {lt-blue}(电气化){white}";
     /* 0xDC26 */ "高速铁路 {lt-blue}(电气化){white}";
-    /* 0xDC27 */ "现代高铁 {lt-blue}(电气化){white}";
+    /* 0xDC27 */ "{ext push-colour}{gold}现代{ext pop-colour}高铁 {lt-blue}(电气化){white}";
     /* 0xDC28 */ "主线铁路 {green}(第三轨){white}";
     /* 0xDC29 */ "主线铁路 {green}(双{lt-blue}电气化){white}";
-    /* 0xDC2A */ "都市铁路 {lt-blue}(电气化){white}";
-    /* 0xDC2B */ "都市铁路 {green}(第三轨){white}";
+    /* 0xDC2A */ "{ext push-colour}{yellow}都市{ext pop-colour}铁路 {lt-blue}(电气化){white}";
+    /* 0xDC2B */ "{ext push-colour}{yellow}都市{ext pop-colour}铁路 {green}(第三轨){white}";
     /* 0xDC2C */ "窄轨铁路{white}";
     /* 0xDC2D */ "窄轨铁路 {lt-blue}(电气化){white}";
 }
@@ -186,16 +186,16 @@ strings<RailTypes, zh_CN, 0xDC40*> // <feature, language, first_id> Action04, zh
 {
     /* 0xDC40 */ "轻型列车";
     /* 0xDC41 */ "铁路列车";
-    /* 0xDC42 */ "现代列车";
+    /* 0xDC42 */ "{ext push-colour}{gold}现代{ext pop-colour}列车";
     /* 0xDC43 */ "高速列车";
     /* 0xDC44 */ "电气化列车";
-    /* 0xDC45 */ "现代电气化列车";
+    /* 0xDC45 */ "{ext push-colour}{gold}现代{ext pop-colour}电气化列车";
     /* 0xDC46 */ "电气化高速列车";
-    /* 0xDC47 */ "现代电气化高速列车";
+    /* 0xDC47 */ "{ext push-colour}{gold}现代{ext pop-colour}电气化高速列车";
     /* 0xDC48 */ "第三轨列车";
     /* 0xDC49 */ "双供电电气化列车";
-    /* 0xDC4A */ "都市列车";
-    /* 0xDC4B */ "都市第三轨列车";
+    /* 0xDC4A */ "{ext push-colour}{yellow}都市{ext pop-colour}列车";
+    /* 0xDC4B */ "{ext push-colour}{yellow}都市{ext pop-colour}第三轨列车";
     /* 0xDC4C */ "窄轨列车";
     /* 0xDC4D */ "电气化窄轨列车";
 }
