@@ -13,7 +13,7 @@ GitHub archive: [github.com](https://github.com/WenSimEHRP/jptracks-5867-source)
 - Changed track and tunnel sprites
 - Changed minimum version requirement to OpenTTD 12.0
 - Improved GUI (WIP)
-- Wideeeeeeer ballast
+- Wiiiiiider ballast
 
 ## Building
 
@@ -54,3 +54,7 @@ Dandan, stevenh
 
 Modification by:\
 WenSim
+
+Translation by:\
+WenSim\
+Keihoku
