@@ -1,0 +1,292 @@
+ignore // Action0C
+{
+    "This is the start of this language file.";
+}
+// Record #80
+if_act9 (is_equal(param[0x10] & 0xFF, 0x01)) // Action09
+{
+    skip_sprites: 0xF0;
+    // Or skip to the next label (Action10) with this value - search wraps at end of GRF.
+    // 0x00 means skip to end of GRF file - may disable the GRF.
+}
+// Record #33
+strings<RailTypes, ja_JP, 0xDC10*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC10 */ "{white}狭軌線路";
+    /* 0xDC11 */ "{white}狭軌線路";
+    /* 0xDC12 */ "{white}狭軌線路(電化)";
+    /* 0xDC13 */ "{white}現代的な狭軌線路(電化)";
+    /* 0xDC14 */ "{white}標準軌線路(電化)";
+    /* 0xDC15 */ "{white}現代的な標準軌線路(電化)";
+    /* 0xDC16 */ "{white}新幹線線路(電化)";
+    /* 0xDC17 */ "{white}現代的な新幹線線路(電化)";
+    /* 0xDC18 */ "{white}標準軌線路(第三軌条)";
+    /* 0xDC19 */ "{white}標準軌都市線路(第三軌条)";
+}
+
+strings<RailTypes, ja_JP, 0xDC1B*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC1B */ "{white}狭軌都市線路(電化)";
+    /* 0xDC1C */ "{white}標準軌都市線路(電化)";
+    /* 0xDC1D */ "{white}標準軌線路";
+}
+// Record #46
+strings<RailTypes, ja_JP, 0xDC20*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC20 */ "狭軌線路{white}";
+    /* 0xDC21 */ "狭軌線路{white}";
+    /* 0xDC22 */ "狭軌線路 {lt-blue}(電化){white}";
+    /* 0xDC23 */ "現代的な狭軌線路 {lt-blue}(電化){white}";
+    /* 0xDC24 */ "標準軌線路 {lt-blue}(電化){white}";
+    /* 0xDC25 */ "現代的な標準軌線路 {lt-blue}(電化){white}";
+    /* 0xDC26 */ "新幹線線路 {lt-blue}(電化){white}";
+    /* 0xDC27 */ "現代的な新幹線線路 {lt-blue}(電化){white}";
+    /* 0xDC28 */ "標準軌線路 {green}(第三軌条){white}";
+    /* 0xDC29 */ "標準軌都市線路 {green}(第三軌条){white}";
+}
+
+strings<RailTypes, ja_JP, 0xDC2B*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC2B */ "狭軌都市線路 {lt-blue}(電化){white}";
+    /* 0xDC2C */ "標準軌都市線路 {lt-blue}(電化){white}";
+    /* 0xDC2D */ "標準軌線路{white}";
+}
+// Record #59
+strings<RailTypes, ja_JP, 0xDC30*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC30 */ "{white}狭軌車両(非電化)を購入";
+    /* 0xDC31 */ "{white}狭軌車両(非電化)を購入";
+    /* 0xDC32 */ "{white}狭軌車両(電化/非電化)を購入";
+    /* 0xDC33 */ "{white}狭軌車両(電化/非電化)を購入";
+    /* 0xDC34 */ "{white}標準軌車両(電化/非電化)を購入";
+    /* 0xDC35 */ "{white}標準軌車両(電化/非電化)を購入";
+    /* 0xDC36 */ "{white}新幹線車両を購入";
+    /* 0xDC37 */ "{white}新幹線車両を購入";
+    /* 0xDC38 */ "{white}第三軌条式電車を購入";
+}
+// Record #68
+strings<RailTypes, ja_JP, 0xDC3B*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC3B */ "{white}狭軌車両(電化/非電化)を購入";
+    /* 0xDC3C */ "{white}標準軌車両(電化/非電化)を購入";
+    /* 0xDC3D */ "{white}標準軌車両(非電化)を購入";
+}
+// Record #71
+strings<RailTypes, ja_JP, 0xDC40*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC40 */ "軽便鉄道";
+    /* 0xDC41 */ "狭軌列車";
+    /* 0xDC42 */ "狭軌電車";
+    /* 0xDC43 */ "現代的な狭軌電車";
+    /* 0xDC44 */ "標準軌電車";
+    /* 0xDC45 */ "現代的な標準軌電車";
+    /* 0xDC46 */ "新幹線";
+    /* 0xDC47 */ "現代的な新幹線";
+    /* 0xDC48 */ "地下鉄";
+}
+// Record #80
+strings<RailTypes, ja_JP, 0xDC4B*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC4B */ "狭軌都市列車";
+    /* 0xDC4C */ "標準軌都市列車";
+    /* 0xDC4D */ "標準軌列車";
+}
+// Record #83
+strings<RailTypes, ja_JP, 0xDC50*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC50 */ "鉄道車両";
+}
+// Record #84
+strings<RailTypes, ja_JP, 0xDC54*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC54 */ "鉄道車両";
+}
+// Record #85
+strings<RailTypes, ja_JP, 0xDC56*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC56 */ "新幹線";
+}
+// Record #86
+strings<RailTypes, ja_JP, 0xDC58*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC58 */ "地下鉄";
+}
+
+strings<RailTypes, ja_JP, 0xDC59*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC59 */ "鉄道車両";
+}
+// Record #88
+label<0xF0> // Action10 - target for Action07 or Action09
+{
+}
+// Record #89
+if_act9 (is_not_equal(param[0x10] & 0xFF, 0x01)) // Action09
+{
+    skip_sprites: 0xF1;
+    // Or skip to the next label (Action10) with this value - search wraps at end of GRF.
+    // 0x00 means skip to end of GRF file - may disable the GRF.
+}
+// Record #90
+strings<RailTypes, ja_JP, 0xDC10*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC10 */ "支線";
+    /* 0xDC11 */ "本線";
+    /* 0xDC12 */ "高規格本線";
+    /* 0xDC13 */ "高速線";
+    /* 0xDC14 */ "本線 (電化)";
+    /* 0xDC15 */ "高規格本線 (電化)";
+    /* 0xDC16 */ "高速線 (電化)";
+    /* 0xDC17 */ "新幹線 (電化)";
+    /* 0xDC18 */ "本線 (第三軌条)";
+    /* 0xDC19 */ "本線 (架線・第三軌条 電化)";
+    /* 0xDC1A */ "都市線 (電化)";
+    /* 0xDC1B */ "都市線 (3rd rail powered)";
+    /* 0xDC1C */ "狭軌本線";
+    /* 0xDC1D */ "狭軌本線 (電化)";
+}
+// Record #104
+strings<RailTypes, ja_JP, 0xDC20*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC20 */ "支線{white}";
+    /* 0xDC21 */ "本線{white}";
+    /* 0xDC22 */ "高規格本線{white}";
+    /* 0xDC23 */ "高速線{white}";
+    /* 0xDC24 */ "本線 {lt-blue}(電化){white}";
+    /* 0xDC25 */ "高規格本線 {lt-blue}(電化){white}";
+    /* 0xDC26 */ "高速線 {lt-blue}(電化){white}";
+    /* 0xDC27 */ "新幹線 {lt-blue}(電化){white}";
+    /* 0xDC28 */ "本線 {green}(第三軌条){white}";
+    /* 0xDC29 */ "本線 {green}(架線・第三軌条 {lt-blue}電化){white}";
+    /* 0xDC2A */ "都市線 {lt-blue}(電化){white}";
+    /* 0xDC2B */ "都市線 {green}(3rd rail powered){white}";
+    /* 0xDC2C */ "狭軌本線{white}";
+    /* 0xDC2D */ "狭軌本線 {lt-blue}(電化){white}";
+}
+// Record #118
+strings<RailTypes, ja_JP, 0xDC30*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC30 */ "{white}鉄道車両を購入";
+    /* 0xDC31 */ "{white}鉄道車両を購入";
+    /* 0xDC32 */ "{white}鉄道車両を購入";
+    /* 0xDC33 */ "{white}鉄道車両を購入";
+    /* 0xDC34 */ "{white}電車を購入";
+    /* 0xDC35 */ "{white}電車を購入";
+    /* 0xDC36 */ "{white}電車を購入";
+    /* 0xDC37 */ "{white}電車を購入";
+    /* 0xDC38 */ "{white}第三軌条式電車を購入";
+    /* 0xDC39 */ "{white}電車を購入";
+    /* 0xDC3A */ "{white}電車を購入";
+    /* 0xDC3B */ "{white}第三軌条式電車を購入";
+    /* 0xDC3C */ "{white}狭軌鉄道車両を購入";
+    /* 0xDC3D */ "{white}狭軌鉄道車両を購入";
+}
+// Record #132
+strings<RailTypes, ja_JP, 0xDC40*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC40 */ "軽便鉄道";
+    /* 0xDC41 */ "鉄道車両";
+    /* 0xDC42 */ "近代的な鉄道車両";
+    /* 0xDC43 */ "高速鉄道車両";
+    /* 0xDC44 */ "電車";
+    /* 0xDC45 */ "近代的な電車";
+    /* 0xDC46 */ "新幹線";
+    /* 0xDC47 */ "新幹線";
+    /* 0xDC48 */ "第三軌条式電車を購入";
+    /* 0xDC49 */ "電車";
+    /* 0xDC4A */ "通勤電車";
+    /* 0xDC4B */ "第三軌条式通勤電車";
+    /* 0xDC4C */ "狭軌列車";
+    /* 0xDC4D */ "狭軌電車";
+}
+// Record #146
+strings<RailTypes, ja_JP, 0xDC50*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC50 */ "鉄道車両";
+}
+// Record #147
+strings<RailTypes, ja_JP, 0xDC53*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC53 */ "鉄道車両";
+}
+// Record #148
+strings<RailTypes, ja_JP, 0xDC5C*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC5C */ "鉄道車両";
+}
+// Record #149
+if_act9 (is_bit_set(param[0x11] & 0xFF, 1 << 1)) // Action09
+{
+    skip_sprites: 0x0C;
+    // Or skip to the next label (Action10) with this value - search wraps at end of GRF.
+    // 0x00 means skip to end of GRF file - may disable the GRF.
+}
+// Record #150
+strings<RailTypes, ja_JP, 0xDC11*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC11 */ "鉄道";
+}
+// Record #151
+strings<RailTypes, ja_JP, 0xDC14*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC14 */ "鉄道 (電化)";
+}
+// Record #152
+strings<RailTypes, ja_JP, 0xDC18*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC18 */ "鉄道 (第三軌条)";
+}
+
+strings<RailTypes, ja_JP, 0xDC1B*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC19 */ "鉄道 (架線・第三軌条 電化)";
+}
+// Record #154
+strings<RailTypes, ja_JP, 0xDC1C*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC1C */ "狭軌鉄道";
+}
+
+strings<RailTypes, ja_JP, 0xDC1D*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC1D */ "狭軌鉄道 (電化)";
+}
+// Record #156
+strings<RailTypes, ja_JP, 0xDC21*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC21 */ "鉄道{white}";
+}
+// Record #157
+strings<RailTypes, ja_JP, 0xDC24*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC24 */ "鉄道 {lt-blue}(電化){white}";
+}
+// Record #158
+strings<RailTypes, ja_JP, 0xDC28*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC28 */ "鉄道 {green}(第三軌条){white}";
+}
+
+strings<RailTypes, ja_JP, 0xDC29*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC29 */ "鉄道 {green}(架線・第三軌条 {lt-blue}電化){white}";
+}
+// Record #160
+strings<RailTypes, ja_JP, 0xDC2C*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC2C */ "狭軌鉄道{white}";
+}
+
+strings<RailTypes, ja_JP, 0xDC2D*> // <feature, language, first_id> Action04, ja_JP
+{
+    /* 0xDC2D */ "狭軌鉄道 {lt-blue}(電化){white}";
+}
+// Record #162
+label<0xF1> // Action10 - target for Action07 or Action09
+{
+}
+
+ignore // Action0C
+{
+    "This is the end of this language file.";
+}

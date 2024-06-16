@@ -3,7 +3,6 @@
 Original NFO source code: [bundles.openttdcoop.org](https://bundles.openttdcoop.org/jptracks/nightlies/LATEST/)\
 GitHub archive: [github.com](https://github.com/WenSimEHRP/jptracks-5867-source)
 
-
 ## Difference with JP3 Tracks
 
 - Removed TTD GUI
@@ -57,4 +56,5 @@ WenSim
 
 Translation by:\
 WenSim\
-Keihoku
+Keihoku\
+Taiyakey (taiyarkey0508)

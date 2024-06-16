@@ -18,6 +18,7 @@ optional_info // Action14
 {new-line}翻译：\
 {new-line}{lt-blue}WenSim{black}\
 {new-line}{lt-blue}Keihoku{black}\
+{new-line}{lt-blue}Taiyakey{black}\
 ";
         NAME: zh_TW, "Japan Set3: 軌道 {ext push-colour}{white}weMOD{ext pop-colour}"; // Chinese (Traditional)
         DESC: zh_TW, "\
@@ -34,6 +35,7 @@ optional_info // Action14
 {new-line}翻譯：\
 {new-line}{lt-blue}Keihoku{black}\
 {new-line}{lt-blue}WenSim{black}\
+{new-line}{lt-blue}Taiyakey{black}\
 ";
         VRSN: [ 0x01 0x00 0x00 0x00 ];
         MINV: [ 0x01 0x00 0x00 0x00 ];
@@ -285,6 +287,7 @@ grf // Action08
 {new-line}Translation by:\
 {new-line}{lt-blue}WenSim{black}\
 {new-line}{lt-blue}Keihoku{black}\
+{new-line}{lt-blue}Taiyakey{black}\
 ";
 }
 // Record #10
