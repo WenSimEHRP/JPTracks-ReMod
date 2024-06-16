@@ -1,16 +1,14 @@
-ignore
-{
-    "start of wemod extra railtypes file";
-}
+ignore{"start of wemod extra railtypes file";}
 
 if_act9 (is_not_equal(param[0x0B] & 0xFF, 0x01))
 {
     skip_sprites: 0xFF; // skip to label 0xFF
 }
-ignore
-{
-    "start of wemod extra railtypes strings";
-}
+
+ignore{"start of extra sprites";}
+
+ignore{"start of wemod extra railtypes strings";}
+
 strings<RailTypes, default, 0xDC60*>
 {
     /* 0xDC60 */ "Narrow gauge urban line";
@@ -30,10 +28,8 @@ strings<RailTypes, default, 0xDC60*>
     /* 0xDC6E */ "Standard gauge line (dual electrified)";
     /* 0xDC6F */ "Standard gauge urban line (dual electrified)";
 }
-ignore
-{
-    "end of wemod extra railtypes strings";
-}
+ignore{"end of wemod extra railtypes strings";}
+
 properties<RailTypes, 0x0010> // Action00
 {
     {
@@ -43,38 +39,62 @@ properties<RailTypes, 0x0010> // Action00
         window_caption_id:      0xDC60;
         autoreplace_text_id:    0xDC60;
         new_engine_text_id:     0xDC60;
+        introduction_date:      date(1950/1/1);
         compatible_railtypes:   [ "NABN" "NABE" "NACE" "NUBE" ];
         powered_railtypes:      [ "NABN" "NABE" "NACE" "NUBE" ];
-        railtype_flags:         0x00;
+        railtype_flags:         0x00;           // no flags!
         curve_speed_multiplier: 0x00;
-        station_graphics:       0x00;
-        speed_limit:            0x0050;
+        station_graphics:       0x00;           // default station graphics
+        speed_limit:            120;
         acceleration_model:     0x00;
         minimap_colour:         0x0D;
         required_railtypes:     [ ];
         introduced_railtypes:   [ ];
-        sort_order:             0x10;
+        //sort_order:             0x10;
         alternate_railtypes:    [ "NAaN" "NBaN" "NBAN" ];
     }
 }
 // we use action03s to link the railtype graphics
 
+/* TODO here are the sprites for the fences
+ * Action03 hex id
+ * 0xA0 = country fences
+ * 0xA1 = chain link fences (fences used for normal tracks)
+ * 0xA5 = urban fences
+ * 0xA9 = shinkansen fences
+ */
+
+// for action03
+#define FENCE_COUNTRY        0xA0
+#define FENCE_CHAINLINK      0xA1
+#define FENCE_URBAN          0xA5
+#define FENCE_SHINKANSEN     0xA9
+
+//
+#define TRACK_URBAN          0xC8
+#define TRACK_URBAN_OVERLAY  0xC1
+
 feature_graphics<RailTypes> // Action03
 {
-    default_set_id: 0x00C0;
+    default_set_id: FENCE_URBAN;
     feature_ids: [ 0x0010 ];
     cargo_types:
     {
         // <cargo_type>: <cargo_id>;
-        SPRITE_RAILTYPE_GUI: 0x00C0;
+        SPRITE_RAILTYPE_GUI:        0x00C0;
+        SPRITE_RAILTYPE_BRIDGE:     0x00C1;
+        SPRITE_RAILTYPE_FENCE:      FENCE_URBAN;
+        SPRITE_RAILTYPE_OVERLAY:    TRACK_URBAN_OVERLAY;
+        SPRITE_RAILTYPE_UNDERLAY:   TRACK_URBAN;
+        //SPRITE_RAILTYPE_TUNNEL:
+        //SPRITE_RAILTYPE_WIRE:
+        //SPRITE_RAILTYPE_PYLON:
+        //SPRITE_RAILTYPE_LEVEL_CROSSING:
+        //SPRITE_RAILTYPE_DEPOT:
+        //SPRITE_RAILTYPE_FENCE:
+        //SPRITE_RAILTYPE_TUNNEL_OVERLAY:
     };
 }
 
-label<0xFE>
-{
-}
-
-ignore
-{
-    "end of wemod extra railtypes file";
-}
+label<0xFE>{}
+ignore{"end of wemod extra railtypes file";}

@@ -40967,8 +40967,11 @@ if_act9 (is_equal(param[0x09] & 0xFF, 0x00)) // Action09
 }
 // Record #2380
 /* TODO here are the sprites for the fences
- * 0x0000, 0xA0 = country fences
- * 0x0001, 0xA1 = chain link fences (fences used for normal tracks)
+ * Action03 hex id
+ * 0xA0 = country fences
+ * 0xA1 = chain link fences (fences used for normal tracks)
+ * 0xA5 = urban fences
+ * 0xA9 = shinkansen fences
  */
 sprite_sets<RailTypes, 0x0000> // <feature, first_set> Action01
 {
@@ -43545,3 +43548,5 @@ feature_graphics<RailTypes> // Action03
 label<0xD0> // Action10 - target for Action07 or Action09
 {
 }
+
+#include "./extra_tracks.pyagl"
