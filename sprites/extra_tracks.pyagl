@@ -7,29 +7,67 @@ if_act9 (is_not_equal(param[0x0B] & 0xFF, 0x01))
 {
     skip_sprites: 0xFF; // skip to label 0xFF
 }
-
+ignore
+{
+    "start of wemod extra railtypes strings";
+}
+strings<RailTypes, default, 0xDC60*>
+{
+    /* 0xDC60 */ "Narrow gauge urban line";
+    /* 0xDC61 */ "Narrow gauge modern urban line (electrified)";\
+    /* 0xDC62 */ "Shinkansen urban line (electrified)";
+    /* 0xDC63 */ "Dual-Gauge Line";
+    /* 0xDC64 */ "Dual-Gauge Line (electrified)";
+    /* 0xDC65 */ "Dual-Gauge Line (3rd rail powered)";
+    /* 0xDC66 */ "Dual-Gauge Urban Line (electrified)";
+    /* 0xDC67 */ "Dual-Gauge Urban Line (3rd rail powered)";
+    /* 0xDC68 */ "Dual-Gauge Line (dual electrified)";
+    /* 0xDC69 */ "Dual-Gauge Urban Line (dual electrified)";
+    /* 0xDC6A */ "Empty dirt ground (Trackless)";
+    /* 0xDC6B */ "Empty urban ground (Trackless)";
+    /* 0xDC6C */ "Empty gravel ground (Trackless)";
+    /* 0xDC6D */ "Empty reinforced ground (Trackless)";
+    /* 0xDC6E */ "Standard gauge line (dual electrified)";
+    /* 0xDC6F */ "Standard gauge urban line (dual electrified)";
+}
+ignore
+{
+    "end of wemod extra railtypes strings";
+}
 properties<RailTypes, 0x0010> // Action00
 {
     {
-        railtype_label: "NAAN";
-        toolbar_caption_id: 0xDC10;
-        dropdown_text_id: 0xDC20;
-        window_caption_id: 0xDC30;
-        autoreplace_text_id: 0xDC40;
-        new_engine_text_id: 0xDC50;
-        compatible_railtypes: [ "NABN" "NABE" "NACE" "NUBE" ];
-        powered_railtypes: [ "NABN" "NABE" "NACE" "NUBE" ];
-        railtype_flags: 0x00;
+        railtype_label:         "NAAN";
+        toolbar_caption_id:     0xDC60;
+        dropdown_text_id:       0xDC60;
+        window_caption_id:      0xDC60;
+        autoreplace_text_id:    0xDC60;
+        new_engine_text_id:     0xDC60;
+        compatible_railtypes:   [ "NABN" "NABE" "NACE" "NUBE" ];
+        powered_railtypes:      [ "NABN" "NABE" "NACE" "NUBE" ];
+        railtype_flags:         0x00;
         curve_speed_multiplier: 0x00;
-        station_graphics: 0x00;
-        speed_limit: 0x0050;
-        acceleration_model: 0x00;
-        minimap_colour: 0x0D;
-        required_railtypes: [ ];
-        introduced_railtypes: [ ];
-        sort_order: 0x10;
-        alternate_railtypes: [ "NAaN" "NBaN" "NBAN" ];
+        station_graphics:       0x00;
+        speed_limit:            0x0050;
+        acceleration_model:     0x00;
+        minimap_colour:         0x0D;
+        required_railtypes:     [ ];
+        introduced_railtypes:   [ ];
+        sort_order:             0x10;
+        alternate_railtypes:    [ "NAaN" "NBaN" "NBAN" ];
     }
+}
+// we use action03s to link the railtype graphics
+
+feature_graphics<RailTypes> // Action03
+{
+    default_set_id: 0x00C0;
+    feature_ids: [ 0x0010 ];
+    cargo_types:
+    {
+        // <cargo_type>: <cargo_id>;
+        SPRITE_RAILTYPE_GUI: 0x00C0;
+    };
 }
 
 label<0xFE>

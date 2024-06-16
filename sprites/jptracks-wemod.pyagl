@@ -9,10 +9,9 @@ ignore // Action0C
     Adding translations in NFO is just a pain, and YAGL is a gamechanger.{new-line}
     ";
 }
-// Record #1
+#include "./defines.pyagl"
 #include "./checks.pyagl"
 #include "./header.pyagl"
-// Record #21
 if_act9 (is_not_equal(param[0x00] & 0xFF, 0x00)) // Action09
 {
     skip_sprites: 0x01;
@@ -40967,6 +40966,10 @@ if_act9 (is_equal(param[0x09] & 0xFF, 0x00)) // Action09
     // 0x00 means skip to end of GRF file - may disable the GRF.
 }
 // Record #2380
+/* TODO here are the sprites for the fences
+ * 0x0000, 0xA0 = country fences
+ * 0x0001, 0xA1 = chain link fences (fences used for normal tracks)
+ */
 sprite_sets<RailTypes, 0x0000> // <feature, first_set> Action01
 {
     sprite_set // 0x0000
