@@ -141,7 +141,7 @@ strings<RailTypes, ja_JP, 0xDC10*> // <feature, language, first_id> Action04, ja
     /* 0xDC18 */ "本線 (第三軌条)";
     /* 0xDC19 */ "本線 (架線・第三軌条 電化)";
     /* 0xDC1A */ "都市線 (電化)";
-    /* 0xDC1B */ "都市線 (3rd rail powered)";
+    /* 0xDC1B */ "都市線 (第三軌条)";
     /* 0xDC1C */ "狭軌本線";
     /* 0xDC1D */ "狭軌本線 (電化)";
 }
