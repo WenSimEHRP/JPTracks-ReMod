@@ -37,7 +37,7 @@ optional_info // Action14
 ";
         VRSN: [ 0x01 0x00 0x00 0x00 ];
         MINV: [ 0x01 0x00 0x00 0x00 ];
-        NPAR: [ 0x0B ];
+        NPAR: [ 0x0C ];
         PALS: [ 0x44 ];
         PARA: 
         {
@@ -250,6 +250,18 @@ optional_info // Action14
                     0x00000001: default, "{red}OpenGFX"; // Default
                 }
             }
+            0x0000000B:
+            {
+                DFLT: [ 0x01 0x00 0x00 0x00 ];
+                LIMI: [ 0x00 0x00 0x00 0x00 0x01 0x00 0x00 0x00 ];
+                TYPE: [ 0x01 ];
+                NAME: default, "Use weMOD extra tracks"; // Default
+                DESC: default, "Use weMOD extra tracks if this option is enabled."; // Default
+                NAME: zh_CN, "使用 weMOD 额外轨道"; // Chinese (Simplified)
+                DESC: zh_CN, "如果启用此选项，则使用 weMOD 额外轨道。"; // Chinese (Simplified)
+                NAME: zh_TW, "使用 weMOD 額外軌道"; // Chinese (Traditional)
+                DESC: zh_TW, "如果啟用此選項，則使用 weMOD 額外軌道。"; // Chinese (Traditional)
+            }
         }
     }
 }
@@ -274,4 +286,111 @@ grf // Action08
 {new-line}{lt-blue}WenSim{black}\
 {new-line}{lt-blue}Keihoku{black}\
 ";
+}
+// Record #10
+set_parameter // Action0D
+{
+    target: 0x00;
+    operation: 0x80;
+    source1: 0xFF;
+    source2: 0x00;
+    data_value: 0x00000000;
+}
+// Record #11
+set_parameter // Action0D
+{
+    target: 0x01;
+    operation: 0x80;
+    source1: 0xFF;
+    source2: 0x00;
+    data_value: 0x00000000;
+}
+// Record #12
+set_parameter // Action0D
+{
+    target: 0x02;
+    operation: 0x80;
+    source1: 0xFF;
+    source2: 0x00;
+    data_value: 0x00000000;
+}
+// Record #13
+set_parameter // Action0D
+{
+    target: 0x03;
+    operation: 0x80;
+    source1: 0xFF;
+    source2: 0x02;
+    data_value: 0x00000000;
+}
+// Record #14
+set_parameter // Action0D
+{
+    target: 0x04;
+    operation: 0x80;
+    source1: 0xFF;
+    source2: 0x02;
+    data_value: 0x00000000;
+}
+// Record #15
+set_parameter // Action0D
+{
+    target: 0x05;
+    operation: 0x80;
+    source1: 0xFF;
+    source2: 0x01;
+    data_value: 0x00000000;
+}
+// Record #16
+set_parameter // Action0D
+{
+    target: 0x06;
+    operation: 0x80;
+    source1: 0xFF;
+    source2: 0x01;
+    data_value: 0x00000000;
+}
+// Record #17
+set_parameter // Action0D
+{
+    target: 0x07;
+    operation: 0x80;
+    source1: 0xFF;
+    source2: 0x01;
+    data_value: 0x00000000;
+}
+// Record #18
+set_parameter // Action0D
+{
+    target: 0x08;
+    operation: 0x80;
+    source1: 0xFF;
+    source2: 0x03;
+    data_value: 0x00000000;
+}
+// Record #19
+set_parameter // Action0D
+{
+    target: 0x09;
+    operation: 0x80;
+    source1: 0xFF;
+    source2: 0x01;
+    data_value: 0x00000000;
+}
+// Record #20
+set_parameter // Action0D
+{
+    target: 0x0A;
+    operation: 0x80;
+    source1: 0xFF;
+    source2: 0x00;
+    data_value: 0x00000000;
+}
+set_parameter // Action0D
+{
+    target: 0x0B;
+    operation: 0x80;
+    source1: 0xFF;
+    source2: 0x01;
+    data_value: 0x00000000;
 }

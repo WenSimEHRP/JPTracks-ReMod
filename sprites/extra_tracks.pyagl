@@ -1,0 +1,42 @@
+ignore
+{
+    "start of wemod extra railtypes file";
+}
+
+if_act9 (is_not_equal(param[0x0B] & 0xFF, 0x01))
+{
+    skip_sprites: 0xFF; // skip to label 0xFF
+}
+
+properties<RailTypes, 0x0010> // Action00
+{
+    {
+        railtype_label: "NAAN";
+        toolbar_caption_id: 0xDC10;
+        dropdown_text_id: 0xDC20;
+        window_caption_id: 0xDC30;
+        autoreplace_text_id: 0xDC40;
+        new_engine_text_id: 0xDC50;
+        compatible_railtypes: [ "NABN" "NABE" "NACE" "NUBE" ];
+        powered_railtypes: [ "NABN" "NABE" "NACE" "NUBE" ];
+        railtype_flags: 0x00;
+        curve_speed_multiplier: 0x00;
+        station_graphics: 0x00;
+        speed_limit: 0x0050;
+        acceleration_model: 0x00;
+        minimap_colour: 0x0D;
+        required_railtypes: [ ];
+        introduced_railtypes: [ ];
+        sort_order: 0x10;
+        alternate_railtypes: [ "NAaN" "NBaN" "NBAN" ];
+    }
+}
+
+label<0xFE>
+{
+}
+
+ignore
+{
+    "end of wemod extra railtypes file";
+}
