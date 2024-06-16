@@ -9,10 +9,13 @@ GitHub archive: [github.com](https://github.com/WenSimEHRP/jptracks-5867-source)
 - Improved tracks fences
 - Added extra translations
   - Simplified Chinese
+  - Traditional Chinese
+  - Japanese
 - Changed track and tunnel sprites
 - Changed minimum version requirement to OpenTTD 12.0
 - Improved GUI (WIP)
-- Wiiiiiider ballast
+- Added Wiiiiiider ballast
+- Added extra railtype (WIP)
 
 ## Building
 
