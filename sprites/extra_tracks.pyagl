@@ -12,7 +12,7 @@ ignore{"start of wemod extra railtypes strings";}
 strings<RailTypes, default, 0xDC60*>
 {
     /* 0xDC60 */ "Narrow gauge urban line";
-    /* 0xDC61 */ "Narrow gauge modern urban line (electrified)";\
+    /* 0xDC61 */ "Narrow gauge modern urban line (electrified)";
     /* 0xDC62 */ "Shinkansen urban line (electrified)";
     /* 0xDC63 */ "Dual-Gauge Line";
     /* 0xDC64 */ "Dual-Gauge Line (electrified)";
@@ -45,7 +45,7 @@ properties<RailTypes, 0x0010> // Action00
         railtype_flags:         0x00;           // no flags!
         curve_speed_multiplier: 0x00;
         station_graphics:       0x00;           // default station graphics
-        speed_limit:            120;
+        speed_limit:            120;            // 120 km/h
         acceleration_model:     0x00;
         minimap_colour:         0x0D;
         required_railtypes:     [ ];
@@ -64,14 +64,12 @@ properties<RailTypes, 0x0010> // Action00
  * 0xA9 = shinkansen fences
  */
 
-// for action03
+// for action03, those are action02 ids
 #define FENCE_COUNTRY        0xA0
 #define FENCE_CHAINLINK      0xA1
 #define FENCE_URBAN          0xA5
 #define FENCE_SHINKANSEN     0xA9
 
-//
-#define TRACK_URBAN          0xC8
 #define TRACK_URBAN_OVERLAY  0xC1
 
 feature_graphics<RailTypes> // Action03
@@ -85,7 +83,7 @@ feature_graphics<RailTypes> // Action03
         SPRITE_RAILTYPE_BRIDGE:     0x00C1;
         SPRITE_RAILTYPE_FENCE:      FENCE_URBAN;
         SPRITE_RAILTYPE_OVERLAY:    TRACK_URBAN_OVERLAY;
-        SPRITE_RAILTYPE_UNDERLAY:   TRACK_URBAN;
+        SPRITE_RAILTYPE_UNDERLAY:   TRACK_NARROW_URBAN;
         //SPRITE_RAILTYPE_TUNNEL:
         //SPRITE_RAILTYPE_WIRE:
         //SPRITE_RAILTYPE_PYLON:

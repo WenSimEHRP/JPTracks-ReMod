@@ -14561,6 +14561,15 @@ switch<RailTypes, 0xD4, PrimaryByte> // Action02 variable
     };
     default: 0x00AB;
 }
+ignore{"persistant action02 storage for extra railtypes";}
+switch<RailTypes, TRACK_NARROW_URBAN, PrimaryByte> // Action02 variable
+{
+    expression:{value1 = variable[0x40] & 0x000000FF;};// for snow
+    ranges:{0x00000004: 0x00B9;};
+    default: 0x00AB;
+}
+
+
 // Record #884
 sprite_sets<RailTypes, 0x0000> // <feature, first_set> Action01
 {
