@@ -1,8 +1,8 @@
 ignore{"start of wemod extra railtypes file";}
 
-if_act9 (is_not_equal(param[0x0B] & 0xFF, 0x01))
+if_act9 (is_not_equal(param[0x0A] & 0xFF, 0x01))
 {
-    skip_sprites: 0xFF; // skip to label 0xFF
+    skip_sprites: 0xFE; // skip to label 0xFE
 }
 
 ignore{"start of extra sprites";}
