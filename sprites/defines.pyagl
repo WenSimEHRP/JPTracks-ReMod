@@ -1,3 +1,4 @@
+// rail sprite ids used in action03
 #define SPRITE_RAILTYPE_GUI             0x00
 #define SPRITE_RAILTYPE_OVERLAY         0x01
 #define SPRITE_RAILTYPE_UNDERLAY        0x02
@@ -12,4 +13,20 @@
 #define SPRITE_RAILTYPE_SIGNAL          0x0B
 #define SPRITE_RAILTYPE_PRECOMBINED     0x0C
 
+// action03 ids, we don't want each of them to be identical
 #define TRACK_NARROW_URBAN              0x10
+#define TRACK_STANDARD_URBAN_3RD        0x11
+#define TRACK_TRACKLESS_REINFORCED      0x12
+#define TRACK_TRACKLESS_DIRT            0x13
+#define TRACK_FENCE_COUNTRY             0x14
+#define TRACK_TRACKLESS_GRAVEL          0x15
+#define GUI_RAILTYPE                    0x16
+#define TRACK_TRACKLESS_URBAN           0x17
+#define TRACK_DUAL_NORMAL               0x18
+
+// railtype ids
+#define RAILTYPE_TRACKLESS_DIRT         0x0011
+#define RAILTYPE_TRACKLESS_REINFORCED   0x0012
+#define RAILTYPE_TRACKLESS_GRAVEL       0x0013
+#define RAILTYPE_TRACKLESS_URBAN        0x0014
+#define RAILTYPE_DUAL_NORMAL            0x0015

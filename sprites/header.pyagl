@@ -46,7 +46,7 @@ optional_info // Action14
             0x00000000: 
             {
                 DFLT: [ 0x00 0x00 0x00 0x00 ];
-                LIMI: [ 0x00 0x00 0x00 0x00 0x04 0x00 0x00 0x00 ];
+                LIMI: [ 0x00 0x00 0x00 0x00 0x05 0x00 0x00 0x00 ];
                 NAME: default, "Mode"; // Default
                 DESC: default, "Choose between generic or country-specific modes. When set to 'automatic', the Japanese mode is used only if the Japanese train set is used."; // Default
                 NAME: zh_CN, "轨道模式"; // Chinese (Simplified)
@@ -60,16 +60,19 @@ optional_info // Action14
                     0x00000002: default, "German"; // Default
                     0x00000003: default, "British"; // Default
                     0x00000004: default, "North American"; // Default
+                    0x00000005: default, "Japanese"; // Default
                     0x00000000: zh_CN, "自动（日本/通用）"; // Chinese (Simplified)
                     0x00000001: zh_CN, "通用"; // Chinese (Simplified)
                     0x00000002: zh_CN, "德国"; // Chinese (Simplified)
                     0x00000003: zh_CN, "英国"; // Chinese (Simplified)
                     0x00000004: zh_CN, "北美"; // Chinese (Simplified)
+                    0x00000005: zh_CN, "日本"; // Chinese (Simplified)
                     0x00000000: zh_TW, "自動（日本/通用）"; // Chinese (Traditional)
                     0x00000001: zh_TW, "通用"; // Chinese (Traditional)
                     0x00000002: zh_TW, "德國"; // Chinese (Traditional)
                     0x00000003: zh_TW, "英國"; // Chinese (Traditional)
                     0x00000004: zh_TW, "北美"; // Chinese (Traditional)
+                    0x00000005: zh_TW, "日本"; // Chinese (Traditional)
                 }
             }
             0x00000001: 
