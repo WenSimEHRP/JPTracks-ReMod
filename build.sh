@@ -5,6 +5,7 @@
 # -C: preserve comments
 # -x c: treat the input file as C code
 # -o: output file
-gcc -E -P -C -x c sprites/jptracks-wemod.pyagl > sprites/jptracks-wemod.yagl &&
-    yagl -e jptracks-wemod.grf &&
+gcc -E -x c sprites/jptracks-wemod.pyagl > sprites/jptracks-wemod.yagl &&
+    #yagl -e jptracks-wemod.grf &&
+    /d/Data/Documents/GitHub/yagl/build/Debug/yagl.exe -e jptracks-wemod.grf &&
     echo "done!"

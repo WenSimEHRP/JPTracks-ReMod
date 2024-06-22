@@ -1,4 +1,5 @@
-yagl_version: "v1.2.2-0-g679a0ca";
+//yagl_version: "v1.2.2-0-g679a0ca";
+yagl_version: "v1.2.2-16-g903c367";
 grf_format: Container1;
 ignore // Action0C
 {
@@ -12,6 +13,8 @@ ignore // Action0C
 #include "./defines.pyagl"
 #include "./checks.pyagl"
 #include "./header.pyagl"
+ignore{"inforce use of Japanese Tracks";}
+if_act9 (is_equal(param[0x00] & 0xFF, 0x05)){skip_sprites: 0x03;}
 if_act9 (is_not_equal(param[0x00] & 0xFF, 0x00)) // Action09
 {
     skip_sprites: 0x01;
@@ -8391,6 +8394,11 @@ sprite_groups<RailTypes, 0xC0> // Action02 basic
 {
     primary_spritesets: [ 0x0000 ];
 }
+//TODO replace this with better gui
+sprite_groups<RailTypes, GUI_RAILTYPE>
+{
+    primary_spritesets:[ 0x0000 ];
+}
 // Record #594
 sprite_sets<RailTypes, 0x0000> // <feature, first_set> Action01
 {
@@ -13977,6 +13985,13 @@ switch<RailTypes, 0xCA, PrimaryByte> // Action02 variable
     };
     default: 0x00AB;
 }
+ignore{"persistant action02 storage for extra railtypes";}
+switch<RailTypes, TRACK_STANDARD_URBAN_3RD, PrimaryByte> // Action02 variable
+{
+    expression:{value1 = variable[0x40] & 0x000000FF;};
+    ranges:{0x00000004: 0x00B8;};
+    default: 0x00AB;
+}
 // Record #866
 sprite_sets<RailTypes, 0x0000> // <feature, first_set> Action01
 {
@@ -14561,6 +14576,15 @@ switch<RailTypes, 0xD4, PrimaryByte> // Action02 variable
     };
     default: 0x00AB;
 }
+ignore{"persistant action02 storage for extra railtypes";}
+switch<RailTypes, TRACK_NARROW_URBAN, PrimaryByte> // Action02 variable
+{
+    expression:{value1 = variable[0x40] & 0x000000FF;};// for snow
+    ranges:{0x00000004: 0x00B9;};
+    default: 0x00AB;
+}
+
+
 // Record #884
 sprite_sets<RailTypes, 0x0000> // <feature, first_set> Action01
 {
@@ -38286,7 +38310,7 @@ feature_graphics<RailTypes> // Action03
     };
 }
 // Record #2174
-if_act9 (is_equal(param[0x06] & 0xFF, 0x00)) // Action09
+if_act9 (is_not_equal(param[0x06] & 0xFF, 0x01)) // Action09
 {
     skip_sprites: 0xF8;
     // Or skip to the next label (Action10) with this value - search wraps at end of GRF.
@@ -41048,6 +41072,10 @@ sprite_groups<RailTypes, 0xA0> // Action02 basic
 {
     primary_spritesets: [ 0x0000 ];
 }
+sprite_groups<RailTypes, TRACK_FENCE_COUNTRY>
+{
+    primary_spritesets: [ 0x0000 ];
+}
 // Record #2382
 if_act9 (is_less_than(param[0x08] & 0xFF, 0x03)) // Action09
 {
@@ -43550,3 +43578,4 @@ label<0xD0> // Action10 - target for Action07 or Action09
 }
 
 #include "./extra_tracks.pyagl"
+#include "./qatenary.pyagl"
