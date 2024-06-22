@@ -93,7 +93,7 @@ sprite_sets<RailTypes, 0x0000>
     {
         sprite_id<0x10000040>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [10,  52];}
         sprite_id<0x10000041>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [84,  52];}
-        sprite_id<0x10000042>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [158,  52];}
+        sprite_id<0x10000042>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [158, 52];}
         sprite_id<0x10000043>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [232, 52];}
         sprite_id<0x10000044>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [306, 52];}
         sprite_id<0x10000045>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [380, 52];}
@@ -111,26 +111,94 @@ sprite_sets<RailTypes, 0x0000>
 }
 sprite_groups<RailTypes, TRACK_DUAL_NORMAL>{primary_spritesets: [ 0x0000 ];}
 
-ignore{"start of wemod extra railtypes strings";}
+sprite_sets<RailTypes, 0x0000>
+{
+    sprite_set
+    {
+        sprite_id<0x10000050>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [10,  190];}
+        sprite_id<0x10000051>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [84,  190];}
+        sprite_id<0x10000052>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [158, 190];}
+        sprite_id<0x10000053>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [232, 190];}
+        sprite_id<0x10000054>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [306, 190];}
+        sprite_id<0x10000055>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [380, 190];}
+        sprite_id<0x10000056>{[64, 39, -31,-8], normal, c8bpp | chunked, "extra-tracks.png", [454, 190];}
+        sprite_id<0x10000057>{[64, 23, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [528, 190];}
+        sprite_id<0x10000058>{[64, 23, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [602, 190];}
+        sprite_id<0x10000059>{[64, 39, -31,-8], normal, c8bpp | chunked, "extra-tracks.png", [676, 190];}
+    }
+}
+
+sprite_groups<RailTypes, TRACK_DUAL_OVERLAY>{primary_spritesets: [ 0x0000 ];}
+
+sprite_sets<RailTypes, 0x0000>
+{
+    sprite_set
+    {
+        sprite_id<0x10000060>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [10,  144];}
+        sprite_id<0x10000061>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [84,  144];}
+        sprite_id<0x10000062>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [158, 144];}
+        sprite_id<0x10000063>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [232, 144];}
+        sprite_id<0x10000064>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [306, 144];}
+        sprite_id<0x10000065>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [380, 144];}
+        sprite_id<0x10000066>{[64, 39, -31,-8], normal, c8bpp | chunked, "extra-tracks.png", [454, 144];}
+        sprite_id<0x10000067>{[64, 23, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [528, 144];}
+        sprite_id<0x10000068>{[64, 23, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [602, 144];}
+        sprite_id<0x10000069>{[64, 39, -31,-8], normal, c8bpp | chunked, "extra-tracks.png", [676, 144];}
+        sprite_id<0x1000006A>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [751, 144];}
+        sprite_id<0x1000006B>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [825, 144];}
+        sprite_id<0x1000006C>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [825, 144];}
+        sprite_id<0x1000006D>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [825, 144];}
+        sprite_id<0x1000006E>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [825, 144];}
+        sprite_id<0x1000006F>{[64, 31, -31, 0], normal, c8bpp | chunked, "extra-tracks.png", [825, 144];}
+    }
+}
+
+sprite_groups<RailTypes, TRACK_DUAL_URBAN>{primary_spritesets: [ 0x0000 ];}
+
+ignore
+{
+    "
+    start of wemod extra railtypes strings
+
+    Note: railtypes:
+
+    NUBN = Narrow gauge urban line
+    NUCE = Narrow gauge modern urban line (electrified)
+    SUCE = Shinkansen urban line (electrified)
+    dABN = Dual-Gauge Line
+    dABE = Dual-Gauge Line (electrified)
+    dAB3 = Dual-Gauge Line (3rd rail powered)
+    dUBE = Dual-Gauge Urban Line (electrified)
+    dUB3 = Dual-Gauge Urban Line (3rd rail powered)
+    dABZ = Dual-Gauge Line (dual electrified)
+    dUBZ = Dual-Gauge Urban Line (dual electrified)
+    0JP0 = Empty dirt ground (Trackless)
+    0JP3 = Empty urban ground (Trackless)
+    0JP2 = Empty gravel ground (Trackless)
+    0JP1 = Empty reinforced ground (Trackless)
+    SABZ = Standard gauge line (dual electrified)
+    SUBZ = Standard gauge urban line (dual electrified)
+    ";
+}
 
 strings<RailTypes, default, 0xDC60*>
 {
-    /* 0xDC60 */ "Narrow gauge urban line{white}";
-    /* 0xDC61 */ "Narrow gauge modern urban line (electrified){white}";
-    /* 0xDC62 */ "Shinkansen urban line (electrified){white}";
-    /* 0xDC63 */ "Dual-Gauge Line{white}";
-    /* 0xDC64 */ "Dual-Gauge Line (electrified){white}";
-    /* 0xDC65 */ "Dual-Gauge Line (3rd rail powered){white}";
-    /* 0xDC66 */ "Dual-Gauge Urban Line (electrified){white}";
-    /* 0xDC67 */ "Dual-Gauge Urban Line (3rd rail powered){white}";
-    /* 0xDC68 */ "Dual-Gauge Line (dual electrified){white}";
-    /* 0xDC69 */ "Dual-Gauge Urban Line (dual electrified){white}";
-    /* 0xDC6A */ "Empty dirt ground (Trackless){white}";
-    /* 0xDC6B */ "Empty urban ground (Trackless){white}";
-    /* 0xDC6C */ "Empty gravel ground (Trackless){white}";
-    /* 0xDC6D */ "Empty reinforced ground (Trackless){white}";
-    /* 0xDC6E */ "Standard gauge line (dual electrified){white}";
-    /* 0xDC6F */ "Standard gauge urban line (dual electrified){white}";
+    /* 0xDC60 */ "Narrow gauge urban line{white}";                          // NUBN, partially done
+    /* 0xDC61 */ "Narrow gauge modern urban line (electrified){white}";     // NUCE
+    /* 0xDC62 */ "Shinkansen urban line (electrified){white}";              // SUCE
+    /* 0xDC63 */ "Dual-Gauge Line{white}";                                  // dABN / DABN
+    /* 0xDC64 */ "Dual-Gauge Line (electrified){white}";                    // dABE / DABE
+    /* 0xDC65 */ "Dual-Gauge Line (3rd rail powered){white}";               // dAB3 / DAB3
+    /* 0xDC66 */ "Dual-Gauge Urban Line (electrified){white}";              // dUBE / DUBE
+    /* 0xDC67 */ "Dual-Gauge Urban Line (3rd rail powered){white}";         // dUB3 / DUB3
+    /* 0xDC68 */ "Dual-Gauge Line (dual electrified){white}";               // dABZ / DABZ
+    /* 0xDC69 */ "Dual-Gauge Urban Line (dual electrified){white}";         // dUBZ / DUBZ
+    /* 0xDC6A */ "Empty dirt ground (Trackless){white}";                    // 0JP0, done
+    /* 0xDC6B */ "Empty urban ground (Trackless){white}";                   // 0JP3, done
+    /* 0xDC6C */ "Empty gravel ground (Trackless){white}";                  // 0JP2, done
+    /* 0xDC6D */ "Empty reinforced ground (Trackless){white}";              // 0JP1, done
+    /* 0xDC6E */ "Standard gauge line (dual electrified){white}";           // SABZ
+    /* 0xDC6F */ "Standard gauge urban line (dual electrified){white}";     // SUBZ
 }
 
 strings<RailTypes, zh_CN, 0xDC60*>
@@ -155,7 +223,7 @@ strings<RailTypes, zh_CN, 0xDC60*>
 
 ignore{"end of wemod extra railtypes strings";}
 
-properties<RailTypes, 0x0010> // Action00
+properties<RailTypes, RAILTYPE_NARROW_URBAN> // Action00
 {
     {
         railtype_label:         "NUBN";
@@ -170,13 +238,87 @@ properties<RailTypes, 0x0010> // Action00
         railtype_flags:         0x00;           // no flags!
         curve_speed_multiplier: 0x00;
         station_graphics:       0x00;           // default station graphics
-        speed_limit:            130;            // 120 km/h
+        speed_limit:            130;            // 130 km/h
         acceleration_model:     0x00;
         minimap_colour:         0x0D;
         required_railtypes:     [ ];
         introduced_railtypes:   [ ];
         sort_order:             0x11;
         alternate_railtypes:    [ "NAaN" "NBaN" "NBAN" ];
+    }
+}
+
+properties<RailTypes, RAILTYPE_DUAL_NORMAL>
+{
+    {
+        railtype_label:         "DABN";
+        toolbar_caption_id:     0xDC63;
+        dropdown_text_id:       0xDC63;
+        window_caption_id:      0xDC63;
+        autoreplace_text_id:    0xDC63;
+        new_engine_text_id:     0xDC63;
+        introduction_date:      date(1950/1/1);
+        compatible_railtypes:   [ "NABN" "NABE" "NACE" "NUBE" ];
+        powered_railtypes:      [ "NABN" "NABE" "NACE" "NUBE" ];
+        railtype_flags:         0x00;           // no flags!
+        curve_speed_multiplier: 0x00;
+        station_graphics:       0x00;           // default station graphics
+        speed_limit:            130;            // 130 km/h
+        acceleration_model:     0x00;
+        minimap_colour:         0x0D;
+        required_railtypes:     [ ];
+        introduced_railtypes:   [ ];
+        sort_order:             0x32;
+    }
+}
+
+properties<RailTypes, RAILTYPE_DUAL_ELECTRIFIED>
+{
+    {
+        railtype_label:         "DABE";
+        toolbar_caption_id:     0xDC64;
+        dropdown_text_id:       0xDC64;
+        window_caption_id:      0xDC64;
+        autoreplace_text_id:    0xDC64;
+        new_engine_text_id:     0xDC64;
+        introduction_date:      date(1950/1/1);
+        compatible_railtypes:   [ "NABN" "NABE" "NACE" "NUBE" ];
+        powered_railtypes:      [ "NABN" "NABE" "NACE" "NUBE" ];
+        railtype_flags:         0b00000001;
+        curve_speed_multiplier: 0x00;
+        station_graphics:       0x00;           // default station graphics
+        speed_limit:            130;            // 130 km/h
+        acceleration_model:     0x00;
+        minimap_colour:         0x0D;
+        required_railtypes:     [ ];
+        introduced_railtypes:   [ ];
+        sort_order:             0x32;
+    }
+}
+
+// dual gauge urban
+
+properties<RailTypes, RAILTYPE_DUAL_URBAN_ELECTRIFIED>
+{
+    {
+        railtype_label:         "DUBE";
+        toolbar_caption_id:     0xDC66;
+        dropdown_text_id:       0xDC66;
+        window_caption_id:      0xDC66;
+        autoreplace_text_id:    0xDC66;
+        new_engine_text_id:     0xDC66;
+        introduction_date:      date(1950/1/1);
+        compatible_railtypes:   [ "NABN" "NABE" "NACE" "NUBE" ];
+        powered_railtypes:      [ "NABN" "NABE" "NACE" "NUBE" ];
+        railtype_flags:         0b00000001;
+        curve_speed_multiplier: 0x00;
+        station_graphics:       0x00;           // default station graphics
+        speed_limit:            130;            // 130 km/h
+        acceleration_model:     0x00;
+        minimap_colour:         0x0D;
+        required_railtypes:     [ ];
+        introduced_railtypes:   [ ];
+        sort_order:             0x32;
     }
 }
 
@@ -193,6 +335,7 @@ properties<RailTypes, RAILTYPE_TRACKLESS_DIRT>
         new_engine_text_id:     0xDC6A;
         sort_order:             0x32;
         introduction_date:      date(1/1/1);
+        railtype_flags:         0b00000010; // no level crossings
     }
 }
 
@@ -207,6 +350,7 @@ properties<RailTypes, RAILTYPE_TRACKLESS_REINFORCED>
         new_engine_text_id:     0xDC6D;
         sort_order:             0x33;
         introduction_date:      date(1/1/1);
+        railtype_flags:         0b00000010; // no level crossings
     }
 }
 
@@ -221,6 +365,7 @@ properties<RailTypes, RAILTYPE_TRACKLESS_GRAVEL>
         new_engine_text_id:     0xDC6C;
         sort_order:             0x34;
         introduction_date:      date(1/1/1);
+        railtype_flags:         0b00000010; // no level crossings
     }
 }
 
@@ -235,6 +380,7 @@ properties<RailTypes, RAILTYPE_TRACKLESS_URBAN>
         new_engine_text_id:     0xDC6B;
         sort_order:             0x35;
         introduction_date:      date(1/1/1);
+        railtype_flags:         0b00000010; // no level crossings
     }
 }
 // we use action03s to link the railtype graphics
@@ -258,7 +404,7 @@ properties<RailTypes, RAILTYPE_TRACKLESS_URBAN>
 feature_graphics<RailTypes> // Action03
 {
     default_set_id: FENCE_URBAN;
-    feature_ids: [ 0x0010 ];
+    feature_ids: [ RAILTYPE_NARROW_URBAN ];
     cargo_types:
     {
         // <cargo_type>: <cargo_id>;
@@ -266,7 +412,6 @@ feature_graphics<RailTypes> // Action03
         SPRITE_RAILTYPE_BRIDGE:     0x00C1;
         SPRITE_RAILTYPE_FENCE:      FENCE_URBAN;
         SPRITE_RAILTYPE_OVERLAY:    TRACK_URBAN_OVERLAY;
-        //SPRITE_RAILTYPE_UNDERLAY:   TRACK_NARROW_URBAN;
         SPRITE_RAILTYPE_UNDERLAY:   TRACK_NARROW_URBAN;
         //SPRITE_RAILTYPE_TUNNEL:
         //SPRITE_RAILTYPE_WIRE:
@@ -275,6 +420,48 @@ feature_graphics<RailTypes> // Action03
         //SPRITE_RAILTYPE_DEPOT:
         //SPRITE_RAILTYPE_FENCE:
         //SPRITE_RAILTYPE_TUNNEL_OVERLAY:
+    };
+}
+
+feature_graphics<RailTypes>
+{
+    default_set_id: FENCE_URBAN;
+    feature_ids: [ RAILTYPE_DUAL_NORMAL ];
+    cargo_types:
+    {
+        SPRITE_RAILTYPE_GUI:        GUI_RAILTYPE;
+        SPRITE_RAILTYPE_BRIDGE:     0x00C1;
+        SPRITE_RAILTYPE_FENCE:      FENCE_CHAINLINK;
+        SPRITE_RAILTYPE_OVERLAY:    TRACK_DUAL_OVERLAY;
+        SPRITE_RAILTYPE_UNDERLAY:   TRACK_DUAL_NORMAL;
+    };
+}
+
+feature_graphics<RailTypes>
+{
+    default_set_id: FENCE_URBAN;
+    feature_ids: [ RAILTYPE_DUAL_ELECTRIFIED ];
+    cargo_types:
+    {
+        SPRITE_RAILTYPE_GUI:        GUI_RAILTYPE;
+        SPRITE_RAILTYPE_BRIDGE:     0x00C1;
+        SPRITE_RAILTYPE_FENCE:      FENCE_CHAINLINK;
+        SPRITE_RAILTYPE_OVERLAY:    TRACK_DUAL_OVERLAY;
+        SPRITE_RAILTYPE_UNDERLAY:   TRACK_DUAL_NORMAL;
+    };
+}
+
+feature_graphics<RailTypes>
+{
+    default_set_id: FENCE_URBAN;
+    feature_ids: [ RAILTYPE_DUAL_URBAN_ELECTRIFIED ];
+    cargo_types:
+    {
+        SPRITE_RAILTYPE_GUI:        GUI_RAILTYPE;
+        SPRITE_RAILTYPE_BRIDGE:     0x00C1;
+        SPRITE_RAILTYPE_FENCE:      FENCE_URBAN;
+        SPRITE_RAILTYPE_OVERLAY:    TRACK_DUAL_OVERLAY;
+        SPRITE_RAILTYPE_UNDERLAY:   TRACK_DUAL_URBAN;
     };
 }
 
@@ -341,9 +528,14 @@ properties<RailTypes, 0x0006> // pre-modern shinkansen
     // instance_id: 0x0006
     {
         railtype_label:         "HSSN";
-        introduction_date:      date(1964/10/1);
-        compatible_railtypes:   ["HSSN" "MDSN" "SAEE" "SBEE" "SAAE" "SABN" "RAIL" "SBCN" "SADN" "SBCE" "SADE" "ELRL" "SAC3" "SACZ" "SUCE" "SUC3"];
-        powered_railtypes:      ["HSSN" "MDSN" "SAEE" "SBEE" "SAAE" "SBCE" "SADE" "ELRL" "SACZ" "SUCE"];
+        introduction_date:      date(1964/10/1); // first shinkansen line
+        compatible_railtypes:   ["HSSN" "MDSN" "SAEE" "SBEE" "SAAE" "SABN"
+                                 "RAIL" "SBCN" "SADN" "SBCE" "SADE" "ELRL"
+                                 "SAC3" "SACZ" "SUCE" "SUC3"
+                                 "DABN" "DABE" "DUBE"];
+        powered_railtypes:      ["HSSN" "MDSN" "SAEE" "SBEE" "SAAE" "SBCE"
+                                 "SADE" "ELRL" "SACZ" "SUCE"
+                                 "DABE" "DUBE"];
         required_railtypes:     [ ];
         introduced_railtypes:   [ "MDSN" ];
         speed_limit: 0x0103; // 0x0104 = 260 km/h, 0x0103 = 259 km/h
@@ -358,8 +550,13 @@ properties<RailTypes, 0x0007> // modern shinkansen
     {
         railtype_label:         "MDSN";
         introduction_date:      date(1990/1/1);
-        compatible_railtypes:   ["HSSN" "MDSN" "SAEE" "SBEE" "SAAE" "SABN" "RAIL" "SBCN" "SADN" "SBCE" "SADE" "ELRL" "SAC3" "SACZ" "SUCE" "SUC3"];
-        powered_railtypes:      ["HSSN" "MDSN" "SAEE" "SBEE" "SAAE" "SBCE" "SADE" "ELRL" "SACZ" "SUCE"];
+        compatible_railtypes:   ["HSSN" "MDSN" "SAEE" "SBEE" "SAAE" "SABN"
+                                 "RAIL" "SBCN" "SADN" "SBCE" "SADE" "ELRL"
+                                 "SAC3" "SACZ" "SUCE" "SUC3"
+                                 "DABN" "DABE" "DUBE"];
+        powered_railtypes:      ["HSSN" "MDSN" "SAEE" "SBEE" "SAAE" "SBCE"
+                                 "SADE" "ELRL" "SACZ" "SUCE"
+                                 "DABE" "DUBE"];
         required_railtypes:     [ ];
         introduced_railtypes:   [ ];
         speed_limit:              0; // no limit!
@@ -367,28 +564,34 @@ properties<RailTypes, 0x0007> // modern shinkansen
     }
 }
 
-ignore{"RAIL override";}
+ignore{"RAIL & ELRL override";}
 
 properties<RailTypes, 0x000D> // Action00
 {
     {
-        compatible_railtypes:   ["HSSN" "MDSN" "DABN" "DABE" "RAIL" "ELRL" "SACE" "SAEE" "SBEE" "SUBE" "SAB3" "SUB3" "SAAN"];
-        powered_railtypes:      ["HSSN" "MDSN" "DABE" "ELRL" "SACE" "SAEE" "SBEE" "SUBE"];
+        compatible_railtypes:   ["HSSN" "MDSN" "DABN" "DABE" "DUBE" "RAIL" "ELRL" "SACE" "SAEE" "SBEE" "SUBE" "SAB3" "SUB3" "SAAN"];
+        powered_railtypes:      ["HSSN" "MDSN" "DABE" "ELRL" "SACE" "SAEE" "SBEE" "SUBE" "DUBE"];
     }
 }
 properties<RailTypes, 0x0004>
 {
     {
-        compatible_railtypes:   ["HSSN" "MDSN" "DABN" "DABE" "RAIL" "ELRL" "SACE" "SAEE" "SBEE" "SUBE" "SAB3" "SUB3" "SAAN"];
-        powered_railtypes:      ["HSSN" "MDSN" "DABE" "ELRL" "SACE" "SAEE" "SBEE" "SUBE"];
+        compatible_railtypes:   ["HSSN" "MDSN" "DABN" "DABE" "DUBE" "RAIL" "ELRL" "SACE" "SAEE" "SBEE" "SUBE" "SAB3" "SUB3" "SAAN"];
+        powered_railtypes:      ["HSSN" "MDSN" "DABE" "ELRL" "SACE" "SAEE" "SBEE" "SUBE" "DUBE"];
     }
 }
 
-ignore{"default rail override";}
+ignore{"other rail override (narrow gauge, standard gauge, etc.)";}
 
 properties<RailTypes, 0x0000>{{
-        compatible_railtypes:   [ "NABN" "NABE" "NACE" "NUBE" "NUBN" ];
-        powered_railtypes:      [ "NABN" "NABE" "NACE" "NUBE" "NUBN" ];}}
+        compatible_railtypes:   [ "NABN" "NABE" "NACE" "NUBE" "NUBN" "DABN" "DABE" "DUBE"];
+        powered_railtypes:      [ "NABN" "NABE" "NACE" "NUBE" "NUBN" "DABN" "DABE" "DUBE"];}}
+        //compatible_railtypes:   [ "NABN" "NABE" "NACE" "NUBE" "NUBN" "DABN" "DABE"];
+        //powered_railtypes:      [ "NABN" "NABE" "NACE" "NUBE" "NUBN" "DABN" "DABE"];}}
+
+properties<RailTypes, 0x0002>{{
+        compatible_railtypes:   [ "NABN" "NABE" "NACE" "NUBE" "NUBN" "DABN" "DABE" "DUBE"];
+        powered_railtypes:      [ "NABN" "NABE" "NACE" "NUBE" "DABE" "DUBE"];}}
 
 label<0xFE>{}
 ignore{"end of wemod extra railtypes file";}

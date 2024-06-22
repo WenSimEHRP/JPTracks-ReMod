@@ -179,7 +179,7 @@ optional_info // Action14
             }
             0x00000006: 
             {
-                DFLT: [ 0x01 0x00 0x00 0x00 ];
+                DFLT: [ 0x00 0x00 0x00 0x00 ];
                 LIMI: [ 0x00 0x00 0x00 0x00 0x01 0x00 0x00 0x00 ];
                 TYPE: [ 0x01 ];
                 NAME: default, "Use custom catenary"; // Default
