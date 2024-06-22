@@ -180,14 +180,23 @@ optional_info // Action14
             0x00000006: 
             {
                 DFLT: [ 0x00 0x00 0x00 0x00 ];
-                LIMI: [ 0x00 0x00 0x00 0x00 0x01 0x00 0x00 0x00 ];
-                TYPE: [ 0x01 ];
+                LIMI: [ 0x00 0x00 0x00 0x00 0x02 0x00 0x00 0x00 ];
                 NAME: default, "Use custom catenary"; // Default
                 DESC: default, "If this setting is disabled, the default graphics for catenary wire and poles will be used instead of the ones provided by this set."; // Default
                 NAME: zh_CN, "使用自定义接触网"; // Chinese (Simplified)
                 DESC: zh_CN, "如果禁用此设置，则将使用接触网和杆的默认图形，而不是此设置提供的图形。"; // Chinese (Simplified)
                 NAME: zh_TW, "使用自定義電車線"; // Chinese (Traditional)
                 DESC: zh_TW, "如果禁用此設置，則將使用電車線和電車線柱的默認圖形，而不是此設置提供的圖形。"; // Chinese (Traditional)
+                VALU:
+                {
+                    0x00000000: default, "{ext push-colour}{red}Disabled{ext pop-colour}";
+                    0x00000001: default, "JP3 Tracks";
+                    0x00000002: default, "{ext push-colour}{lt-gray}Qatenary (weMOD){ext pop-colour}";
+                    0x00000000: zh_CN, "{ext push-colour}{red}禁用{ext pop-colour}";
+                    0x00000001: zh_CN, "JP3 轨道";
+                    0x00000000: zh_TW, "{ext push-colour}{red}禁用{ext pop-colour}";
+                    0x00000001: zh_TW, "JP3 軌道";
+                }
             }
             0x00000007: 
             {

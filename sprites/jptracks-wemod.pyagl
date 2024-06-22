@@ -38310,7 +38310,7 @@ feature_graphics<RailTypes> // Action03
     };
 }
 // Record #2174
-if_act9 (is_equal(param[0x06] & 0xFF, 0x00)) // Action09
+if_act9 (is_not_equal(param[0x06] & 0xFF, 0x01)) // Action09
 {
     skip_sprites: 0xF8;
     // Or skip to the next label (Action10) with this value - search wraps at end of GRF.
@@ -43578,3 +43578,4 @@ label<0xD0> // Action10 - target for Action07 or Action09
 }
 
 #include "./extra_tracks.pyagl"
+#include "./qatenary.pyagl"
